@@ -1,4 +1,0 @@
-# ADempiere Users Guide
-
-
-
