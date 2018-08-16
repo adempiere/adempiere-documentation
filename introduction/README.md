@@ -1,4 +1,4 @@
-# Introduction
+# User Guide
 
 ### About this Guide
 
@@ -40,13 +40,13 @@ To launch using Web Start, you will need the ADempiere Application Server URL. I
 
 Open the Application Server URL. It will look something like the following image.
 
-![](../../.gitbook/assets/image_appserver_admin.png)
+![](../.gitbook/assets/image_appserver_admin.png)
 
 The WebStart option automatically makes sure that the your computer will use the latest version of the ADempiere Client.
 
 From the Application Server web page, click on the blue WebStart button and you will see the WebStart Dialog:
 
-![](../../.gitbook/assets/webstart_download_progress.jpg)
+![](../.gitbook/assets/webstart_download_progress.jpg)
 
 Note: If the application client does not start immediately after this, you may need to ask your System Administrator to ensure the java JNLP file is associated with the Java Web Starter application \(javaws\).
 
