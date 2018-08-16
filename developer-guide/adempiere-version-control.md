@@ -1,5 +1,5 @@
 ---
-description: Provide a description of the version control process in use.
+description: Provides a description of the version control process in use.
 ---
 
 # ADempiere Version Control

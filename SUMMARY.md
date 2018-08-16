@@ -18,4 +18,5 @@
   * [Becoming a Developer](developer-guide/becoming-a-developer.md)
   * [Software Development Procedure](developer-guide/software-development-procedure.md)
   * [ADempiere Version Control](developer-guide/adempiere-version-control.md)
+  * [Development Environments](developer-guide/development-environments.md)
 
