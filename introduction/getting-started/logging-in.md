@@ -1,7 +1,3 @@
----
-description: How to log-in to the application.
----
-
 # Logging In
 
 ## The Login Dialog

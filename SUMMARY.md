@@ -14,9 +14,11 @@
     * [Launching the Application](introduction/getting-started/launching-the-application.md)
     * [Logging In](introduction/getting-started/logging-in.md)
     * [Finding Your Way Around](introduction/getting-started/finding-your-way-around.md)
+* [System Administration](system-administration.md)
 * [Developer Guide](developer-guide/README.md)
   * [Becoming a Developer](developer-guide/becoming-a-developer.md)
   * [Software Development Procedure](developer-guide/software-development-procedure.md)
   * [ADempiere Version Control](developer-guide/adempiere-version-control.md)
   * [Development Environments](developer-guide/development-environments.md)
+* [Installing ADempiere Manually](installing-adempiere-manually.md)
 

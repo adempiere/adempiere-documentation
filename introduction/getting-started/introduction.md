@@ -1,10 +1,10 @@
 # About the Application
 
-### About this Guide
+## About this Guide
 
 The ADempiere User Guide provides instructions and hints on the use of the software in day-to-day operation. It is intended as a reference on how to use the software to perform general functions. It includes configuration information where this is in the realm of the end-user. More complex configuration information can be found in the System Administration Guide or the Development Guide.
 
-### About the ADempiere Application
+## About the ADempiere Application
 
 ADempiere is a world-class ERP software application designed to support:
 
@@ -29,3 +29,4 @@ ADempiere is a world-class ERP software application designed to support:
   ADempiere provides workflows from simple documents, to multi-level approval and automated processing that can be fully customized to any business process.
 
 The application supports all the main features and functions expected of an ERP system and allows for the customization of the software so company specific features can be easily added. As an end-user, you will likely be presented with a customized version of the software, specific to your business. Information on those customizations will be provided to you by your system provider or administrator. This guide covers the ADempiere application in its released configuration and uses the Garden World demo client for examples.
+
