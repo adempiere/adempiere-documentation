@@ -150,7 +150,7 @@ In linux, you can use **nohup** or an equivalent tool.
 
 '**Congratulations!'**
 
-At this point, your installation is complete and you can move on to [Launching the ADempiere Application.](introduction/getting-started/launching-the-application.md)
+At this point, your installation is complete and you can move on to [Launching the ADempiere Application.](../introduction/getting-started/launching-the-application.md)
 
 ### Uninstall or Revert to Previous Version
 
