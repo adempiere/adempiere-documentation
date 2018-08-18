@@ -1,7 +1,3 @@
----
-description: Suggestions on setting up a development environment
----
-
 # Development Environments
 
 Creating a development environment is an exciting first step to becoming a developer with ADempiere. The development environment will allow you to test and debug the application and make changes back to the community. Before you begin, you should be familiar with the [Software Development Procedure](software-development-procedure.md) and [ADempiere Version Control](adempiere-version-control.md). To test the Web User Interface \(webui\) you will need to follow the steps in [Creating WebUI Workspace using Eclipse Webtool](http://wiki.adempiere.net/Creating_WebUI_Workspace_using_Eclipse_Webtool) after you create your development environment. It is also recommended that you create a separate project for customization work that will not be shared with all ADempiere users. See [Create your ADempiere customization environment](http://wiki.adempiere.net/Create_your_ADempiere_customization_environment) for more information.

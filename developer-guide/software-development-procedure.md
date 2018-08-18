@@ -1,9 +1,3 @@
----
-description: >-
-  A description of the software development procedure in use by the ADempiere
-  Project
----
-
 # Software Development Procedure
 
 ### Preface

@@ -1,7 +1,3 @@
----
-description: Provides a description of the version control process in use.
----
-
 # ADempiere Version Control
 
 ## The ADempiere Project Repository

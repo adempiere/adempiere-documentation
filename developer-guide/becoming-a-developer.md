@@ -1,7 +1,3 @@
----
-description: Helpful tips on how to join the project as a software developer
----
-
 # Becoming a Developer
 
 A Developer in the ADempiere bazaar is a person who contributes code, documentation or other work that is of value to the community. Anyone can become a Developer by making contributions. It is one of the most challenging and rewarding aspects of being involved in an open source community project.
