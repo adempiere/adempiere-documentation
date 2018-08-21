@@ -69,7 +69,7 @@ The configurations need the following settings:
 * Name: Call it something specific in the case that you have multiple projects
   * Main Tab - Project: browse to your ADempiere project
   * Main Tab - Main class: org.compiere.Adempiere
-  * Arguments Tab - VM Arguments: -Xms64m -Xmx64m -Dorg.adempiere.server.embedded=true -DPropertyFile="C:\Adempiere\Adempiere.properties"
+  * Arguments Tab - VM Arguments: `-Xms64m -Xmx64m -Dorg.adempiere.server.embedded=true  -DPropertyFile="C:\Adempiere\Adempiere.properties"`
   * Common Tab - Select Debug and Run in the "Display in favorites menu"
 
 > | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**Replace the path to the Adempiere.properties files with the one you wish to use. You can also change the VM Arguments to increase or decrease the amount of memory. The VM arguments define the minimum and maximum RAM allocation for the Java VM. Check the Java documentation for more information. |
@@ -136,7 +136,7 @@ env.ADEMPIERE_HOME=${env.ADEMPIERE_ROOT}/Adempiere
 
 ADempiere needs a database to function. If you haven't already installed one, follow the instructions in [Database Server Installation & Setup](http://wiki.adempiere.net/Database_Server_Installation_%26_Setup).
 
-Before you can run ADempiere, you will need to [Initialize the ADempiere Database](http://wiki.adempiere.net/Initialize_the_ADempiere_Database). You do this by executing the RUN\_ImportAdempiere script in the c:/adempiere/utils directory.
+Before you can run ADempiere, you will need to [Initialize the ADempiere Database](http://wiki.adempiere.net/Initialize_the_ADempiere_Database). You do this by executing the RUN\_ImportAdempiere script in the ADEMPIERE\_HOME/utils directory.
 
 > | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**You can setup an external tool configuration as described above to run any of the scripts in the ADempiere installation from within Eclipse. |
 > | :--- | :--- |

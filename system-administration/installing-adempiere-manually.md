@@ -1,7 +1,3 @@
----
-description: Steps required to successfully install ADempiere on Windows and Linux servers
----
-
 # Installing ADempiere Manually
 
 ## General Installation Instructions

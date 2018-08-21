@@ -16,6 +16,7 @@
     * [Finding Your Way Around](introduction/getting-started/finding-your-way-around.md)
 * [System Administration](system-administration/README.md)
   * [Installing ADempiere Manually](system-administration/installing-adempiere-manually.md)
+  * [Application Server Installation and Setup](system-administration/application-server-installation-and-setup.md)
 * [Developer Guide](developer-guide/README.md)
   * [Becoming a Developer](developer-guide/becoming-a-developer.md)
   * [Software Development Procedure](developer-guide/software-development-procedure.md)
