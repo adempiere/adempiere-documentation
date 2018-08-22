@@ -6,10 +6,9 @@ description: A list of system requirements for the ADempiere application.
 
 ADempiere system requirements vary considerably with the complexity of the enterprise being supported. This page provides a minimum set of system requirements.
 
-It is possible to install ADempiere on a single computer with the database, server and client all running on the same machine. This is quite adequate for evaluation or very small applications.  In a production environment such a simple installation may not be sufficient, especially when there are more than a handful of concurrent users. Performance demands will require more attention to the architecture of the installation. In a production environment, it is highly recommended to separate the servers, with the [Application Server](http://en.wikipedia.org/wiki/Application_server) and [Database Server](http://en.wikipedia.org/wiki/Database_server) on different machines.
+It is possible to install ADempiere on a single computer with the database, server and client all running on the same machine. This is quite adequate for evaluation or very small applications. In a production environment such a simple installation may not be sufficient, especially when there are more than a handful of concurrent users. Performance demands will require more attention to the architecture of the installation. In a production environment, it is highly recommended to separate the servers, with the [Application Server](http://en.wikipedia.org/wiki/Application_server) and [Database Server](http://en.wikipedia.org/wiki/Database_server) on different machines.
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:** Proper database server architecture and database tuning is essential to efficient operation. For installations with more than 10 users, ensure you do your homework. See specifics about your database or consult with a database specialist for correct hardware architecture, database tuning and query tuning.For PostgreSQL, see [Postgres Performance](http://wiki.postgresql.org/wiki/Category:Performance) [Hardware Design](http://www.postgresql.org/files/documentation/books/aw_pgsql/hw_performance/) [Tuning Your PostgreSQL Server](http://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server) [Using EXPLAIN \(Query Tuning\)](http://wiki.postgresql.org/wiki/Using_EXPLAIN) |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:** Proper database server architecture and database tuning is essential to efficient operation. For installations with more than 10 users, ensure you do your homework. See specifics about your database or consult with a database specialist for correct hardware architecture, database tuning and query tuning.For PostgreSQL, see [Postgres Performance](http://wiki.postgresql.org/wiki/Category:Performance) [Hardware Design](http://www.postgresql.org/files/documentation/books/aw_pgsql/hw_performance/) [Tuning Your PostgreSQL Server](http://wiki.postgresql.org/wiki/Tuning_Your_PostgreSQL_Server) [Using EXPLAIN \(Query Tuning\)](http://wiki.postgresql.org/wiki/Using_EXPLAIN) \| \| :--- \| :--- \|
 
 The following sections describe the main requirements and options.
 
@@ -42,8 +41,7 @@ The following sections describe the main requirements and options.
 
 * Oracle 10g release 2 \(Express, Standard and Enterprise editions\)
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:** The export utility \(used by RUN\_DBExport\) on 11g doesn't export empty tables by default. Some configuration of the database is needed or you need to use a different tool. For that reason, 11g is not "officially" supported. |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:** The export utility \(used by RUN\_DBExport\) on 11g doesn't export empty tables by default. Some configuration of the database is needed or you need to use a different tool. For that reason, 11g is not "officially" supported. \| \| :--- \| :--- \|
 
 * PostgreSQL 8.2 or better
 * MySQL

@@ -84,8 +84,7 @@ ProxyPass / http://127.0.0.1:8081/
 ProxyPassReverse / http://127.0.0.1:8081/
 ```
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**The port and the IP address can/must be changed if you used different IP/port for RUN\_setup.sh |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**The port and the IP address can/must be changed if you used different IP/port for RUN\_setup.sh \| \| :--- \| :--- \|
 
 * Be wary of "free" parameters in web services. Use these wisely as they can be a vector for an attack. For example through unrestricted filters or allowing accesses to any table. It is recommended to be specific with web service requests.
 * Secure access to the server
