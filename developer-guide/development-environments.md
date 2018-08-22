@@ -14,21 +14,19 @@ Download and install the Java JDK from the [Oracle website](http://www.oracle.co
 
 Follow the installation instructions and set the environment variable JAVA\_HOME to point to the installed JDK and add %JAVA\_HOME%\bin to your PATH environment variable.
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:** You can have multiple JDK versions installed and change which one you use by changing where JAVA\_HOME points. Also, use the commands "which" on linux and "where" on dos to see where the called version is installed and "java -version" to check the version. |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:** You can have multiple JDK versions installed and change which one you use by changing where JAVA\_HOME points. Also, use the commands "which" on linux and "where" on dos to see where the called version is installed and "java -version" to check the version. \| \| :--- \| :--- \|
 
 Download and install a database. You can use PostgreSQL, Oracle or MySQL. PostgreSQL is recommended. Read more at [Database Server Installation & Setup](http://wiki.adempiere.net/Database_Server_Installation_%26_Setup).
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**if you have access to a database server, you can use that rather than install a local copy of the database. |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**if you have access to a database server, you can use that rather than install a local copy of the database. \| \| :--- \| :--- \|
 
-Download and install a Java Integrated Development Environment such as Itellij IDEA or the  Eclipse Integrated Development Environment \(IDE\) for Java EE Developers from the [Eclipse web site](https://www.eclipse.org/).  The rest of this section is based on Eclipse.
+Download and install a Java Integrated Development Environment such as Itellij IDEA or the Eclipse Integrated Development Environment \(IDE\) for Java EE Developers from the [Eclipse web site](https://www.eclipse.org/). The rest of this section is based on Eclipse.
 
 ### Download the ADempiere Source
 
 Download, install and configure your version control tools. See [ADempiere Version Control](adempiere-version-control.md) for instructions. You may find tools that integrate with Eclipse directly but it is recommended to use those that include the latest versions of Mercurial and Git. Once you have your pristine and working clones created, you should update the working clone to the desired branch head.
 
-Import the your working clone as a project in your IDE. The project includes nested subprojects but it is not necessary to import these as separate projects. 
+Import the your working clone as a project in your IDE. The project includes nested subprojects but it is not necessary to import these as separate projects.
 
 ### Compile and Debug ADempiere
 
@@ -56,8 +54,7 @@ Before you can compile the ADempiere software, there are a few things you can do
 * Create debug and run "configurations" so you can reliably launch the application in a known state
 * Create external tool "configurations" to launch the build processes and other tools
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**Many of these configurations are already shared within the project. If you can't see them in the Eclipse "Debug Configurations" or "Run Configurations", its likely that your project is setup slightly differently than the way the configuration was generated. Check the "Filter launch configurations..." dialog and deselect "Filter Deleted/Unavailable Projects". All the shared configurations should then appear in the list. To use one of these, copy it and modify it to fit with your setup. **Be sure to make this a local copy in the "Common" tab.** This will prevent your work from being over writen. A common difference would be in the project name or if the repository is setup as a single project or multiple projects. Some of the configurations use variables such as ${adempierePropertiesFile} which will need to be set before the configuration can be run. |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**Many of these configurations are already shared within the project. If you can't see them in the Eclipse "Debug Configurations" or "Run Configurations", its likely that your project is setup slightly differently than the way the configuration was generated. Check the "Filter launch configurations..." dialog and deselect "Filter Deleted/Unavailable Projects". All the shared configurations should then appear in the list. To use one of these, copy it and modify it to fit with your setup. **Be sure to make this a local copy in the "Common" tab.** This will prevent your work from being over writen. A common difference would be in the project name or if the repository is setup as a single project or multiple projects. Some of the configurations use variables such as ${adempierePropertiesFile} which will need to be set before the configuration can be run. \| \| :--- \| :--- \|
 
 **Create Debug and Run Configurations**
 
@@ -72,8 +69,7 @@ The configurations need the following settings:
   * Arguments Tab - VM Arguments: `-Xms64m -Xmx64m -Dorg.adempiere.server.embedded=true  -DPropertyFile="C:\Adempiere\Adempiere.properties"`
   * Common Tab - Select Debug and Run in the "Display in favorites menu"
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**Replace the path to the Adempiere.properties files with the one you wish to use. You can also change the VM Arguments to increase or decrease the amount of memory. The VM arguments define the minimum and maximum RAM allocation for the Java VM. Check the Java documentation for more information. |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**Replace the path to the Adempiere.properties files with the one you wish to use. You can also change the VM Arguments to increase or decrease the amount of memory. The VM arguments define the minimum and maximum RAM allocation for the Java VM. Check the Java documentation for more information. \| \| :--- \| :--- \|
 
 Create additional configurations for other projects as required.
 
@@ -91,7 +87,7 @@ Create additional configurations as required. A helpful one uses the build targe
 
 There are many build files in the project that perform specific tasks. You can also create external tool configurations for these. One helpful one is in the migration directory to install migrations. For example, in the directory adempiereTrunk/migration/380lts-release/postgresql, the build.xml file can apply the long list of migration scripts from within Eclipse. You will need to copy the adempiereTrunk/migration/postgresql.properties.template file to postgresql.properties and modify it for your installation. Then create an External Tool Configuration to run the target "run-scripts".
 
-You can also create external tool configurations for some of the basic shell scripts in ADempiere. These are created under the external tool "Program" category. Assuming you have installed adempiere on the C:\ drive, the suggested targets are:
+You can also create external tool configurations for some of the basic shell scripts in ADempiere. These are created under the external tool "Program" category. Assuming you have installed adempiere on the C: drive, the suggested targets are:
 
 * c:\adempiere\Run\_Setup.bat/sh
 * c:\adempiere\Run\_SilentSetup.bat/sh
@@ -138,8 +134,7 @@ ADempiere needs a database to function. If you haven't already installed one, fo
 
 Before you can run ADempiere, you will need to [Initialize the ADempiere Database](http://wiki.adempiere.net/Initialize_the_ADempiere_Database). You do this by executing the RUN\_ImportAdempiere script in the ADEMPIERE\_HOME/utils directory.
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**You can setup an external tool configuration as described above to run any of the scripts in the ADempiere installation from within Eclipse. |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**You can setup an external tool configuration as described above to run any of the scripts in the ADempiere installation from within Eclipse. \| \| :--- \| :--- \|
 
 ### Debugging and Running the Client
 
@@ -182,7 +177,7 @@ Before you can debug the software, you will need to generate a few of the key co
 
 1. Update your repository to the desired revision using your version control software. \(Pick a working version for the first time - not a work in progress.\)
 2. Refresh Eclipse to ensure it is synced with the files in the repository following the update.
-3. Copy uitls\_dev/build.properties to mybuild.properties and modify to point the root to your local install directory - typically c:\ on windows machines.
+3. Copy uitls\_dev/build.properties to mybuild.properties and modify to point the root to your local install directory - typically c: on windows machines.
 4. Clean your development environment to remove old classes.
 5. Build the code using the ANT build utils\_dev/build.xml.
 6. Install the code using the ANT install target in utils\_dev/build.xml.
@@ -198,15 +193,13 @@ Before you can debug the software, you will need to generate a few of the key co
 
 After these steps you should be able to debug the application from within eclipse using a debug/run configuration.
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**If you rename the adempiere.properties file, you can create copies with different setup options so you can change the main options simply by selecting different debug/run configurations. |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**If you rename the adempiere.properties file, you can create copies with different setup options so you can change the main options simply by selecting different debug/run configurations. \| \| :--- \| :--- \|
 
 #### Major Software Update
 
 Following an update to your repository performed through the version control system, you will need to do the following steps, depending on the extent and nature of the change.
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**This procedure assumes you have all the necessary software installed and have successfully debugged ADempiere from Eclipse in the past. |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**This procedure assumes you have all the necessary software installed and have successfully debugged ADempiere from Eclipse in the past. \| \| :--- \| :--- \|
 
 1. Refresh your development environment.
 2. Clean your development environment to remove old classes.
@@ -237,7 +230,7 @@ The steps to do so are described in [ADempiere Version Control](adempiere-versio
 
 Problems \(and their solutions\) that people often have when compiling ADempiere.
 
-#### Use the proper Java version. 
+#### Use the proper Java version.
 
 Make sure that the JDK and JREs used in Eclipse and installed on your computer are consistent. Check the Eclipse workspace settings, project settings and build settings if you run into problems.
 
@@ -280,7 +273,7 @@ MailLogger failed to send e-mail!java.lang.Exception: Missing required parameter
 ### See also
 
 * The interesting German version [De\_DE/eclipse-setup](http://wiki.adempiere.net/De_DE/eclipse-setup) that goes right through debugging from the JBoss server.
-* [Hacker's guide](http://wiki.adempiere.net/Hacker%27s_guide)
+* [Hacker's guide](http://wiki.adempiere.net/Hacker's_guide)
 * [Compile](http://wiki.adempiere.net/Compile)
 * [Creating WebUI Workspace using Eclipse Webtool](http://wiki.adempiere.net/Creating_WebUI_Workspace_using_Eclipse_Webtool)
 

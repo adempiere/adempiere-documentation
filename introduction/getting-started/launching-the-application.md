@@ -2,7 +2,7 @@
 
 There are two ways of accessing the ADempiere Application: through a java software client that runs on the user's computer or through a web user interface \(webui\) which can be accessed through a browser. Both these applications communicate with the ADempiere Application Server. Which you use will be determined by your system implementation. In general, the two methods are similar and provide the same functionality. The User Guide will focus on the Client software and will discuss the web version where it differs.
 
-### Launching the ADempiere Client using Web Start
+## Launching the ADempiere Client using Web Start
 
 To launch using Web Start, you will need the ADempiere Application Server URL. It may be provided as a link on your company's intranet or you can ask the System Administrator. It may look like `http://mycompany.com:8088/admin`.
 

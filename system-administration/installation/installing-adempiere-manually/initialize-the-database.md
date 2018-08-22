@@ -8,8 +8,7 @@ description: >-
 
 After having installed the database and setup the ADempiere Application Server, the database needs to be initialized prior to launching the Application Server and any client software.
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:** The utility scripts provided with the Application software need to have access to the database functions in order to run. In a network installation, you may have to copy the database executable files to the Application Server machine, install a local copy of the database on the application server or manually install the seed database on the database server. Detailed instructions are provided below. |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:** The utility scripts provided with the Application software need to have access to the database functions in order to run. In a network installation, you may have to copy the database executable files to the Application Server machine, install a local copy of the database on the application server or manually install the seed database on the database server. Detailed instructions are provided below. \| \| :--- \| :--- \|
 
 Before starting with the database creation, you should have the following installed:
 
@@ -26,24 +25,23 @@ The initial ADempiere Seed database is imported from the Adempiere.dmp file for 
 
 Open shell and change directories to the ADEMPIERE\_HOME/utils directory.
 
-> | [![Image:Caution.gif](http://wiki.adempiere.net/images/3/3f/Caution.gif)](http://wiki.adempiere.net/File:Caution.gif) | **Caution!** The following script will **DROP** any existing adempiere database. Do not run this command if you already have data loaded. |
-> | :--- | :--- |
+> \| [![Image:Caution.gif](http://wiki.adempiere.net/images/3/3f/Caution.gif)](http://wiki.adempiere.net/File:Caution.gif) \| **Caution!** The following script will **DROP** any existing adempiere database. Do not run this command if you already have data loaded. \| \| :--- \| :--- \|
 
 Run the script **RUN\_ImportAdempiere** \(.bat or .sh\).
 
 You will see information about .dmp file \(such as date creation, size, etc.\) and the message: **== The import will show warnings. This is Ok ==**
 
- [![](http://wiki.adempiere.net/images/0/0c/CD_Run_ImportAdempiere.PNG)](http://wiki.adempiere.net/File:CD_Run_ImportAdempiere.PNG)
+[![](http://wiki.adempiere.net/images/0/0c/CD_Run_ImportAdempiere.PNG)](http://wiki.adempiere.net/File:CD_Run_ImportAdempiere.PNG)
 
 Press any key to start the process.
 
 Don't worry if you see warnings \(such as "Warning: object created with compilation warnings"\). This is normal and can be ignored. After the import has finished, an SQL procedure makes sure that everything has been imported correctly and will list any invalid objects.
 
- [![](http://wiki.adempiere.net/images/f/f4/CD_Run_ImportAdempiere2.PNG)](http://wiki.adempiere.net/File:CD_Run_ImportAdempiere2.PNG)
+[![](http://wiki.adempiere.net/images/f/f4/CD_Run_ImportAdempiere2.PNG)](http://wiki.adempiere.net/File:CD_Run_ImportAdempiere2.PNG)
 
 At the process end, you should see a message similar to the one displayed below, with the text "no rows selected".
 
- [![](http://wiki.adempiere.net/images/2/28/CD_Run_ImportAdempiere3.PNG)](http://wiki.adempiere.net/File:CD_Run_ImportAdempiere3.PNG)
+[![](http://wiki.adempiere.net/images/2/28/CD_Run_ImportAdempiere3.PNG)](http://wiki.adempiere.net/File:CD_Run_ImportAdempiere3.PNG)
 
 A common cause of problems when running this script is not having the environment variables set properly. The script will not run if ADEMPIERE\_HOME, JAVA\_HOME are set incorrectly or if the database executables are not on the path. It may also be necessary to add the Postgres/Oracle bin directory to the PATH environment variable in some environments.
 
@@ -71,9 +69,9 @@ Following the database import, the database is **signed** - to indicate the vers
 The ImportAdempiere script is called with the following parameters:
 
 * system/%ADEMPIERE\_DB\_SYSTEM% \(not used in PostgreSQL installation\)
-*  %ADEMPIERE\_DB\_USER% \(typically Adempiere\)
-*  %ADEMPIERE\_DB\_PASSWORD% \(typically Adempiere\)
-*  %ADEMPIERE\_DB\_SYSTEM% \(typically postgres - not used in the oracle installation\)
+* %ADEMPIERE\_DB\_USER% \(typically Adempiere\)
+* %ADEMPIERE\_DB\_PASSWORD% \(typically Adempiere\)
+* %ADEMPIERE\_DB\_SYSTEM% \(typically postgres - not used in the oracle installation\)
 
 In addition, the following environment variables are required and should have been set by the Application Setup process:
 
