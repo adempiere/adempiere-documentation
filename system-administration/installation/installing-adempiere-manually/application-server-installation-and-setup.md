@@ -119,7 +119,7 @@ If, for example, the Application Server name is wrong, then you will see a messa
 
 When all the tests pass \(you can see the boxes checked: √ \):
 
-![ADempiere Server Setup with the test results shown](../../../.gitbook/assets/image-1%20%281%29.png)
+![ADempiere Server Setup with the test results shown](../../../.gitbook/assets/image-1-1.png)
 
 * press the Save button. This will save the settings to the AdempiereEnv.properties file in the ADEMPIERE\_HOME directory.
 * After you accept the license, you will see the dialog:
