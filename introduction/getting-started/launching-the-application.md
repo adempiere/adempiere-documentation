@@ -8,7 +8,7 @@ To launch using Web Start, you will need the ADempiere Application Server URL. I
 
 Open the Application Server URL. It will look something like the following image.
 
-![](../../.gitbook/assets/image_appserver_admin.png)
+![](../../.gitbook/assets/image_appserver_admin-1.png)
 
 The WebStart option automatically makes sure that the your computer will use the latest version of the ADempiere Client.
 
