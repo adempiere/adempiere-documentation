@@ -1,9 +1,3 @@
----
-description: >-
-  How to run the ADempiere Application Server as a standalone process or a
-  service.
----
-
 # Launch the Application Server
 
 ## Prerequisites

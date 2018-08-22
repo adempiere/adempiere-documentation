@@ -28,7 +28,7 @@ When launching the client, the initiation process tests the application server s
 
 Click in the Server field to go to the Connection Test Dialog to diagnose the problem causing red backgrounds in the field or to change the database parameters.
 
-> \| ![](../../.gitbook/assets/note%20%281%29.gif) \| The Client will still operate if the database is available but the application server is not running. \| \| :--- \| :--- \|
+> \| ![](../../.gitbook/assets/note-1.gif) \| The Client will still operate if the database is available but the application server is not running. \| \| :--- \| :--- \|
 
 **Default Accounts**
 
