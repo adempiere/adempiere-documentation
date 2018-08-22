@@ -1,8 +1,5 @@
 ---
-description: >-
-  This page is directed at System Administrators who need to install the
-  ADempiere Application Server in a network environment where the database
-  server could be running on a separate network server
+description: This page provides advice on installation of the ADempiere application server.
 ---
 
 # Application Server Installation and Setup
@@ -11,11 +8,52 @@ This page is directed at System Administrators who need to install the **ADempie
 
 ### Prerequisites
 
-Before continuing, ensure you have installed a suitable database \(i.e. Oracle 10g, Oracle 10gXE, PostgreSQL, MySQL\) and that the database server is running. See [Database Server Installation & Setup](http://wiki.adempiere.net/Database_Server_Installation_%26_Setup).
+Before continuing, ensure you have installed a suitable database \(i.e. Oracle 10g, Oracle 10gXE, PostgreSQL, MySQL\) and that the database server is running. See [Database Server Installation & Setup](database-server-installation-and-setup.md).
 
-### Start
+### Required Downloads
 
-The ADempiere software contains all the components necessary to create a stand alone application server. For a fresh install, follow the instructions for your operating system in [Installing ADempiere Manually](http://wiki.adempiere.net/Installing_ADempiere_Manually) but ignore the installation of the database, which you have already done, and return here when you are first requested to RUN\_Setup.bat/sh.
+Download each of the following packages:
+
+* **Java SE Development Kit** - Get the latest from [http://www.oracle.com/](http://www.oracle.com/technetwork/java/javase/downloads/index.html). You only need the JDK without JavaFX, EE or NetBeans bundles.
+* **ADempiere Latest Release** - Download the latest ADempiere from [here](https://github.com/adempiere/adempiere/releases).
+* **ADempiere Patches** - Any patches or customization jars to apply.
+
+### Install Java
+
+Install the JAVA JDK with the default installation settings. Say OK to install the follow-on JRE as well. Carefully note the full path for the JDK directory \(e.g: C:\Program Files\java\jdk1.5.0\_19\) and the JRE directory that you have just installed.
+
+> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**There may well be a number of JDK and JRE directories, so choose the right one! The JDK should include the JRE. |
+> | :--- | :--- |
+
+The ADempiere scripts rely on the existence of a system environment variable JAVA\_HOME. When the scripts call java, they use the full path as JAVA\_HOME/bin/java so it is important that this variable exist.
+
+Following the instructions for your system, add a new System Variable JAVA\_HOME for your new JDK directory. Set JAVA\_HOME to C:\Program Files\Java\jdk1.7.0\_25 \(or whatever your JDK directory is called\).
+
+According to your OS, append the following JDK path to the system path: 
+
+`%JAVA_HOME%\bin` or 
+
+`$JAVA_HOME/bin`
+
+### Install the ADempiere Software
+
+There is no install script. Just extract the ADempiere archive to a suitable location: \(e.g. c:\ or /u01/\). For reference, call this directory ADEMPIERE\_ROOT. You should end up with the files in a folder like ADEMPIERE\_ROOT\Adempiere. For reference, call this folder ADEMPIERE\_HOME.
+
+> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note: Avoid spaces in the directory path**. The batch scripts do not like directory names with spaces. If using a ADEMPIERE\_ROOT with multiple directories, avoid directory names with spaces. |
+> | :--- | :--- |
+
+#### Apply the Patches
+
+Patches are a combination of \*.jar files, which replace \*.jar files in the ADEMPIERE\_HOME\lib directory, and migration scripts which update the database. In the Patches directory on Source Forge, there may be more than one type of \*.jar that needs patching. If you downloaded one or more patch files, replace the existing file with the downloaded one, changing its name to match. For example, copy the \*\_patches\_\*.jar file to ADEMPIERE\_HOME\lib\patches.jar, overwriting the existing file. See the detailed instructions in [Patches Installation](http://wiki.adempiere.net/Patches_Installation).
+
+> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**It is a good idea to rename the existing \*.jar file to something like patches.jar.old before you replace it with the the new file |
+> | :--- | :--- |
+
+#### Apply Customizations, Packages and other Files
+
+If you have a customization.jar with customized code or a packages.jar file with supporting \*.jar files, add them to the ADEMPIERE\_HOME\lib directory, overwriting the existing files.
+
+For migration scripts which end in .xml, store these in the ADEMPIERE\_HOME/migration directory.
 
 ### Setting Up The ADempiere Server
 
@@ -23,12 +61,12 @@ The Application Server is configured by a utility RUN\_Setup.\(sh/bat\) found in
 
 You can rerun this utility as many times as you like until everything is correct.
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**In case you are changing settings on an existing Application Server, make sure that the Application Server is shut down before you start. Otherwise you will get port errors during the testing. You can shut down the Application server by running the script RUN\_Server2Stop.\(sh/bat\) from ADEMPIERE\_HOME/utils or by stopping the "service". |
+> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:** In case you are changing settings on an existing Application Server, make sure that the Application Server is shut down before you start. Otherwise you will get port errors during the testing. You can shut down the Application server by running the script RUN\_Server2Stop.\(sh/bat\) from ADEMPIERE\_HOME/utils or by stopping the "service". |
 > | :--- | :--- |
 
 In a command shell with administrative privileges, run the script **RUN\_Setup**, located in the ADEMPIERE\_HOME directory. The ADempiere Server Setup window should appear as shown below:
 
- [![](http://wiki.adempiere.net/images/0/00/IS_ServerSetup.PNG)](http://wiki.adempiere.net/File:IS_ServerSetup.PNG)
+![ADempiere Server Setup window](../../../.gitbook/assets/image.png)
 
 The Setup window opens and loads its values from the file AdempiereEnv.properties. It looks for this file in the ADEMPIERE\_HOME directory. If the environment variable ADEMPIERE\_HOME is not set or is null, it will look in the directory defined in the system property "user.dir".
 
@@ -62,16 +100,24 @@ Fill in the setup window fields as follows:
     * PostgreSQL: Password for the postgres user.
   * **Database User**: The application database user name, default is adempiere.
   * **Database Password**: The application database password, default is adempiere.
-* Mail Server
+* Mail Server \(See notes below\)
+  * **Server**: ****the mail server  \(e.g. smtp.gmail.com\)
+  * **Port**: the mail server port for sending mail
+  * **Protocol**: the protocol to use, SMTP or IMAP
+  * **Admin E-Mail**: The email to use as the From address
+  * **Encryption Type**: The type of encryption to use
+  * **Auth. Mechanism**: how the account is authorized.  Login is the default.
+  * **Mail User**: the mail user login name
+  * **Mail Password**: the mail user password
 
-A mail server is required to send requests. The mail server here is used as the default but is optional - the Setup tool will finish successfully without a fully functioning mail server. You maintain the mail server connection in the Application on a Client basis from the [**Client Window**](http://wiki.adempiere.net/ManPageW_Client). If you don't want to enter or don't have an SMTP server, just enter a valid server. If the server exists, but does not provide POP3, SMTP or IMAP, the setup will finish successfully. If the server is invalid, then the setup test will fail.
+Mail setup is optional but a server does have to be identified.  The Setup Tool will finish successfully whether the mail tests work or not. You can maintain the mail server connection in the Application on a Client basis from the [**Client Window**](http://wiki.adempiere.net/ManPageW_Client). If you don't want to setup mail or don't have an SMTP server, just enter a valid server - the field defaults to the local computer name. As long as the server exists, the setup will finish successfully. 
 
 > | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:**The software only needs a method to send email. There is no ability to read email in the application. |
 > | :--- | :--- |
 
 #### Testing the Setup
 
-After you fill the Setup fields, press the Test button to verify them. As the test progresses, you will see the boxes checked \(√\). Only if all the parameters are verified will you will not be able to save them. If an entry cannot be verified, a pop-up window stating the error will be displayed. Fix it and test again.
+After you fill the Setup fields, press the Test button to verify them. As the test progresses, you will see the boxes checked \(√\). Only if all the parameters are verified will you will not be able to save them. If an entry cannot be verified, a pop-up window stating the error will be displayed Fix it and test again.
 
 If, for example, the Application Server name is wrong, then you will see a message such as:
 
@@ -79,7 +125,7 @@ If, for example, the Application Server name is wrong, then you will see a messa
 
 When all the tests pass \(you can see the boxes checked: √ \):
 
- [![](http://wiki.adempiere.net/images/c/cd/IS_ServerSetupOK.PNG)](http://wiki.adempiere.net/File:IS_ServerSetupOK.PNG)
+![ADempiere Server Setup with the test results shown](../../../.gitbook/assets/image%20%281%29.png)
 
 * press the Save button. This will save the settings to the AdempiereEnv.properties file in the ADEMPIERE\_HOME directory.
 * After you accept the license, you will see the dialog:
