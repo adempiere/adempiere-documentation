@@ -6,7 +6,11 @@ The goal is to maintain the set of documentation in parallel with the software s
 
 To contribute, you will need an account on [GitHub](http://github.com). Fork the [ADempiere-Documentation](https://github.com/adempiere/adempiere-documentation) repository to your GitHub account.
 
-Create or login to your account on [GitBook](https://www.gitbook.com/) and create a space linked to your GitHub fork of the ADempiere documentation. Use GitBook to make your edits in your fork. When you have made your edits, use Github to create a pull-request on the main ADempiere repository.
+Create or login to your account on [GitBook](https://www.gitbook.com/) and create a space linked to your GitHub fork of the ADempiere documentation. When you specify the branches to sync with your GitHub account, use the following branch names:
 
-GitHub provides excellent documentation on making pull requests. Be sure to target the correct branch in the main repository when making the pull request.  One suggested approach is to create a new branch in GitHub for your edits, basing the branch on master branch.  Then, when your edits are complete, use GitHub to make a pull request from your new branch back to the master branch.
+`master doc* release* contrib*`
+
+Use GitBook to make your edits in your fork. When you have made your edits, use Github to create a pull-request on the main ADempiere repository.
+
+GitHub provides excellent documentation on making pull requests. Be sure to target the correct branch in the main repository when making the pull request.  One suggested approach is to create a new branch in GitHub for your edits, basing the branch on the master branch.  Then, when your edits are complete, use GitHub to make a pull request from your new branch back to the master branch.
 
