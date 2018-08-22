@@ -62,7 +62,7 @@ You can rerun this utility as many times as you like until everything is correct
 
 In a command shell with administrative privileges, run the script **RUN\_Setup**, located in the ADEMPIERE\_HOME directory. The ADempiere Server Setup window should appear as shown below:
 
-![ADempiere Server Setup window](../../../.gitbook/assets/image%20%282%29.png)
+![ADempiere Server Setup window](../../../.gitbook/assets/image-2.png)
 
 The Setup window opens and loads its values from the file AdempiereEnv.properties. It looks for this file in the ADEMPIERE\_HOME directory. If the environment variable ADEMPIERE\_HOME is not set or is null, it will look in the directory defined in the system property "user.dir".
 
@@ -80,7 +80,7 @@ Fill in the setup window fields as follows:
   * **KeyStore Password**: ADempiere requires a SSL certificate. It automatically creates a certificate in the key store $ADEMPIERE\_HOME/keystore/myKeystore with the keystore password entered. The self certified certificate created has the alias adempiere and uses the same password as the keystore. You can replace the certificate used with the Java "keytool" \(see Java tool documentation\).
 * Application Server
   * **Application Server**: is the name, URL or IP of your server PC \(Don't use localhost\). The Application Server defaults to the server currently running the program. Avoid using IP addresses - use the DNS name of the server.
-  * **Web Port**: The web port that the Application Server will listen on. Access to the application server will be through a URL similar to [http://myApplicationServer:webport](http://myApplicationServer:webport) \([http://appserver:8088\](http://appserver:8088\)\). Please keep in mind that, under Linux/Unix, ports under 1000 need root privileges. If you use Apache as a front end, you may need to use ports like 8080 or 8088 - basically, find a free port. The default ports is 80
+  * **Web Port**: The web port that the Application Server will listen on. Access to the application server will be through a URL similar to [http://myApplicationServer:webport](http://myApplicationServer:webport) \([http://appserver:8088\](http://appserver:8088%29\). Please keep in mind that, under Linux/Unix, ports under 1000 need root privileges. If you use Apache as a front end, you may need to use ports like 8080 or 8088 - basically, find a free port. The default ports is 80
   * **SSL**: The secure socket layer port. The default is 443. If that is not available try another value such as 4443 or 8443.
   * **JNP Port**: The Java Name Provider and Remote Method Invocation\(RMI\) port. The Default ports are 1099 \(1098\).
 * Database Server
@@ -96,7 +96,7 @@ Fill in the setup window fields as follows:
   * **Database User**: The application database user name, default is adempiere.
   * **Database Password**: The application database password, default is adempiere.
 * Mail Server \(See notes below\)
-  * **Server**: _\*\*_the mail server  \(e.g. smtp.gmail.com\)
+  * **Server**: \_\*\*\_the mail server  \(e.g. smtp.gmail.com\)
   * **Port**: the mail server port for sending mail
   * **Protocol**: the protocol to use, SMTP or IMAP
   * **Admin E-Mail**: The email to use as the From address

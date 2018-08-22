@@ -119,9 +119,9 @@ Developers contributing to the project use the **Forking Workflow**[\[2\]](https
 
 In summary:
 
-* The Maintainer manages the main repository \([https://github.com/adempiere/adempiere\](https://github.com/adempiere/adempiere\)\)
+* The Maintainer manages the main repository \([https://github.com/adempiere/adempiere\](https://github.com/adempiere/adempiere%29\)
 * Developers should have their own account on GitHub.
-* Developers fork the main repository on GitHub to their personal account \([https://github.com/&lt;developerAcct&gt;/adempiere\](https://github.com/<developerAcct>/adempiere\)\) and make a local clone of their personal fork.
+* Developers fork the main repository on GitHub to their personal account \([https://github.com/&lt;developerAcct&gt;/adempiere\](https://github.com/<developerAcct>/adempiere%29\) and make a local clone of their personal fork.
 * If the developer is working with Jira a lot, they should link their GitHub account with the project Jira account. This requires the help of a Jira administator so ask in the Developers forum. There is a good \(if you don't mind elevator music\) [video tutorial](https://www.youtube.com/watch?v=SCNWWfXpCw0) on youtube showing what is involved.
 * Working on their local clone, developers can open a new “feature” branch or contribute to any other branch using the Gitflow Workflow' model.
 * Developers commit to their local clone and push to their fork using well documented commits. To use the smart commits that link to the Jira issues, follow the [instructions on the Atlassian site](https://confluence.atlassian.com/display/Cloud/Processing+JIRA+issues+with+commit+messages). It is important to use the uppercase references \(e.g. ADEMPIERE-123\) in the commit messages. Read the instructions for more information.
