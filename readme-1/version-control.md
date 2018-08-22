@@ -12,7 +12,7 @@ Create or login to your account on [GitBook](https://www.gitbook.com/) and creat
 
 After GitBook has synced content with your GitHub fork, you can use GitBook to make edits in your fork. At the top left of the GitBook window, you will see the name of the branch/version you are currently reading. Expand that list and there will appear a link with the name "Create a new release +".
 
-![Menu to create a new release](../.gitbook/assets/image%20%281%29.png)
+![Menu to create a new release](../.gitbook/assets/image-1.png)
 
 Select "Create a new release" and give it a name that follows the wildcard patterns. A copy of the main version will be created. Make your edits and save them. Add a comment to describe the draft's changes and then publish them. GitBook will sync with your GitHub repository automatically.
 

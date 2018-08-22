@@ -2,7 +2,7 @@
 
 * [ADempiere Documentation](README.md)
 * [Copyright](copyright.md)
-* [Preface](readme-1/README.md)
+* [About this Documentation](readme-1/README.md)
   * [Conventions Used](readme-1/conventions-used.md)
   * [Contributors](readme-1/contributors.md)
   * [Version Control](readme-1/version-control.md)
