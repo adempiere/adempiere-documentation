@@ -1,8 +1,8 @@
 # Table of contents
 
 * [ADempiere Documentation](README.md)
-* [Copyright](copyright.md)
-* [Preface](readme-1/README.md)
+* [About this Documentation](readme-1/README.md)
+  * [Copyright](readme-1/copyright.md)
   * [Conventions Used](readme-1/conventions-used.md)
   * [Contributors](readme-1/contributors.md)
   * [Version Control](readme-1/version-control.md)
@@ -24,6 +24,9 @@
       * [Initialize the Database](system-administration/installation/installing-adempiere-manually/initialize-the-database.md)
       * [Launch the Application Server](system-administration/installation/installing-adempiere-manually/launch-the-application-server.md)
     * [Securing Your ADempiere Installation](system-administration/installation/securing-your-adempiere-installation.md)
+  * [Upgrading and Migration](system-administration/upgrading-and-migration.md)
+  * [Database Maintenance](system-administration/database-maintenance/README.md)
+    * [Database Backup and Restore](system-administration/database-maintenance/database-backup-and-restore.md)
 * [Developer Guide](developer-guide/README.md)
   * [Becoming a Developer](developer-guide/becoming-a-developer.md)
   * [Software Development Procedure](developer-guide/software-development-procedure.md)
