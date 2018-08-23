@@ -6,15 +6,14 @@ description: >-
 
 # Upgrading and Migration
 
-One of the great features of ADempiere is that upgrades and migration to new releases are always free!  The process of migration is relatively simple with the migration tools that have been added in release 3.8.0.
+One of the great features of ADempiere is that upgrades and migration to new releases are always free! The process of migration is relatively simple with the migration tools that have been added in release 3.8.0.
 
 There are two main activities:
 
 1. Upgrade your software; and
 2. Migrate your database to ensure all the necessary fields and data are compatible with  the software.
 
-> | [![Image:Caution.gif](http://wiki.adempiere.net/images/3/3f/Caution.gif)](http://wiki.adempiere.net/File:Caution.gif) | **Caution!** Back up your database \(utils/RUN\_DBExport\) and make a copy of the contents of the application directory \($ADEMPIERE\_HOME\) before attempting to upgrade your system. The installation of the latest version of software may overwrite needed files so its best to have them all backed up. In production environments, stage the upgrade in a test environment first. |
-> | :--- | :--- |
+> \| [![Image:Caution.gif](http://wiki.adempiere.net/images/3/3f/Caution.gif)](http://wiki.adempiere.net/File:Caution.gif) \| **Caution!** Back up your database \(utils/RUN\_DBExport\) and make a copy of the contents of the application directory \($ADEMPIERE\_HOME\) before attempting to upgrade your system. The installation of the latest version of software may overwrite needed files so its best to have them all backed up. In production environments, stage the upgrade in a test environment first. \| \| :--- \| :--- \|
 
 ## Software Upgrades
 
@@ -42,13 +41,11 @@ Extract the new ADempiere archive to the ADEMPIERE\_ROOT directory \(i.e. if ADE
 
 Patches are a combination of \*.jar files, which replace \*.jar files in the ADEMPIERE\_HOME\lib directory. In the Patches directory on GitHub, there may be more than one type of \*.jar that needs patching. If you downloaded one or more patch files, replace the existing file with the downloaded one, changing its name to match. For example, copy the \*\_patches\_\*.jar file to ADEMPIERE\_HOME\lib\patches.jar, overwriting the existing file. See the detailed instructions in [Patches Installation](http://wiki.adempiere.net/Patches_Installation).
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:** If you are updating a patch file, it is a good idea to rename the existing \*.jar file to something like patches.jar.old. |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:** If you are updating a patch file, it is a good idea to rename the existing \*.jar file to something like patches.jar.old. \| \| :--- \| :--- \|
 
 ### **Apply Customizations, Packages and other Files**
 
-> | [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) | **Note:** Ensure that any customizations applied are compatible with the target software version. |
-> | :--- | :--- |
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:** Ensure that any customizations applied are compatible with the target software version. \| \| :--- \| :--- \|
 
 If you have a customization.jar with customized code or a packages.jar file with supporting \*.jar files, add them to the $ADEMPIERE\_HOME\lib directory, overwriting the existing files.
 
