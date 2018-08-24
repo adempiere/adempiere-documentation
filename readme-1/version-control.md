@@ -10,7 +10,7 @@ Create or login to your account on [GitBook](https://www.gitbook.com/) and creat
 
 `master develop v* contrib*`
 
-After GitBook has synced content with your GitHub fork, you can use GitBook to make edits in your fork. At the top left of the GitBook window, you will see the name of the branch/version you are currently reading. If you expand that drop down, a list of available versions will be shown.  The version "1.0.0" is the "master" version.  \(You can click on a version and change its name if you wish.\)  Select the one version edit.  When it appears, at the bottom right, click the button to edit the selected version.  The list of versions should show a link with the name "Create a new release +".
+After GitBook has synced content with your GitHub fork, you can use GitBook to make edits in your fork. At the top left of the GitBook window, you will see the name of the branch/version you are currently reading. If you expand that drop down, a list of available versions will be shown. The version "1.0.0" is the "master" version. \(You can click on a version and change its name if you wish.\) Select the one version edit. When it appears, at the bottom right, click the button to edit the selected version. The list of versions should show a link with the name "Create a new release +".
 
 ![Menu to create a new release](../.gitbook/assets/image-1.png)
 
@@ -20,5 +20,5 @@ When you have completed all the edits and want to submit them to the main adempi
 
 GitHub provides excellent documentation on making pull requests. Be sure to target the correct branch in the main repository when making the pull request.
 
-If you run into trouble, you can delete your local GitBook version and recreate it from the data in GitHub.  Just ensure all your edits are committed first.
+If you run into trouble, you can delete your local GitBook version and recreate it from the data in GitHub. Just ensure all your edits are committed first.
 

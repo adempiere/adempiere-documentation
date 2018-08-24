@@ -4,7 +4,7 @@
 
 After [Launching the ADempiere Application](launching-the-application.md) the login dialog will appear. This dialog has two tabs, a connection tab and a default tab. Before you can set the defaults, you must complete the connection.
 
-The icon ![](../../.gitbook/assets/icon_ok24.png) and ![](../../.gitbook/assets/icon_cancel24.png) at the bottom of each page will process or cancel the dialog respectively.
+The icon ![](../../.gitbook/assets/icon_ok24%20%281%29.png) and ![](../../.gitbook/assets/icon_cancel24.png) at the bottom of each page will process or cancel the dialog respectively.
 
 ### Connection Tab
 
