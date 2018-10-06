@@ -2,13 +2,30 @@
 
 ## The Login Dialog
 
-After [Launching the ADempiere Application](launching-the-application.md) the login dialog will appear. This dialog has two tabs, a connection tab and a default tab. Before you can set the defaults, you must complete the connection.
+After [Launching the ADempiere Application](launching-the-application.md) the login dialog will appear. This dialog has two tabs, a [Connection Tab](logging-in.md#connection-tab) and a [Default Tab](logging-in.md#defaults-tab). Before you can set the defaults, you must complete the connection by logging in.  Enter you user name and password and click the green check mark \( ![](../../.gitbook/assets/icon_ok24.png) \) called "Confirm".  If you don't have a user name, you can use one of the default names as shown below.  For the first time, just confirm the defaults that appear and move on to [Finding Your Way Around](finding-your-way-around.md).
 
-The icon ![](../../.gitbook/assets/icon_ok24%20%281%29.png) and ![](../../.gitbook/assets/icon_cancel24.png) at the bottom of each page will process or cancel the dialog respectively.
+| ![](../../.gitbook/assets/note%20%281%29.gif)  | The icon ![](../../.gitbook/assets/icon_ok24%20%281%29.png) and ![](../../.gitbook/assets/icon_cancel24.png) at the bottom of each page will confirm/process or cancel the dialog respectively. |
+| :--- | :--- |
+
+
+### **Default Accounts**
+
+The following users and passwords are part of the initial seed database:
+
+| **Usage** | **User** | **Password** |
+| :--- | :--- | :--- |
+| System Management | System | System |
+| System Management or any role/company | SuperUser | System |
+| Sample Client Administration | GardenAdmin | GardenAdmin |
+| Sample Client User | GardenUser | GardenUser |
+
+The System and SuperUser accounts are used to manage the system.  For first time use, try the GardenAdmin account which will access the Garden World demonstration client.
+
+For more information about using the Garden World client when you first log on, see the page on [Garden World](http://wiki.adempiere.net/Garden_World) and its initial setup.
 
 ### Connection Tab
 
-![ADempiere Login Dialog - Connection Tab](http://wiki.adempiere.net/images/0/05/Login_Connection.jpg)
+![ADempiere Login Connection Tab](../../.gitbook/assets/image%20%281%29.png)
 
 | **Field** | **Description** |
 | :--- | :--- |
@@ -28,26 +45,15 @@ When launching the client, the initiation process tests the application server s
 
 Click in the Server field to go to the Connection Test Dialog to diagnose the problem causing red backgrounds in the field or to change the database parameters.
 
-> \| ![](../../.gitbook/assets/note-1.gif) \| The Client will still operate if the database is available but the application server is not running. \| \| :--- \| :--- \|
+| ![](../../.gitbook/assets/note%20%281%29.gif)  | The Client will still operate if the database is available but the application server is not running. |
+| :--- | :--- |
 
-**Default Accounts**
-
-The following users and passwords are part of the initial seed database:
-
-| **Usage** | **User** | **Password** |
-| :--- | :--- | :--- |
-| System Management | System | System |
-| System Management or any role/company | SuperUser | System |
-| Sample Client Administration | GardenAdmin | GardenAdmin |
-| Sample Client User | GardenUser | GardenUser |
-
-For more information about using the Garden World client when you first log on, see the page on [Garden World](http://wiki.adempiere.net/Garden_World) and its initial setup.
 
 ### Defaults Tab
 
-![ADempiere Login Window - Defaults Tab](../../.gitbook/assets/login_defaults.jpg)
+![ADempiere Login Defaults Tab](../../.gitbook/assets/image.png)
 
-After selecting the desired values in this tab, you can click on the green check mark to start the application. See [Navigating the Main Panel](http://wiki.adempiere.net/Navigating_the_Main_Panel).
+After selecting the desired values in this tab, you can click on the green check mark to start the application. See [Finding Your Way Around](finding-your-way-around.md).
 
 | **Field** | **Description** |
 | :--- | :--- |
@@ -60,11 +66,13 @@ After selecting the desired values in this tab, you can click on the green check
 
 ### Connection Test Dialog
 
-When you click in the Server field in the Connection tab of the login dialog, the Connection Test dialog appears
+When you click in the Server field in the Connection tab of the login dialog, the Connection Test dialog appears.  Note that this window is intended for system administrators.  As a user, you should not need to look at it.
 
-![Connection Test Dialog](../../.gitbook/assets/login_connection_test.jpg)
+![ADempiere Login Connection Test Dialog](../../.gitbook/assets/image%20%285%29.png)
 
-> \| ![](../../.gitbook/assets/note.gif) \| Please talk with your system administrator if you don't know how to manage this window. In order to use the Connection Test Dialog, the ADempiere Application Server must be running and the database service must be available. \| \| :--- \| :--- \|
+| ![](../../.gitbook/assets/note%20%281%29.gif)  | In order to use the Connection Test Dialog, the ADempiere Application Server must be running and the database service must be available. |
+| :--- | :--- |
+
 
 | **Field** | **Description** |
 | :--- | :--- |
@@ -86,15 +94,4 @@ When you click in the Server field in the Connection tab of the login dialog, th
 | Test Database | Click this button to check the database connection |
 
 Once all the tests are complete, click the green check mark to return to the Defaults Tab.
-
-### For Developers
-
-The software for the application initiation and login windows can be found in:
-
-* base/src
-  * org.compiere.Adempiere.java
-* client/src
-  * org.compiere.apps.AMenu.java
-  * org.compiere.apps.ALogin.java
-  * org.compiere.apps.ALoginTest.java
 
