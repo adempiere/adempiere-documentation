@@ -68,7 +68,7 @@ After selecting the desired values in this tab, you can click on the green check
 
 When you click in the Server field in the Connection tab of the login dialog, the Connection Test dialog appears. Note that this window is intended for system administrators. As a user, you should not need to look at it.
 
-![ADempiere Login Connection Test Dialog](../../.gitbook/assets/image%20%285%29.png)
+![ADempiere Login Connection Test Dialog](../../.gitbook/assets/image%20%288%29.png)
 
 | ![](../../.gitbook/assets/note%20%282%29.gif) | In order to use the Connection Test Dialog, the ADempiere Application Server must be running and the database service must be available. |
 | :--- | :--- |
