@@ -1,6 +1,6 @@
 # Development Environments
 
-Creating a development environment is an exciting first step to becoming a developer with ADempiere. The development environment will allow you to test and debug the application and make changes back to the community. Before you begin, you should be familiar with the [Software Development Procedure](../software-development-procedure.md) and [ADempiere Version Control](../adempiere-version-control.md). To test the Web User Interface \(webui\) you will need to follow the steps in [Creating WebUI Workspace using Eclipse Webtool](http://wiki.adempiere.net/Creating_WebUI_Workspace_using_Eclipse_Webtool) after you create your development environment. It is also recommended that you create a separate project for customization work that will not be shared with all ADempiere users. See [Create your ADempiere customization environment](http://wiki.adempiere.net/Create_your_ADempiere_customization_environment) for more information.
+Creating a development environment is an exciting first step to becoming a developer with ADempiere. The development environment will allow you to test and debug the application and make changes back to the community. Before you begin, you should be familiar with the [Software Development Procedure](software-development-procedure.md) and [ADempiere Version Control](adempiere-version-control.md). To test the Web User Interface \(webui\) you will need to follow the steps in [Creating WebUI Workspace using Eclipse Webtool](http://wiki.adempiere.net/Creating_WebUI_Workspace_using_Eclipse_Webtool) after you create your development environment. It is also recommended that you create a separate project for customization work that will not be shared with all ADempiere users. See [Create your ADempiere customization environment](http://wiki.adempiere.net/Create_your_ADempiere_customization_environment) for more information.
 
 If you have any issues, please join our [chat](http://www.adempiere.net/web/guest/chat-on-line). We'd be happy to help.
 
@@ -14,21 +14,17 @@ Download and install the Java JDK from the [Oracle website](http://www.oracle.co
 
 Follow the installation instructions and set the environment variable JAVA\_HOME to point to the installed JDK and add %JAVA\_HOME%\bin to your PATH environment variable.
 
-| ![](../../.gitbook/assets/note%20%281%29.gif)  | Note: You can have multiple JDK versions installed and change which one you use by changing where JAVA\_HOME points. Also, use the commands "which" on linux and "where" on dos to see where the called version is installed and "java -version" to check the version. |
-| :--- | :--- |
-
-
-| ​​![](https://firebasestorage.googleapis.com/v0/b/gitbook-28427.appspot.com/o/assets%2F-LKb7QtxD9re6e--e5Kz%2F-LKc2ArFzWzvbylfNBLa%2F-LKc34o-IPpSZaZ2Xr6q%2Fnote.gif?alt=media&token=e38945ab-5859-4fea-b29c-b23abf842cac) | Note: If you have access to a database server, you can use that rather than install a local copy of the database. |
-| :--- | :--- |
-
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:** You can have multiple JDK versions installed and change which one you use by changing where JAVA\_HOME points. Also, use the commands "which" on linux and "where" on dos to see where the called version is installed and "java -version" to check the version. \| \| :--- \| :--- \|
 
 Download and install a database. You can use PostgreSQL, Oracle or MySQL. PostgreSQL is recommended. Read more at [Database Server Installation & Setup](http://wiki.adempiere.net/Database_Server_Installation_%26_Setup).
+
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**if you have access to a database server, you can use that rather than install a local copy of the database. \| \| :--- \| :--- \|
 
 Download and install a Java Integrated Development Environment such as Itellij IDEA or the Eclipse Integrated Development Environment \(IDE\) for Java EE Developers from the [Eclipse web site](https://www.eclipse.org/). The rest of this section is based on Eclipse.
 
 ### Download the ADempiere Source
 
-Download, install and configure your version control tools. See [ADempiere Version Control](../adempiere-version-control.md) for instructions. You may find tools that integrate with Eclipse directly but it is recommended to use those that include the latest versions of Mercurial and Git. Once you have your pristine and working clones created, you should update the working clone to the desired branch head.
+Download, install and configure your version control tools. See [ADempiere Version Control](adempiere-version-control.md) for instructions. You may find tools that integrate with Eclipse directly but it is recommended to use those that include the latest versions of Mercurial and Git. Once you have your pristine and working clones created, you should update the working clone to the desired branch head.
 
 Import the your working clone as a project in your IDE. The project includes nested subprojects but it is not necessary to import these as separate projects.
 
@@ -197,17 +193,13 @@ Before you can debug the software, you will need to generate a few of the key co
 
 After these steps you should be able to debug the application from within eclipse using a debug/run configuration.
 
-| ![](../../.gitbook/assets/note%20%281%29.gif)  | Note: If you rename the adempiere.properties file, you can create copies with different setup options so you can change the main options simply by selecting different debug/run configurations. |
-| :--- | :--- |
-
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**If you rename the adempiere.properties file, you can create copies with different setup options so you can change the main options simply by selecting different debug/run configurations. \| \| :--- \| :--- \|
 
 #### Major Software Update
 
 Following an update to your repository performed through the version control system, you will need to do the following steps, depending on the extent and nature of the change.
 
-| ![](../../.gitbook/assets/note%20%281%29.gif)  | Note: This procedure assumes you have all the necessary software installed and have successfully debugged ADempiere from Eclipse in the past. |
-| :--- | :--- |
-
+> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**This procedure assumes you have all the necessary software installed and have successfully debugged ADempiere from Eclipse in the past. \| \| :--- \| :--- \|
 
 1. Refresh your development environment.
 2. Clean your development environment to remove old classes.
@@ -222,12 +214,12 @@ The ADempiere Project uses a Fork and Pull model. It is best practice to fork th
 
 This is best practice for ADempiere developers, for individuals who want to contribute or when you are working on a module/feature with a team and you commit, push, revert, merge etc. in many cycles before deciding to publish.
 
-The steps to do so are described in [ADempiere Version Control](../adempiere-version-control.md) but, in summary, here the steps:
+The steps to do so are described in [ADempiere Version Control](adempiere-version-control.md) but, in summary, here the steps:
 
 * Go to the [Adempiere repository in Github](https://github.com/adempiere/adempiere), login with your Github account and fork from it following [these instructions](https://help.github.com/articles/fork-a-repo/).
 * Go to your Github account \(for example [https://github.com/MY\_GITHUB\_ACCOUNT](https://github.com/MY_GITHUB_ACCOUNT)\) and see your fork. It will be under [https://github.com/MY\_GITHUB\_ACCOUNT/adempiere](https://github.com/MY_GITHUB_ACCOUNT/adempiere).
 * Clone the ADempiere repository locally with for example git clone git@github.com:MY\_GITHUB\_ACCOUNT/adempiere.git or with Eclipse or your favorite IDE.
-* Create a new branch for your development work. Follow the branch naming conventions in the [Software Development Procedure](../software-development-procedure.md) - be specific. Keep your local branches limited to a single bug fix or feature development. Use as many branches as you need.
+* Create a new branch for your development work. Follow the branch naming conventions in the [Software Development Procedure](software-development-procedure.md) - be specific. Keep your local branches limited to a single bug fix or feature development. Use as many branches as you need.
 * Make some software changes and commit and push your local changes as usual and then push to your fork on github.
 * When you want your changes to be submitted to the Technical Team to be accepted, follow [these instructions](https://yangsu.github.io/pull-request-tutorial) or [these instructions](https://help.github.com/articles/using-pull-requests/). Pay attention to the target branch on the ADempiere repository.
 * Keeping your fork synced
@@ -272,9 +264,7 @@ For many Linux system, such as OpenSuSE, Fedora, Red Hat
 
 #### You may get a MailLogger Exception
 
-MailLogger failed to send e-mail!java.lang.Exception: Missing required parameter: MailLogger.from
-
-Add these lines to Adempiere/utils\_dev/mybuild.properties:
+MailLogger failed to send e-mail!java.lang.Exception: Missing required parameter: MailLogger.fromAdd these lines to Adempiere/utils\_dev/mybuild.properties:
 
 > MailLogger.from=username@domain.com  
 > MailLogger.success.to=username@domain.com  

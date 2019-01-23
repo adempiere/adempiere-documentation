@@ -2,15 +2,19 @@
 
 ## The Login Dialog
 
-After [Launching the ADempiere Application](launching-the-application.md) the login dialog will appear. This dialog has two tabs, a [Connection Tab](logging-in.md#connection-tab) and a [Default Tab](logging-in.md#defaults-tab). Before you can set the defaults, you must complete the connection by logging in.  Enter you user name and password and click the green check mark \( ![](../../.gitbook/assets/icon_ok24.png) \) called "Confirm".  If you don't have a user name, you can use one of the default names as shown below.  For the first time, just confirm the defaults that appear and move on to [Finding Your Way Around](finding-your-way-around.md).
+After [Launching the ADempiere Application](launching-the-application.md) the login dialog will appear. This dialog has two tabs, a [Connection Tab](logging-in.md#connection-tab) and a [Default Tab](logging-in.md#defaults-tab). Before you can set the defaults, you must complete the connection - which means log in.  
 
-| ![](../../.gitbook/assets/note%20%281%29.gif)  | The icon ![](../../.gitbook/assets/icon_ok24%20%281%29.png) and ![](../../.gitbook/assets/icon_cancel24.png) at the bottom of each page will confirm/process or cancel the dialog respectively. |
+| ![](../../.gitbook/assets/note.gif)  | The icon ![](../../.gitbook/assets/icon_ok24%20%281%29.png) and ![](../../.gitbook/assets/icon_cancel24.png) at the bottom of each page will process or cancel the dialog respectively. |
 | :--- | :--- |
 
 
+Enter your User Name and Password and click the green check mark icon \( ![](../../.gitbook/assets/icon_ok24%20%282%29.png) \).  The [Defaults Tab](logging-in.md#defaults-tab) should appear.  If you con't have a User Name yet, use one of the default accounts provided below.  For a first time look around, use the GardenAdmin account.
+
+For a first time look, you can accept the defaults and move on to [Finding Your Way Around](finding-your-way-around.md).
+
 ### **Default Accounts**
 
-The following users and passwords are part of the initial seed database:
+The following users and passwords are part of the initial seed database and can be used to look around:
 
 | **Usage** | **User** | **Password** |
 | :--- | :--- | :--- |
@@ -19,13 +23,11 @@ The following users and passwords are part of the initial seed database:
 | Sample Client Administration | GardenAdmin | GardenAdmin |
 | Sample Client User | GardenUser | GardenUser |
 
-The System and SuperUser accounts are used to manage the system.  For first time use, try the GardenAdmin account which will access the Garden World demonstration client.
-
-For more information about using the Garden World client when you first log on, see the page on [Garden World](http://wiki.adempiere.net/Garden_World) and its initial setup.
+The System and SuperUser accounts provide access to the system administration.  The GardenAdmin and GardenUser accounts are end-user accounts in a demonstration client.  For more information about using the Garden World client, see the page on [Garden World](http://wiki.adempiere.net/Garden_World) and its initial setup.
 
 ### Connection Tab
 
-![ADempiere Login Connection Tab](../../.gitbook/assets/image%20%281%29.png)
+![ADempiere Login Dialog - Connection Tab](http://wiki.adempiere.net/images/0/05/Login_Connection.jpg)
 
 | **Field** | **Description** |
 | :--- | :--- |
@@ -45,13 +47,13 @@ When launching the client, the initiation process tests the application server s
 
 Click in the Server field to go to the Connection Test Dialog to diagnose the problem causing red backgrounds in the field or to change the database parameters.
 
-| ![](../../.gitbook/assets/note%20%281%29.gif)  | The Client will still operate if the database is available but the application server is not running. |
+| ![](../../.gitbook/assets/note.gif)  | The Client will still operate if the database is available but the application server is not running. |
 | :--- | :--- |
 
 
 ### Defaults Tab
 
-![ADempiere Login Defaults Tab](../../.gitbook/assets/image.png)
+![ADempiere Login Window - Defaults Tab](../../.gitbook/assets/login_defaults.jpg)
 
 After selecting the desired values in this tab, you can click on the green check mark to start the application. See [Finding Your Way Around](finding-your-way-around.md).
 
@@ -62,15 +64,15 @@ After selecting the desired values in this tab, you can click on the green check
 | Organization | Select the default organization to work on ADempiere. The list is filled with the organizations allowed for the role and user |
 | Warehouse | Select the default warehouse to use for this session |
 | Date | Fill in the default date to keep while working on ADempiere |
-| Printer | Select the default printer to work on ADempiere |
+| Printer | Select the default printer to work on ADempiere.  This printer will be used for general printing tasks. |
 
 ### Connection Test Dialog
 
-When you click in the Server field in the Connection tab of the login dialog, the Connection Test dialog appears.  Note that this window is intended for system administrators.  As a user, you should not need to look at it.
+When you click in the Server field in the Connection tab of the login dialog, the Connection Test dialog appears.  For most users, the connection should be automatic and you shouldn't need to use this dialog.
 
-![ADempiere Login Connection Test Dialog](../../.gitbook/assets/image%20%285%29.png)
+![Connection Test Dialog](../../.gitbook/assets/login_connection_test.jpg)
 
-| ![](../../.gitbook/assets/note%20%281%29.gif)  | In order to use the Connection Test Dialog, the ADempiere Application Server must be running and the database service must be available. |
+| ![](../../.gitbook/assets/note.gif)  | Please talk with your system administrator if you don't know how to manage this window. In order to use the Connection Test Dialog, the ADempiere Application Server must be running and the database service must be available. |
 | :--- | :--- |
 
 
@@ -93,5 +95,5 @@ When you click in the Server field in the Connection tab of the login dialog, th
 | Firewall Port | Fill in with the port provided for the firewall |
 | Test Database | Click this button to check the database connection |
 
-Once all the tests are complete, click the green check mark to return to the Defaults Tab.
+Once all the tests are complete, click the green check mark \( ![](../../.gitbook/assets/icon_ok24%20%282%29.png) \) to return to the Defaults Tab.
 

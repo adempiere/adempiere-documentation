@@ -1,7 +1,3 @@
----
-description: Instruction and hints on the use of the ADempiere software
----
-
 # User Guide
 
 ### About this Guide

@@ -1,5 +1,11 @@
 # About the Application
 
+## About this Guide
+
+The ADempiere User Guide provides instructions and hints on the use of the software in day-to-day operation. It is intended as a reference on how to use the software to perform general functions. It includes configuration information where this is in the realm of the end-user. More complex configuration information can be found in the System Administration Guide or the Development Guide.
+
+## About the ADempiere Application
+
 ADempiere is a world-class ERP software application designed to support:
 
 * **Multiple Organizations within the Enterprise**
