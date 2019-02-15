@@ -25,7 +25,7 @@ For more information about using the Garden World client when you first log on, 
 
 ### Connection Tab
 
-![ADempiere Login Connection Tab](../../.gitbook/assets/image%20%281%29.png)
+![ADempiere Login Connection Tab](../../.gitbook/assets/image%20%282%29.png)
 
 | **Field** | **Description** |
 | :--- | :--- |
