@@ -28,5 +28,3 @@ The other three tabs besides the Performance tab are:
 
 These tabs will be discussed in detail in the following pages.
 
-
-

@@ -4,22 +4,22 @@ description: How to use the Product Categories
 
 # Product Categories
 
-A Product Category provides a way to set values and behavior across all the products that belong to the Category.  This is a great time saver when first setting up products and also provides a way to make changes to hundreds of products at a time. 
+A Product Category provides a way to set values and behavior across all the products that belong to the Category. This is a great time saver when first setting up products and also provides a way to make changes to hundreds of products at a time.
 
-The most important values are the accounting elements that the associated products should use.  The Product Category header provides a few others:
+The most important values are the accounting elements that the associated products should use. The Product Category header provides a few others:
 
 * **Parent Product Category** - this can be useful when reporting by Product Category. The parent Category provides a way to summarize a number of other Categories.
 * The **Material Policy** to use when selecting items from inventory.  The choices are First In, First Out \(FiFo\) or Last In, First Out \(LiFo\).  This choice can not be overwritten by the products assigned to this category.  If left empty, the Material Policy set in the Client window will be used.
-* The **Asset Group** used to connect assets to products when buying and selling assets frequently.  This connection makes it easier to manage the accounting of capital asset values.  See [Assets and Asset Management](../../assets-and-asset-management.md#asset-groups) for more information.
+* The **Asset Group** used to connect assets to products when buying and selling assets frequently. This connection makes it easier to manage the accounting of capital asset values. See [Assets and Asset Management](../../assets-and-asset-management.md#asset-groups) for more information.
 
   **Planned Margin %** - this value is used in calculating the planned margin for products created by Projects. Specifically, where the project line hasn't identified a specific product but the product category is known.
 
 * **Self-Service** - A flag to indicate if the product category should appear in the web store.
 * The **Print Color** - Currently not implemented.  May be used to highlight the products assigned to the category by color in menu trees or reports.
 
-#### Product Category Accounting
+## Product Category Accounting
 
-This is an important tab as it provides the main mechanism to assign the same accounting setup to many products.  When a new product is created, the accounts defined in the Product Category Accounting tab are copied to the product.  In the Product Window, its possible to override these accounts.  These accounts are part of the default accounting setup and will be set to defaults when the a new Accounting record is created.  They accounts must be defined for the ADempiere software to function - even if they will not be used.  
+This is an important tab as it provides the main mechanism to assign the same accounting setup to many products. When a new product is created, the accounts defined in the Product Category Accounting tab are copied to the product. In the Product Window, its possible to override these accounts. These accounts are part of the default accounting setup and will be set to defaults when the a new Accounting record is created. They accounts must be defined for the ADempiere software to function - even if they will not be used.
 
 Changes made to the Product Category Accounting can be copied to all the assigned products using the "Copy Accounts" button at the bottom of the Accounting Tab.
 
@@ -28,7 +28,7 @@ A set of accounts is needed for each Accounting Schema defined for the system. T
 {% endhint %}
 
 {% hint style="info" %}
-Note that  For Product Categories connected to Asset Groups, refer to the [Asset Groups](asset-groups.md) page for hints on how to link the accounts.  
+Note that For Product Categories connected to Asset Groups, refer to the [Asset Groups](asset-groups.md) page for hints on how to link the accounts.
 {% endhint %}
 
 The required accounts are:
@@ -43,13 +43,10 @@ The required accounts are:
   <tbody>
     <tr>
       <td style="text-align:left">Product Asset</td>
-      <td style="text-align:left">
-        <p></p>
-        <p>The account used to record the cost of the product. For stocked products,
-          this would typically be the balance sheet inventory account. For non-stocked
-          products, this could be set to an appropriate expense account. The costs
-          recorded are determined by the cost methods used.</p>
-      </td>
+      <td style="text-align:left">The account used to record the cost of the product. For stocked products,
+        this would typically be the balance sheet inventory account. For non-stocked
+        products, this could be set to an appropriate expense account. The costs
+        recorded are determined by the cost methods used.</td>
     </tr>
     <tr>
       <td style="text-align:left">Product COGS</td>
@@ -73,18 +70,12 @@ The required accounts are:
         for the timing difference between invoice receipt and matching.</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p></p>
-        <p>Cost Adjustment</p>
-      </td>
+      <td style="text-align:left">Cost Adjustment</td>
       <td style="text-align:left">The account to record cost adjustments when, for example, landed costs
         are added</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p></p>
-        <p>Invoice Price Variance</p>
-      </td>
+      <td style="text-align:left">Invoice Price Variance</td>
       <td style="text-align:left">An account used to record the difference between the invoice price and
         the product asset cost when matching AP invoices to material receipts.
         The material receipt document creates accounting facts in the Product Asset
@@ -111,10 +102,7 @@ The required accounts are:
         amount and the actual price amount.</td>
     </tr>
     <tr>
-      <td style="text-align:left">
-        <p></p>
-        <p>Trade Discount Granted</p>
-      </td>
+      <td style="text-align:left">Trade Discount Granted</td>
       <td style="text-align:left">The account used to post the amount of trade discounts granted on sales
         invoices/credit memos if the "Post Trade Discount" flag is selected in
         the Account Schema. If the invoice is based on an item with a list price,

@@ -16,13 +16,13 @@ Open the Application Server URL. It will look something like the following image
 
 ### Accessing the Web Application
 
-To log in to the Web Application, click the link for the **ADempiere ZK Webui** in the administration page above.  You may also have been given the address directly.  It will look something line this:
+To log in to the Web Application, click the link for the **ADempiere ZK Webui** in the administration page above. You may also have been given the address directly. It will look something line this:
 
 ```text
 http://mycompany.com:8088/webui
 ```
 
-The web page shown will be the login page to the Web Application running on the server.  See [Logging In](logging-in.md) for more information.
+The web page shown will be the login page to the Web Application running on the server. See [Logging In](logging-in.md) for more information.
 
 ### Launching the Java Client Using WebStart
 

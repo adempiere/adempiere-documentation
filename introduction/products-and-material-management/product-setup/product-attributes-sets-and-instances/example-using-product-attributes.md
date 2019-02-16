@@ -1,8 +1,6 @@
 # Example - Using Product Attributes
 
-
-
-## Example - Using Product Attributes <a id="firstHeading"></a>
+## Example - Using Product Attributes  <a id="firstHeading"></a>
 
 > <table>
 >   <thead>
@@ -22,11 +20,7 @@
 >   <tbody></tbody>
 > </table>
 
-
-
 ### Fertilizer in Garden World
-
-
 
 #### Attribute setup
 

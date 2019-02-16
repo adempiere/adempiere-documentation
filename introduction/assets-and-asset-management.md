@@ -14,7 +14,7 @@ The basic approach to assets in ADempiere is that they are specialized products 
 
 ### Defining Assets
 
-Essentially, assets are products and are treated like products in every sense. 
+Essentially, assets are products and are treated like products in every sense.
 
 Asset related products are bought and sold just like the services or other items but the accounting is managed differently so that the cost of the asset product is capitalized rather then expensed. The accounting of the assets is controlled by the Asset Group for the capital portion and by the Product Category for the product expenses and revenue. These two windows are the starting point for managing assets in ADempiere.
 
@@ -103,8 +103,6 @@ In the Garden World demo, the Product Category Accounts for the Building Product
 * Product Revenue HQ-79200-\_-\_-\_-\_
 * Product Expense HQ-79200-\_-\_-\_-\_
 
-
-
 #### Defining the Asset Product
 
 Asset products are defined as if they were regular products in the **Material Management&gt;Material Management Rules** [**Product Window**](http://wiki.adempiere.net/ManPageW_Product). The Product Category should be one that was linked with an associated Asset Group. The product should be stocked if it is at all tangible as the value of the asset will be easier to manage through the acquisition and disposal processes. For assets that are tracked by serial numbers, an appropriate Attribute Set should be defined. Also, if the asset product is unique, a specific Attribute Set Instance can be created with a serial number and set on the Product tab.
@@ -148,7 +146,7 @@ When the invoice was completed, the posting is as follows:
 
 | Account | Debit | Credit |
 | :--- | :--- | :--- |
-| Tax |   $22,750 |  |
+| Tax | $22,750 |  |
 | Inventory Clearing | $175,000 |  |
 | Accounts Payable |  | $197,750 |
 

@@ -1,11 +1,11 @@
 # Roles and Managing Data Access
 
-### User Level
+## User Level
 
-The user level determines the extent of information the User has access to.  The possible settings and limitations are shown in the table below.  Organization access is controlled via the fields _**Access All Orgs**_, _**Use User Org Access**_ and through the **Org Access** tab in the **Role** window. Table access levels are set by the System Administrator but can be further restricted by Role in the **Role Data Access** window.
+The user level determines the extent of information the User has access to. The possible settings and limitations are shown in the table below. Organization access is controlled via the fields _**Access All Orgs**_, _**Use User Org Access**_ and through the **Org Access** tab in the **Role** window. Table access levels are set by the System Administrator but can be further restricted by Role in the **Role Data Access** window.
 
 {% hint style="info" %}
-Organizations are specified by name except for a special organization identified by the asterisk symbol \(\*\) which means All Organizations.  
+Organizations are specified by name except for a special organization identified by the asterisk symbol \(\*\) which means All Organizations.
 {% endhint %}
 
 <table>

@@ -4,9 +4,9 @@ description: How to define Asset Groups and link them to the Product Categories
 
 # Asset Groups
 
-ADempiere provides an Asset Management capability that allows users to manage capital assets using standard documents rather than GL Accounting. If you are not going to use the Asset Management module, you can skip this section.  For more information, see the section on the [Assets & Asset Management](../../assets-and-asset-management.md).
+ADempiere provides an Asset Management capability that allows users to manage capital assets using standard documents rather than GL Accounting. If you are not going to use the Asset Management module, you can skip this section. For more information, see the section on the [Assets & Asset Management](../../assets-and-asset-management.md).
 
-If you are going to use the Asset Management module, you will need to link Product Categories to the Asset Groups.  The Product Category and Asset Group are linked on the Product Category page, so its easier if the Asset Groups exist before the Product Categories are created.  The Product Category Accounts referred to here are described in more detail in the [Product Categories](product-categories.md) section.
+If you are going to use the Asset Management module, you will need to link Product Categories to the Asset Groups. The Product Category and Asset Group are linked on the Product Category page, so its easier if the Asset Groups exist before the Product Categories are created. The Product Category Accounts referred to here are described in more detail in the [Product Categories](product-categories.md) section.
 
 The **Assets** [**Asset Groups Window**](http://wiki.adempiere.net/index.php?title=ManPageW_Asset_Groups&action=edit&redlink=1) is the first window to use when defining assets. Each Asset Group defines specific accounting elements to use so the groups should be set up according to the asset reporting structure in the corporate financial statements. For example, in the GardenWorld demo, the financial statements report on the assets using the following categories:
 
@@ -51,9 +51,9 @@ There are a number of possible depreciation functions to choose from that match 
 
 The other key element that can be set in the Asset Group is the Accounting Schema. This allows the accounts and depreciation methods to change from one Schema to another where multiple schema are in use. For example, an accelerated depreciation scheme could be used in one Schema for tax purposes and a basic straight line scheme in another for regulatory reporting.
 
-#### Product Categories for Asset Products
+## Product Categories for Asset Products
 
-After defining Asset Groups, the Asset Groups need to be matched to Product Categories. The next page provides details on setting up Product Categories for non-asset products.  Here, the connection between Asset Groups and Product Category accounts are examined in detail.
+After defining Asset Groups, the Asset Groups need to be matched to Product Categories. The next page provides details on setting up Product Categories for non-asset products. Here, the connection between Asset Groups and Product Category accounts are examined in detail.
 
 When an asset is defined, it is defined using a Product and Asset Group. The Product Category used in the definition of the Product has to be linked to the Asset Group or it won't be possible to save the Asset record.
 
@@ -68,13 +68,13 @@ The **Material Management&gt;Material Management Rules** [**Product Category Win
 
 When setting the accounts on the Product Category Accounting tab, there are a few hints.
 
-**It is recommended that the Product Revenue, Product Expense, Product Inventory Clearing, Cost of Goods Sold and Product Asset accounts be pointed at the same account which will function as a clearing account.**  
+**It is recommended that the Product Revenue, Product Expense, Product Inventory Clearing, Cost of Goods Sold and Product Asset accounts be pointed at the same account which will function as a clearing account.**
 
-The Product Asset account is used when the asset is first added to the books using the [Asset Addition](../../assets-and-asset-management.md#adding-assets) process via a Vendor Invoice. This account will be credited the equivalent of the net book value of the asset. When the asset is received, the Product Asset account will be debited by the Material Receipt with the same value. 
+The Product Asset account is used when the asset is first added to the books using the [Asset Addition](../../assets-and-asset-management.md#adding-assets) process via a Vendor Invoice. This account will be credited the equivalent of the net book value of the asset. When the asset is received, the Product Asset account will be debited by the Material Receipt with the same value.
 
-If moving from asset accounting using a GL, the product expense account could be pointed at a clearing account and a final GL entry could be made to remove the original assets and accumulated depreciation values to balance the clearing account after the asset has been added using the Asset Addition process. 
+If moving from asset accounting using a GL, the product expense account could be pointed at a clearing account and a final GL entry could be made to remove the original assets and accumulated depreciation values to balance the clearing account after the asset has been added using the Asset Addition process.
 
-Ignoring tax and other adjustments, the relevant postings that occur for the addition of an asset related product appear as follows. If the Asset Product is stocked, the Inventory Clearing account will be used.  Otherwise, the Product Expense account.  The Product Category accounts are in bold italics.  The Asset Addition document is created and completed automatically by the Match Invoice document via the asset  model validator.
+Ignoring tax and other adjustments, the relevant postings that occur for the addition of an asset related product appear as follows. If the Asset Product is stocked, the Inventory Clearing account will be used. Otherwise, the Product Expense account. The Product Category accounts are in bold italics. The Asset Addition document is created and completed automatically by the Match Invoice document via the asset model validator.
 
 | Document | Debit Account | Credit Account |
 | :--- | :--- | :--- |
@@ -87,41 +87,29 @@ The end result of these four documents is a capital asset and an equivalent acco
 
 The Product Revenue account will be credited on the sale of the asset, assuming an AR invoice is used to make the sale. The invoice line net amount will be considered as the proceeds of the sale. The documents and the relevant accounts affected are shown below.
 
+| Document | Debit Account | Credit Account |
+| :--- | :--- | :--- |
+
+
+| Customer Invoice | Accounts Receivable | _**Product Revenue**_ |
+| :--- | :--- | :--- |
+
+
+| Shipment | _**Cost of Goods Sold**_ | _**Product Asset**_ |
+| :--- | :--- | :--- |
+
+
 <table>
   <thead>
     <tr>
-      <th style="text-align:left">Document</th>
-      <th style="text-align:left">Debit Account</th>
-      <th style="text-align:left">Credit Account</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">Customer Invoice</td>
-      <td style="text-align:left">Accounts Receivable</td>
-      <td style="text-align:left"><em><b>Product Revenue</b></em>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Shipment</td>
-      <td style="text-align:left"><em><b>Cost of Goods Sold</b></em>
-      </td>
-      <td style="text-align:left"><em><b>Product Asset</b></em>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Asset Disposal</td>
-      <td style="text-align:left">
+      <th style="text-align:left">Asset Disposal</th>
+      <th style="text-align:left">
         <p><em><b>Product Revenue</b></em>,
           <br />Accumulated Depreciation,</p>
         <p>Disposal Loss or Disposal Revenue</p>
-      </td>
-      <td style="text-align:left">Asset</td>
+      </th>
+      <th style="text-align:left">Asset</th>
     </tr>
-  </tbody>
-</table>The end result of these three documents is an accounts receivable balanced by an Asset value  less Accumulated Depreciation and Disposal Loss/Revenue.
-
-
-
-
-
+  </thead>
+  <tbody></tbody>
+</table>

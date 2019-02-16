@@ -49,7 +49,7 @@ The [**Tax Category Window**](http://wiki.adempiere.net/ManPageW_TaxCategory) is
 
 ### Tax Rate
 
-The [**Tax Rate Window**](http://wiki.adempiere.net/ManPageW_TaxRate)  defines the different taxes used for each tax category. For example Sales Tax must be defined for each State in which it applies. If you have multiple taxes falling in a single category, create a summary level tax with the approximate total tax rate. Then create the subordinate tax rates and assign the the summary level tax as their parent.
+The [**Tax Rate Window**](http://wiki.adempiere.net/ManPageW_TaxRate) defines the different taxes used for each tax category. For example Sales Tax must be defined for each State in which it applies. If you have multiple taxes falling in a single category, create a summary level tax with the approximate total tax rate. Then create the subordinate tax rates and assign the the summary level tax as their parent.
 
 > <table>
 >   <thead>
@@ -71,7 +71,7 @@ The [**Tax Rate Window**](http://wiki.adempiere.net/ManPageW_TaxRate)  defines t
 >   <tbody></tbody>
 > </table>
 
-The tax is always calculated from the line net amount. For taxes that include multiple taxes in the base amount, you will have to calculate the net effect and adjust the individual tax rates accordingly. For example, ADempiere calculates the line total tax for two subordinate taxes as 
+The tax is always calculated from the line net amount. For taxes that include multiple taxes in the base amount, you will have to calculate the net effect and adjust the individual tax rates accordingly. For example, ADempiere calculates the line total tax for two subordinate taxes as
 
 $$
 TT = LNA*(Tax1 + Tax2)
@@ -83,7 +83,7 @@ $$
 TT = LNA*Tax1 + (LNA*Tax1)*Tax2
 $$
 
-you will have to adjust the Tax2 rate to equal Tax1\*Tax2.  Similarly, if the equation was 
+you will have to adjust the Tax2 rate to equal Tax1\*Tax2. Similarly, if the equation was
 
 $$
 TT = LNA*Tax1 + LNA*(1+Tax1)*Tax2
@@ -101,11 +101,11 @@ A corollary rule is that every business partner needs to have a bill from and sh
 
 #### Exempt Tax Rates
 
-You can define tax rates as "SO Exempt". If a business partner is flagged as Tax Exempt, the software will find the the first tax rate marked as SO Exempt with the lowest actual rate - not necessarily zero, just the lowest rate. In the simplest case, define a single tax rate as SO Exempt with the rate set to 0%. 
+You can define tax rates as "SO Exempt". If a business partner is flagged as Tax Exempt, the software will find the the first tax rate marked as SO Exempt with the lowest actual rate - not necessarily zero, just the lowest rate. In the simplest case, define a single tax rate as SO Exempt with the rate set to 0%.
 
 #### How Tax Rates are Selected
 
-There is no restriction on the number of tax rates assigned to a category so it is possible to have many to choose from. The software decides which tax rate to apply by simply picking the first summary tax rate it finds that can be applied.  It is not possible to force the order of the search except that summary tax rates with no country or region defined will be tested first.
+There is no restriction on the number of tax rates assigned to a category so it is possible to have many to choose from. The software decides which tax rate to apply by simply picking the first summary tax rate it finds that can be applied. It is not possible to force the order of the search except that summary tax rates with no country or region defined will be tested first.
 
 The Valid From date field will only limit new taxes which will come into effect. The date is compared to the billing date. There is no way to define a date to stop applying a tax. For that, you have to manually mark the rate as inactive. For special cases, a software or script rule can be defined to determine what amount of tax to apply.
 
