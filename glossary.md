@@ -32,6 +32,14 @@ A type of accounting that creates Accounting Facts for Sales or Purchase Orders 
 
 A Dimension is a record of a field on a document that is included in the Accounting Facts generated when the document is posted. Typical Dimensions in ADempiere include the Client, Organization, Business Partner, Product, Project, Campaign, and Activity.
 
+## Dunning
+
+The process of making repeated and insistent demands upon a customer, especially for the payment of a debt.
+
+## Dunning Run
+
+A collection of information and also the process of collecting information for the purposes of Dunning.
+
 ## Identifier
 
 See [Record Identifiers](glossary.md#record-identifiers).

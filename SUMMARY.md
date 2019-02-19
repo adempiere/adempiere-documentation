@@ -43,6 +43,8 @@
       * [Document Status Indicators](introduction/system-administration/managing-organizations/document-status-indicators.md)
   * [Partner Relations](introduction/partner-relations.md)
   * [Revenue Recognition](introduction/revenue-recognition.md)
+  * [Open Items](introduction/open-items/README.md)
+    * [Dunning](introduction/open-items/dunning.md)
   * [Products & Material Management](introduction/products-and-material-management/README.md)
     * [Product Setup](introduction/products-and-material-management/product-setup/README.md)
       * [Warehouse & Locators](introduction/products-and-material-management/product-setup/warehouse-and-locators.md)
