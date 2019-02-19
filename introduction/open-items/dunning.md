@@ -146,7 +146,7 @@ Once the Dunning Run Entries and Lines have been created by the **Create Dunning
 To review the Dunning Run, open the **Dunning Run** window in the **Open Items** menu.  The **Dunning Run** tab is pretty straight forward.  Processed runs will be read only.  Click the _**Create Dunning Run**_ button to recreate the entries if required.
 
 {% hint style="info" %}
-The _**Create Dunning Run**_ process will overwrite the  _**Dunning Date, Dunning** policy and **Dunning**_ ****_**Level**_ fields.
+The **Create Dunning Run** process will overwrite the  _**Dunning Date**_, _**Dunning**_ policy and _**Dunning Level**_ fields.
 {% endhint %}
 
 #### Dunning Run Entry
