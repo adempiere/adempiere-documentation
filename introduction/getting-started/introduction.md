@@ -22,5 +22,5 @@ ADempiere is a world-class ERP software application designed to support:
 
   ADempiere provides workflows from simple documents, to multi-level approval and automated processing that can be fully customized to any business process.
 
-The application supports all the main features and functions expected of an ERP system and allows for the customization of the software so company specific features can be easily added. 
+The application supports all the main features and functions expected of an ERP system and allows for the customization of the software so company specific features can be easily added.
 

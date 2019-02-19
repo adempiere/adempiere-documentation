@@ -6,7 +6,7 @@ description: >-
 
 # Garden World Demonstration Client
 
-## Garden World <a id="firstHeading"></a>
+## Garden World  <a id="firstHeading"></a>
 
 Garden World is a demonstration business that exists as a Client in the ADempiere database. It can be used a demonstration, a sandbox to try business processes or a learning tool. Garden World comes prepared with products, vendors and customers.
 
@@ -26,7 +26,7 @@ By default, documents are posted by the server in an process that occurs at a re
 
 ### Description
 
-Garden World is a national retail and manufacturing enterprise with a headquarters, a plant that makes fertilizer, and five stores spread across the country. It has a central warehouse at the headquarters which distributes goods to the plant and store warehouses.  The company sells plants, fertilizer, lawn furniture and tools.
+Garden World is a national retail and manufacturing enterprise with a headquarters, a plant that makes fertilizer, and five stores spread across the country. It has a central warehouse at the headquarters which distributes goods to the plant and store warehouses. The company sells plants, fertilizer, lawn furniture and tools.
 
 ### A Simple Process to Start
 
@@ -57,5 +57,5 @@ On the Order header, you'll note that the document type you just completed is a 
 
 To see the Accounting Facts of each document, you can click on the "Posted" button. \(If the button says "Not Posted", you need to perform the setup steps above or you can click the button and manually post the document.\) The Info Account window opens showing the accounting entries. For the Sales Order, these will be blank, but for the Shipment and Invoice, you'll note the accounting entries that took place.
 
-The rest of the User Guide will use examples from the Garden World Client to illustrate concepts and processes.  You can also use the Garden World Client as a sandbox to experiment and try out things without impacting any real production data.
+The rest of the User Guide will use examples from the Garden World Client to illustrate concepts and processes. You can also use the Garden World Client as a sandbox to experiment and try out things without impacting any real production data.
 

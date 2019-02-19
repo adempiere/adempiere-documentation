@@ -10,7 +10,7 @@ The Web Application dashboard includes a panel showing Document Tasks as shown b
 
 ![Dashboard Document tasks panel](../../../.gitbook/assets/webui_dashboard_doctasks.PNG)
 
-The information displayed to the User is configured in the **Document Status Indicator** window in the **System Administration &gt; Organizational Rules** menu.  Access to the Document Tasks panel in the Dashboard also has to be enabled for the User in the **Role** window, **Dashboard Access**  tab found in the **System Administration &gt; General Rules &gt; Security** menu.
+The information displayed to the User is configured in the **Document Status Indicator** window in the **System Administration &gt; Organizational Rules** menu. Access to the Document Tasks panel in the Dashboard also has to be enabled for the User in the **Role** window, **Dashboard Access** tab found in the **System Administration &gt; General Rules &gt; Security** menu.
 
 {% hint style="warning" %}
 Configuring Document Status Indicators requires an understanding of the underlying database tables and columns which represent "documents" in ADempiere and SQL queries.
@@ -18,7 +18,7 @@ Configuring Document Status Indicators requires an understanding of the underlyi
 
 ![Document Status Indicator window](../../../.gitbook/assets/webui_win_documentstatusindicator.PNG)
 
-There can be many Document Status Indicator records for an Organization or Client.  The selection of which indicators are displayed to a particular User is based on the following:
+There can be many Document Status Indicator records for an Organization or Client. The selection of which indicators are displayed to a particular User is based on the following:
 
 * Only _**Active**_ indicators are shown
 * From the same _**Client**_
@@ -27,9 +27,9 @@ There can be many Document Status Indicator records for an Organization or Clien
 
 The sequence that the indicators are shown in is determined by the _**Sequence**_ field, with lower numbers being shown first.
 
-The _**Table**_ ****field identifies the document of interest and the _**SQL Where**_ field selects the relevant document records from the _**Table**_.   
+The _**Table**_ **\*\*field identifies the document of interest and the \_**SQL Where _**field selects the relevant document records from the**_ Table\*\*\_.
 
-The display in the Document Tasks panel is a count of the documents of interest.  The link beside the number is based on the _**Name**_ field. 
+The display in the Document Tasks panel is a count of the documents of interest. The link beside the number is based on the _**Name**_ field.
 
 {% hint style="warning" %}
 The name field is not translated.
@@ -41,19 +41,19 @@ The count of the documents and the link to those documents is made using an SQL 
 * If the _**Organization**_ field is not All \(**\***\), then only documents that match the _**Organization**_
 * If the **Projec**t field is not blank, then only documents that match that **Project**
 
-If the User clicks on a status indicator and a _**Window**_ is specified, the window will be opened and loaded with the selected documents.  If the _**Window**_ field is blank and the _**Special Form**_  field identifies a form, the form will be opened and loaded with the documents.
+If the User clicks on a status indicator and a _**Window**_ is specified, the window will be opened and loaded with the selected documents. If the _**Window**_ field is blank and the _**Special Form**_ field identifies a form, the form will be opened and loaded with the documents.
 
 {% hint style="warning" %}
 If both the _**Window**_ and _**Special Form**_ fields are blank, nothing will happen when the User clicks on the link in the Document Status panel.
 {% endhint %}
 
 {% hint style="info" %}
-The _**Name Font**_, _**Name Color**_, _**Number Font**_ and _**Number Color**_  fields are not used.
+The _**Name Font**_, _**Name Color**_, _**Number Font**_ and _**Number Color**_ fields are not used.
 {% endhint %}
 
-### Example - Unpaid AR Invoices
+## Example - Unpaid AR Invoices
 
-As an example using the Garden World client, assume that Garden User needs to see unpaid invoices to ensure payment allocations are made and to personally dun \(collect\) the amount owed.  The GardenAdmin user is not interested in this.  The Document task panel for the GardenUser should look like the following:
+As an example using the Garden World client, assume that Garden User needs to see unpaid invoices to ensure payment allocations are made and to personally dun \(collect\) the amount owed. The GardenAdmin user is not interested in this. The Document task panel for the GardenUser should look like the following:
 
 ![GardenUser Dashboard entry for Document tasks showing the Unpaid Invoices entry](../../../.gitbook/assets/webui_dashboard_doctaskexample.PNG)
 

@@ -1,6 +1,6 @@
 # Logging In
 
-The Log In process is similar to both the Java Client and the Web Application.  Each is discussed below. The default users and passwords are the same.
+The Log In process is similar to both the Java Client and the Web Application. Each is discussed below. The default users and passwords are the same.
 
 ### **Default Users and Passwords**
 
@@ -39,7 +39,7 @@ The icons ![](../../.gitbook/assets/ok16.gif) and ![](../../.gitbook/assets/canc
 | Language | Select the language you wish to use. The change is immediate. |
 
 {% hint style="info" %}
-Note that it is not possible to request a new password when using the Java Client application.  If you forgot your password, please contact an Administrator for your Client to have it reset.
+Note that it is not possible to request a new password when using the Java Client application. If you forgot your password, please contact an Administrator for your Client to have it reset.
 {% endhint %}
 
 The first field called Server shows which server and database you are connected to. The Server field highlights the status of the application server and database that will be used. It indicates this status with a red background if either:
@@ -105,7 +105,7 @@ Once all the tests are complete, click the green check mark to return to the Def
 
 ## WEB Application
 
-The Web Application launch is simpler than the JAVA Client as there is no need to verify the connection with the server.  After Launching the Web Application you will be presented with a login dialog as shown below.
+The Web Application launch is simpler than the JAVA Client as there is no need to verify the connection with the server. After Launching the Web Application you will be presented with a login dialog as shown below.
 
 ![ADempiere Web Application Login](../../.gitbook/assets/webui_login.PNG)
 
@@ -119,15 +119,15 @@ The login fields are pretty self-explanatory:
 | Remember Me | Check if you wish the Login Dialog to remember your entries the next time you access the Web Application.  This option will only appear if allowed in your implementation. |
 | Forgot Password? | Click this link if you have forgotten your password.  A dialog will be presented where you can enter your User ID and submit the request to have the password reset.  You will receive an email with a link to a page where you can reset your password.  The email link will be active for only 5 minutes. |
 
-After you click the Confirm button, the dialog will change to allow the selection of the Role, Client, Organization and Warehouse. 
+After you click the Confirm button, the dialog will change to allow the selection of the Role, Client, Organization and Warehouse.
 
 ![Role Login Dialog](../../.gitbook/assets/webui_login_roles.PNG)
 
-The Roles available to the User will determine the Client and possibly the Organization and Warehouse.  The first time the user logs in, the _**Default**_ Role \(as defined in the **User Assignment**  tab of the **Role** window or **User Roles** tab of the **User** window\) will be selected. From then on, the Role selected on the last login will be the default.
+The Roles available to the User will determine the Client and possibly the Organization and Warehouse. The first time the user logs in, the _**Default**_ Role \(as defined in the **User Assignment** tab of the **Role** window or **User Roles** tab of the **User** window\) will be selected. From then on, the Role selected on the last login will be the default.
 
 {% hint style="info" %}
 If there is only one Role available to the User and the System is configured to only show multiple roles, the Role combo box may not be displayed in the dialog.
 {% endhint %}
 
-After selecting the Role, Client, Organization and Warehouse, click the Confirm button to complete the login.  See [Finding Your Way Around the Web App](finding-your-way-around-the-web-app/).
+After selecting the Role, Client, Organization and Warehouse, click the Confirm button to complete the login. See [Finding Your Way Around the Web App](finding-your-way-around-the-web-app/).
 
