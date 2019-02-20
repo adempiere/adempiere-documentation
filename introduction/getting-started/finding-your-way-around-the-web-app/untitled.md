@@ -12,10 +12,10 @@ The Dashboard can contain a variety of Panels that provide information such as:
 * [Calendar](untitled.md#calendar);
 * [Document tasks](untitled.md#document-tasks);
 * [Favorites \(User\)](untitled.md#favorites-user);
-* Favorites \(System\);
-* Performance measures;
-* Recent Items; and 
-* Views
+* [Favorites \(System\)](untitled.md#favorites-system);
+* [Performance measures](untitled.md#performance-measures);
+* [Recent Items](untitled.md#recent-items); and 
+* [Views](untitled.md#views)
 
 {% hint style="info" %}
 Access to Dashboard Items has to be specifically granted for each Role by a Client Administrator. If no access has been granted for the Role chosen at login, the Dashboard will be blank.
@@ -97,7 +97,39 @@ If multiple users add the same menu item to the Favorites \(System\) or to the J
 
 ## Performance Measures
 
+![Example Performance Measure indicator](../../../.gitbook/assets/webui_dashboard_perfmeasure.PNG)
+
+Performance Measures provide a quick visual reference to key performance data.  The information presented is specific to your role. What is measured and the assessment of good, mediocre and bad can be configured using any data in the database.  To be most effective, the measures should be very relevant and agreed upon between you and your supervisor.  Like instruments in an aircraft, the indicators should give the you clues as to what you need to focus on and how well you are doing your job.
+
+Performance Measures are configured in the **Performance Analysis &gt; Performance Measurement** menu.  See [Performance Measurement Setup](../../accounting-and-performance-analysis/performance-measurement-setup.md) for more information.
+
+If you click on a Performance Measure Indicator, a window will open that will show the performance measure data in a graph along with a table containing  information about the measure. 
+
+![Performance Measure Data](../../../.gitbook/assets/webui_dashboard_perfmeasure_data.PNG)
+
+You can click on the graph or on the measurement data in the table to open relevant documents or see more detail about the measurement data.  At the top left is a combo-box that can be used to change the style of chart displayed
+
 ## Recent Items
 
+![Dashboard Recent Items panel](../../../.gitbook/assets/webui_dashboard_recentitems.PNG)
+
+The Recent Items panel is a list of windows/records that have been opened recently.  The entries are ordered with the most recent at the top. Clicking on a Recent Item will open that record, a handy way to return to work in progress.
+
+ The size of the list is limited to 50 entries by default but this can be configured for the Client or  User to any number.  \(Have a look at the bottom of the **User Contact** tab in the **My Profile** window.\) If a recent record is deleted, it will be automatically removed from the list.  You can also drag and drop items onto the Trash Can icon to delete them.
+
+Click on the Refresh icon at the bottom left to refresh the display manually.
+
 ## Views
+
+![Dashboard Views](../../../.gitbook/assets/webui_dashboard_views.PNG)
+
+Views are special forms that present information in useful ways.  The Product Info view, for example, provides a way to search for products and see quantities in inventory and the expected changes.  The form can be used to provide promise dates to customers or suggest alternative \(substitute\) or complementary products.  The Business Partner info window can be used like a phone or contact list for Business Partners.
+
+The views can be used standalone to find information but they are also connected to search/lookup fields as helper functions.  For example, any search field connected to the Product table will have a helper button that will open the Product Info window.
+
+![](../../../.gitbook/assets/webui_productinfoview.PNG)
+
+The Views are similar in layout except for the Account Info and Schedule Info view.  There is a set of constraints at the top to limit the search.  At the top left is a refresh button that will reset the constrains.  In the middle will be one or more tables of information.  At the bottom are buttons that control how the form behaves and that provide some functions such as zoom to the selected entry.
+
+For more information, refer to the section on Views.
 

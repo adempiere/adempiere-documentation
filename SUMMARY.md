@@ -61,6 +61,7 @@
           * [BOM Components](introduction/products-and-material-management/product-setup/defining-the-product/product-bill-of-materials/bom-components.md)
   * [Accounting & Performance Analysis](introduction/accounting-and-performance-analysis/README.md)
     * [Tax Setup](introduction/accounting-and-performance-analysis/tax-setup.md)
+    * [Performance Measurement Setup](introduction/accounting-and-performance-analysis/performance-measurement-setup.md)
   * [Assets and Asset Management](introduction/assets-and-asset-management.md)
 * [Manufacturing](manufacturing/README.md)
   * [Engineering Change Management](manufacturing/engineering-change-management.md)
