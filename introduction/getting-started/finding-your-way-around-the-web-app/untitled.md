@@ -115,7 +115,7 @@ You can click on the graph or on the measurement data in the table to open relev
 
 The Recent Items panel is a list of windows/records that have been opened recently.  The entries are ordered with the most recent at the top. Clicking on a Recent Item will open that record, a handy way to return to work in progress.
 
- The size of the list is limited to 50 entries by default but this can be configured for the Client or  User to any number.  \(Have a look at the bottom of the **User Contact** tab in the **My Profile** window.\) If a recent record is deleted, it will be automatically removed from the list.  You can also drag and drop items onto the Trash Can icon to delete them.
+The size of the list is limited to 50 entries by default but this can be configured for the Client or  User to any number.  \(Have a look at the bottom of the **User Contact** tab in the **My Profile** window.\) If a recent record is deleted, it will be automatically removed from the list.  You can also drag and drop items onto the Trash Can icon to delete them.
 
 Click on the Refresh icon at the bottom left to refresh the display manually.
 
