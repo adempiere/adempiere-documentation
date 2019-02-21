@@ -2,7 +2,7 @@
 
 [![Join the chat at https://gitter.im/adempiere/adempiere-documentation](https://badges.gitter.im/adempiere/adempiere-documentation.svg)](https://gitter.im/adempiere/adempiere-documentation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-\(Testing Gitbook. See [https://gitbook.com/@adempiere](https://gitbook.com/@adempiere)\)
+\(Testing Gitbook. See [https://adempiere.gitbook.io/docs](https://adempiere.gitbook.io/docs/)\)
 
 Learn, use, configure and extend a world leading open-source ERP project.
 
