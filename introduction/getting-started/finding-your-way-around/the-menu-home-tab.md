@@ -29,7 +29,7 @@ To find a Menu Item based on its name, use the Lookup tool in the bottom right.
 
 ![The Lookup tool for the main menu.](../../../.gitbook/assets/swing_menu_lookupdetail.PNG)
 
-Enter the name or part of the name in the Lookup tool and hit &lt;Enter&gt;.  The Menu will Menu will expand to the first matching item. Keep typing &lt;Enter&gt; until the Menu item your looking for is highlighted.  You can open this entry by typing &lt;Ctrl&gt;&lt;Enter&gt;.
+Enter the name or part of the name in the Lookup tool and hit &lt;Enter&gt;.  The Menu will expand to the first matching item. Keep typing &lt;Enter&gt; until the Menu item your looking for is highlighted.  You can open this entry by typing &lt;Ctrl&gt;&lt;Enter&gt;.
 
 ### The Menu Bar
 
