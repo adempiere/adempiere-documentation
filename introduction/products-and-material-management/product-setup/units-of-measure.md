@@ -30,13 +30,13 @@ As an example, suppose there are two types of rope in inventory. The rope is sto
 
 ![Purchase Order Line for 3 Spools of Rope A](../../../.gitbook/assets/image%20%2811%29.png)
 
-![Purchase Order Line for 3 Spools of Rope B](../../../.gitbook/assets/image%20%2818%29.png)
+![Purchase Order Line for 3 Spools of Rope B](../../../.gitbook/assets/image%20%2819%29.png)
 
 ![Product Info for the Rope products showing Ordered Quantities in meters](../../../.gitbook/assets/image%20%2812%29.png)
 
 ![Material Receipt Lines showing receipt of spools. Not matched to order yet.](../../../.gitbook/assets/image%20%284%29.png)
 
-![After the Material Receipt, On Hand quantity is shown in meters](../../../.gitbook/assets/image%20%2819%29.png)
+![After the Material Receipt, On Hand quantity is shown in meters](../../../.gitbook/assets/image%20%2820%29.png)
 
 ![After the Matching of PO with the Receipt, the On Order quantity is now zero. ](../../../.gitbook/assets/image%20%283%29.png)
 

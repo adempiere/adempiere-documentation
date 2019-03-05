@@ -63,8 +63,8 @@ The [**Tax Rate Window**](http://wiki.adempiere.net/ManPageW_TaxRate) defines th
 >           or invoice lines the tax is first estimated using the summary tax rate.
 >           The correct tax is calculated when the document is prepared or completed.
 >           With many possible rates for a tax category, be aware that estimation can
->           be wrong and that the order/invoice grand total shouldn't be trusted until
->           the document is prepared.</p>
+>           be wrong and that the order/invoice grand total shouldn&apos;t be trusted
+>           until the document is prepared.</p>
 >       </th>
 >     </tr>
 >   </thead>

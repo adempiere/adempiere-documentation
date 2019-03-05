@@ -14,18 +14,6 @@ Open the Application Server URL. It will look something like the following image
 
 ![](../../.gitbook/assets/image_appserver_admin-1.png)
 
-### Accessing the Web Application
-
-To log in to the Web Application, click the link for the **ADempiere ZK Webui** in the administration page above. You may also have been given the address directly. It will look something line this:
-
-```text
-http://mycompany.com:8088/webui
-```
-
-The web page shown will be the login page to the Web Application running on the server. See [Logging In](logging-in.md) for more information.
-
-### Launching the Java Client Using WebStart
-
 The WebStart option automatically makes sure that the your computer will use the latest version of the ADempiere JAVA Client.
 
 From the Application Server web page, click on the blue WebStart button and you will see the WebStart Dialog:
@@ -41,4 +29,14 @@ If a security window appears, click on "Always trust content from this publisher
 The very first time the application starts, you will see a license dialog. Accept the license terms.
 
 The application client should start at this point and present a log in dialog. See [Logging In](logging-in.md) for more information.
+
+## Accessing the Web Application
+
+To log in to the Web Application, click the link for the **ADempiere ZK Webui** in the administration page above. You may also have been given the address directly. It will look something line this:
+
+```text
+http://mycompany.com:8088/webui
+```
+
+The web page shown will be the login page to the Web Application running on the server. See [Logging In](logging-in.md) for more information.
 
