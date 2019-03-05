@@ -96,16 +96,16 @@ The required accounts are:
     <tr>
       <td style="text-align:left">Trade Discount Received</td>
       <td style="text-align:left">The account used to post the amount of trade discounts received on AP
-        invoices/credit memos if the "Post Trade Discount" flag is selected in
-        the Account Schema. If the invoice is based on an item with a list price,
+        invoices/credit memos if the &quot;Post Trade Discount&quot; flag is selected
+        in the Account Schema. If the invoice is based on an item with a list price,
         the discount received is the difference between the invoice line list price
         amount and the actual price amount.</td>
     </tr>
     <tr>
       <td style="text-align:left">Trade Discount Granted</td>
       <td style="text-align:left">The account used to post the amount of trade discounts granted on sales
-        invoices/credit memos if the "Post Trade Discount" flag is selected in
-        the Account Schema. If the invoice is based on an item with a list price,
+        invoices/credit memos if the &quot;Post Trade Discount&quot; flag is selected
+        in the Account Schema. If the invoice is based on an item with a list price,
         the discount granted is the difference between the invoice line list price
         amount and the actual price amount.</td>
     </tr>
@@ -121,8 +121,8 @@ The required accounts are:
       <td style="text-align:left">Floor Stock</td>
       <td style="text-align:left">
         <p>The account to use when issuing stock to a work order where the issue
-          method of the Component of the Manufacturing Order is set to "Floor Stock".
-          The issue is handled as
+          method of the Component of the Manufacturing Order is set to &quot;Floor
+          Stock&quot;. The issue is handled as
           <br />Debit Floor Stock Account</p>
         <p>Credit Work in Process Account</p>
       </td>

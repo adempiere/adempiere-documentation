@@ -1,5 +1,9 @@
 # Glossary
 
+## Accounting Dimension
+
+An Accounting Dimension is a value that is included in the Accounting Facts. The value is drawn from a field on a document when the document is posted. Typical Accounting Dimensions in ADempiere include the Client, Organization, Business Partner, Product, Project, Campaign, and Activity.  The Accounting Dimensions are defined in the [**Accounting Dimension**](https://adempiere.github.io/functional-guide/window/window-accounting-dimensions.html) window.
+
 ## Accounting Facts
 
 An Accounting Fact or just Fact is the results of a document posting. It includes all the information about the accounts and Dimensions used and the debit/credit information. The Facts are the basis of financial reports and can be traced back to the documents that created them. Facts are also referred to as Accounting Consequences.
@@ -22,15 +26,11 @@ A Client Administrator is a User logged into a Role that provides administrative
 
 ## Combination
 
-The set of Dimensions used in generating an Accounting Fact. For accounting systems that don't use dimensions, the Combination is equivalent to the account number. For ADempiere, the Combination uses the account number plus a number of additional Dimensions. The Combinations keep the actual account number simpler - for example, you don't have to have a revenue account for each particular product. They also make reporting by Dimension simpler.
+The set of Accounting Dimensions used in generating an Accounting Fact. For accounting systems that don't use dimensions, the Combination is equivalent to the account number. For ADempiere, the Combination uses the account number plus a number of additional Accounting Dimensions. The Combinations keep the actual account number simpler - for example, you don't have to have a revenue account for each particular product. They also make reporting by Accounting Dimension simpler.
 
 ## Commitment Accounting
 
 A type of accounting that creates Accounting Facts for Sales or Purchase Orders and similar documents to record the legal/financial commitment that the Order represents. Commitment Accounting is controlled in the **System Configurator** window and the default is not to use it.
-
-## Dimension
-
-A Dimension is a record of a field on a document that is included in the Accounting Facts generated when the document is posted. Typical Dimensions in ADempiere include the Client, Organization, Business Partner, Product, Project, Campaign, and Activity.
 
 ## Dunning
 

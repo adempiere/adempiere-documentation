@@ -333,8 +333,8 @@ For reference, the following list contains all the options that will appear in t
       <td style="text-align:left"><a href="http://wiki.adempiere.net/Attachment">Attachment</a>
       </td>
       <td style="text-align:left">Opens the <a href="http://wiki.adempiere.net/Attachment">Attachment</a> dialog
-        where notes and files can be "attached" to a record. When attachments are
-        present, the icon changes to <a href="http://wiki.adempiere.net/File:Icon_AttachmentX24.png"><img src="http://wiki.adempiere.net/images/4/4d/Icon_AttachmentX24.png" alt="Image:Icon_AttachmentX24.png"/></a>.</td>
+        where notes and files can be &quot;attached&quot; to a record. When attachments
+        are present, the icon changes to <a href="http://wiki.adempiere.net/File:Icon_AttachmentX24.png"><img src="http://wiki.adempiere.net/images/4/4d/Icon_AttachmentX24.png" alt="Image:Icon_AttachmentX24.png"/></a>.</td>
     </tr>
     <tr>
       <td style="text-align:left">

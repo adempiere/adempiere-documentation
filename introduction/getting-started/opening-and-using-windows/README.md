@@ -24,3 +24,5 @@ In each tab, the data can be displayed as a table view \(like a spreadsheet\) wh
 
 ![The Business Partner window displayed in table view. Several records are visible.](../../../.gitbook/assets/swing_businesspartnerwindowtable.PNG)
 
+At the bottom of the window is a status bar providing information about the available actions or results of a process.  At the very bottom right is a record count showing the current record number and the total number of records displayed.  If you click on this record count a [Record Info dialog](../dialogs-and-forms/change-log-or-record-info.md) \(also called a Change Log\) will be displayed.
+

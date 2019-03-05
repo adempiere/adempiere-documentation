@@ -169,37 +169,43 @@ The following shortcut keys can be used to speed your work with the software. Pr
       <td style="text-align:left">First record</td>
       <td style="text-align:left"><code>&lt;Alt&gt;&lt;Page Up&gt;</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><code>&lt;Alt&gt;&lt;Page Up&gt;</code>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">Previous record</td>
       <td style="text-align:left"><code>&lt;Alt&gt;&lt;Up Arrow&gt;</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><code>&lt;Alt&gt;&lt;Up Arrow&gt;</code>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">Next record</td>
       <td style="text-align:left"><code>&lt;Alt&gt;&lt;Down Arrow&gt;</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><code>&lt;Alt&gt;&lt;Down Arrow&gt;</code>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">Last record</td>
       <td style="text-align:left"><code>&lt;Alt&gt;&lt;Page Down&gt;</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><code>&lt;Alt&gt;&lt;Page Down&gt;</code>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">Parent tab</td>
       <td style="text-align:left"><code>&lt;Alt&gt;&lt;Left Arrow&gt;</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><code>&lt;Alt&gt;&lt;Left Arrow&gt;</code>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">Detail tab</td>
       <td style="text-align:left"><code>&lt;Alt&gt;&lt;Right Arrow&gt;</code>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left"><code>&lt;Alt&gt;&lt;Right Arrow&gt;</code>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">Show all Windows</td>
