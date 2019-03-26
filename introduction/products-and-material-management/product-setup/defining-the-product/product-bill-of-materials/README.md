@@ -70,7 +70,7 @@ The _**Change Notice**_ \__\*\*_\_field is used to record the Change Notice that
 
 The Change Notice information is passed to the Manufacturing Order when it is created.
 
-Management of change can be complex. See [Engineering Change Management](../../../../../manufacturing/engineering-change-management.md) \(ECM\) for more information. In summary, the need to make a change is identified on Change Request and this change may affect one or more BOMs for the product and its components. The actual change is specified in a Change Notice. The affected BOM is copied to a new record, the new record is modified according to the change, and the Change Notice provides a reference on the new BOM as to what changed, why and who approved it.
+Management of change can be complex. See [Engineering Change Management](../../../../manufacturing/engineering-change-management.md) \(ECM\) for more information. In summary, the need to make a change is identified on Change Request and this change may affect one or more BOMs for the product and its components. The actual change is specified in a Change Notice. The affected BOM is copied to a new record, the new record is modified according to the change, and the Change Notice provides a reference on the new BOM as to what changed, why and who approved it.
 
 ## Revision
 
