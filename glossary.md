@@ -28,10 +28,6 @@ The set of Dimensions used in generating an Accounting Fact. For accounting syst
 
 A type of accounting that creates Accounting Facts for Sales or Purchase Orders and similar documents to record the legal/financial commitment that the Order represents. Commitment Accounting is controlled in the **System Configurator** window and the default is not to use it.
 
-## DDL
-
-A Data Definition or Data Description Language \(_DDL_\) is a syntax similar to a computer programming language for _defining_ data structures, especially database schemas. _DDL_ statements create, modify, and remove database objects such as tables, indexes, and users. Common _DDL_ statements are CREATE, ALTER, and DROP.
-
 ## Dimension
 
 A Dimension is a record of a field on a document that is included in the Accounting Facts generated when the document is posted. Typical Dimensions in ADempiere include the Client, Organization, Business Partner, Product, Project, Campaign, and Activity.
