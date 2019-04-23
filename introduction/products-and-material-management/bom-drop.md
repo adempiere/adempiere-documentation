@@ -48,6 +48,10 @@ The fields are as follows:
 | **Quantity** | The BOM Line quantity that will be used on the document.  Initially, it is the BOM Line quantity multiplied by the BOM quantity in the upper panel.  It can be adjusted. |
 | **UOM** | The Unit of Measure to use on the document line.  Where conversions exist for the selected component product, the UOM can be changed as required. |
 
+{% hint style="warning" %}
+As the Price List is in the Product's UOM, the quantity and UOM used in the form will be converted to the Product UOM on an Order or Invoice.
+{% endhint %}
+
 At the bottom of the form are standard Cancel and Confirm buttons. The Confirm button will be enabled when a Product BOM is selected and, if opened from the Menu, a target document is selected.  Clicking Confirm will save the selected components to the document as new lines.  Clicking Cancel or closing the form will cancel the BOM Drop.
 
 ### Restrictions
