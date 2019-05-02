@@ -69,6 +69,7 @@
         * [Basic Product Setup](introduction/products-and-material-management/product-setup/defining-the-product/basic-product-setup.md)
         * [Product Bill of Materials](introduction/products-and-material-management/product-setup/defining-the-product/product-bill-of-materials/README.md)
           * [BOM Components](introduction/products-and-material-management/product-setup/defining-the-product/product-bill-of-materials/bom-components.md)
+    * [BOM Drop](introduction/products-and-material-management/bom-drop.md)
   * [Accounting & Performance Analysis](introduction/accounting-and-performance-analysis/README.md)
     * [Tax Setup](introduction/accounting-and-performance-analysis/tax-setup.md)
     * [Performance Measurement Setup](introduction/accounting-and-performance-analysis/performance-measurement-setup.md)

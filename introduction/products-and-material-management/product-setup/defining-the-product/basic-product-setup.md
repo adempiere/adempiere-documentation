@@ -100,6 +100,10 @@ These fields provide information about how the Product fits into inventory locat
 
 If a Bill of Materials \(BOM\) is defined on the BOM tab of the Product Window, the Bill of Materials checkbox will be selected and the Verify BOM button and Verified checkbox will be visible. After the BOM is entered, you can click the Verify BOM button and the system will check the BOM products and processes making sure there are no recursive products in the BOM tree. Once the BOM has been verified, the Verified checkbox will be selected.
 
+{% hint style="warning" %}
+Any BOM defined for the product will not be available to use unless the Verify BOM process is completed and the Verified checkbox is selected.
+{% endhint %}
+
 ### **Print detail records on invoice**
 
 This field appears if the Product has a BOM. _\*\*_If selected, the contents of the BOM will be added to the Invoice print out, not as new line items but as details of the master product. This does not affect the invoice document - no lines are added. It only affects the invoice Print or Print Preview output.

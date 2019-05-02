@@ -43,11 +43,13 @@ Additional information about the non-standard fields or special conditions follo
 
 If you have more than one BOM for this Product, the Search Key will have to be unique for each BOM.
 
-{% hint style="warning" %}
-
 ### Default BOM
 
-The BOM where the _**Search Key**_ matches the **Product** _**Search Key**_ will be considered the default BOM for the Product regardless of its _**BOM Type**_ or _**BOM Use**_ settings. This connection with the Search Key is used:
+{% hint style="warning" %}
+The BOM where the _**Search Key**_ matches the **Product** _**Search Key**_ will be considered the default BOM for the Product regardless of its _**BOM Type**_ or _**BOM Use**_ settings. 
+{% endhint %}
+
+This default BOM is used:
 
 * When the Product appears as a BOM Component on another BOM with _**Component Type**_ set to _Phantom_,  then this BOM is used as the Phantom BOM and is exploded on Manufacturing Orders.
 * When doing Product Planning, the Default BOM is used if a specific BOM was not specified for the Product.
@@ -55,6 +57,7 @@ The BOM where the _**Search Key**_ matches the **Product** _**Search Key**_ will
 * When automatically creating a Manufacturing Order as part of the resupply process for a Warehouse or from a Project
 * When adding a product to a Manufacturing Order where there is no Product Planning record for the matching Organization, Product, Warehouse, Resource on the Order.
 * When preparing Distribution Orders.
+* When performing a [BOM Drop](../../../bom-drop.md).
 
 ## Attribute Set Instance
 
@@ -66,7 +69,7 @@ The BOM can use any UOM \(Unit of Measure\) valid for the Product - meaning wher
 
 ## Change Notice
 
-The _**Change Notice**_ \__\*\*_\_field is used to record the Change Notice that is/was being applied to the BOM. A Change Notice is a way to inform people that need to know about the change as to the reasons and nature of the change.
+The _**Change Notice**_  field is used to record the Change Notice that is/was being applied to the BOM. A Change Notice is a way to inform people that need to know about the change as to the reasons and nature of the change.
 
 The Change Notice information is passed to the Manufacturing Order when it is created.
 
@@ -117,7 +120,7 @@ When an Order is completed, if any product on the order has a BOM with _**BOM Ty
 
 For **BOM Type** _Make To Kit_, the Manufacturing order will automatically have material issued to it and the final product will be received into inventory. This is useful where the manufacturing process is simple and there is no need for pick lists and other material handling processes.
 
-For **BOM Type** _Make To Order_, the Manufacturing Order created will be prepared \(materials reserved\) but not completed and will need to processed according to the manufacturing workflow.
+For **BOM Type** _Make To Order_, the Manufacturing Order created will be prepared \(materials reserved\) but not completed and will need to be processed according to the manufacturing workflow.
 {% endhint %}
 
 ## \_\_
