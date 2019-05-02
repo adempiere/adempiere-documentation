@@ -106,7 +106,7 @@ Any BOM defined for the product will not be available to use unless the Verify B
 
 ### **Print detail records on invoice**
 
-This field appears if the Product has a BOM. _\*\*_If selected, the contents of the BOM will be added to the Invoice print out, not as new line items but as details of the master product. This does not affect the invoice document - no lines are added. It only affects the invoice Print or Print Preview output.
+This field appears if the Product has a BOM. \_\*\*\_If selected, the contents of the BOM will be added to the Invoice print out, not as new line items but as details of the master product. This does not affect the invoice document - no lines are added. It only affects the invoice Print or Print Preview output.
 
 {% hint style="warning" %}
 If the product has multiple BOMs, all of the BOM lines will be printed on the Invoice, even the inactive ones. See issue [2305](https://github.com/adempiere/adempiere/issues/2305).

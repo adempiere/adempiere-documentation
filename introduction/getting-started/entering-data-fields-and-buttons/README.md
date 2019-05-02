@@ -10,19 +10,13 @@ Each window that you open in ADempiere will likely provide you with the opportun
 
 Several of the fields have helper functions, indicated by an icon/button at the right side of the field. The helper functions can be opened by clicking this icon. They may also open if the entered data is not clear or complete. The helper functions include the Calendar Tool, Calculator Tool, Search and Info windows \(See the Functionality list\), and others.
 
-Unless noted in the field notes, most fields will accept and lose the focus as the &lt;Tab&gt; key is typed on the keyboard. When buttons have the focus, the buttons can be activated by typing the &lt;Space&gt; key.  Each field also controls the pop-up menu that appears when the mouse is right-clicked over the field.
+Unless noted in the field notes, most fields will accept and lose the focus as the &lt;Tab&gt; key is typed on the keyboard. When buttons have the focus, the buttons can be activated by typing the &lt;Space&gt; key. Each field also controls the pop-up menu that appears when the mouse is right-clicked over the field.
 
-Data entered into a field is not processed until the field loses focus or, unless noted in the field notes, the &lt;Enter&gt; key s typed. 
+Data entered into a field is not processed until the field loses focus or, unless noted in the field notes, the &lt;Enter&gt; key s typed.
 
-The fields and buttons are similar between the Web Application and the Java Client.  
+The fields and buttons are similar between the Web Application and the Java Client.
 
-### 
-
-### 
-
-### 
-
-### Binary
+## Binary
 
 Binary Data fields can be used to store pretty much anything that can be found in a computer's file system. The binary data is stored as a BLOB or Binary Large OBject. The Binary field appears in ADempiere as a [Button](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Button). Clicking the button will open the File Chooser and allow you select a BLOB \(any file\) and save it to the database. The button text will show the following:
 
@@ -55,7 +49,7 @@ ADempiere does not make direct use of Binary fields in windows and tabs but they
 
 \(Software: client/src org.compiere.grid.ed.VBinary.java\)
 
-### Button
+## Button
 
 Buttons perform a command of some sort - starting a process, running a script or performing some other task.
 
@@ -79,9 +73,7 @@ Software:
   * org.compiere.apps.APanel.java
   * org.compiere.grid.ed.VButton.java
 
-
-
-### Color
+## Color
 
 A Color element provides a way to set a color in the database. The Color control appears as a button. Clicking the button will open a color dialog where the color properties can be set. Colors can be selected using the java swing JColorChooser tool.
 
@@ -111,11 +103,7 @@ Software:
 * client/src
   * org.compiere.grid.ed.VColor.java
 
-
-
-### 
-
-### Date [![Image:Icon\_Calendar24.png](http://wiki.adempiere.net/images/5/52/Icon_Calendar24.png)](http://wiki.adempiere.net/File:Icon_Calendar24.png)
+## Date [![Image:Icon\_Calendar24.png](http://wiki.adempiere.net/images/5/52/Icon_Calendar24.png)](http://wiki.adempiere.net/File:Icon_Calendar24.png)
 
 The Date control maintains data as a time stamp in a format consistent with the locale and language of the user's system. The format definitions follow the Java class [SimpleDateFormat](http://download-llnw.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html). If no default format is found, the JDBC standard will be used "yyyy-MM-dd". Local formats will be converted to contain at least "dd" and "MM" numbers in the format code. Year codes will be increased to at least four digits.
 
@@ -136,27 +124,22 @@ Software:
   * org.compiere.grid.ed.MDocDate.java
   * org.compiere.grid.ed.VDate.java
 
-
-
-### Date+Time [![Image:Icon\_Calendar24.png](http://wiki.adempiere.net/images/5/52/Icon_Calendar24.png)](http://wiki.adempiere.net/File:Icon_Calendar24.png)
+## Date+Time [![Image:Icon\_Calendar24.png](http://wiki.adempiere.net/images/5/52/Icon_Calendar24.png)](http://wiki.adempiere.net/File:Icon_Calendar24.png)
 
 Date with time control is similar to the [Date](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Date) control but includes the time component with the full timestamp format of yyyy-MM-dd HH:mm:ss. The text field can't be edited directly so you have to click the button to open the [Calendar Tool](http://wiki.adempiere.net/Calendar_Tool) to enter the values.
 
 See [Date](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Date) above for more information.
 
-### FileName [![Image:Icon\_Open24.png](http://wiki.adempiere.net/images/2/2e/Icon_Open24.png)](http://wiki.adempiere.net/File:Icon_Open24.png)
+## FileName [![Image:Icon\_Open24.png](http://wiki.adempiere.net/images/2/2e/Icon_Open24.png)](http://wiki.adempiere.net/File:Icon_Open24.png)
 
 The FileName control is intended to hold a file name that can be found in the local default directories. Clicking the button will open the File Chooser dialog where you can select the file of interest. You can also enter the file name in the text field directly.
 
-  
 Software:
 
 * client/src
   * org.compiere.grid.ed.VFile.java
 
-
-
-### FilePath [![Image:Icon\_Open24.png](http://wiki.adempiere.net/images/2/2e/Icon_Open24.png)](http://wiki.adempiere.net/File:Icon_Open24.png)
+## FilePath [![Image:Icon\_Open24.png](http://wiki.adempiere.net/images/2/2e/Icon_Open24.png)](http://wiki.adempiere.net/File:Icon_Open24.png)
 
 Local File Path control is similar to the FileName control but is restricted to a directory path only - no file names. Clicking the button will open the File Chooser dialog where you can select the directory of interest. You can also enter the file path in the text field directly.
 
@@ -165,9 +148,7 @@ Software:
 * client/src
   * org.compiere.grid.ed.VFile.java
 
-
-
-### ID [![Image:Icon\_Reset24.png](http://wiki.adempiere.net/images/a/a5/Icon_Reset24.png)](http://wiki.adempiere.net/File:Icon_Reset24.png)
+## ID [![Image:Icon\_Reset24.png](http://wiki.adempiere.net/images/a/a5/Icon_Reset24.png)](http://wiki.adempiere.net/File:Icon_Reset24.png)
 
 The ID control identifies a specific record in a table using the \*\_ID field. The control uses a [lookup/search](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Search) to identify the record. What appears in the ID control is determined by the Identifier field selection in the [**Column Tab**](http://wiki.adempiere.net/ManPageW_TableandColumn#Tab:_Column) of the [**Table And Column Window**](http://wiki.adempiere.net/ManPageW_TableandColumn) where the \*\_ID field is the key. For example, the Value can be Identifier 1 and Name Identifier 2, appearing as Value\_Name. References \(see the [**Reference Window**](http://wiki.adempiere.net/ManPageW_Reference)\) can also be used to control what is displayed in particular windows/fields.
 
@@ -203,13 +184,11 @@ Software:
 * client/src
   * org.compiere.grid.ed.VLookup.java
 
-
-
-### Image
+## Image
 
 Image fields can be used to display images that are stored in the database as binary data or linked to a URL. When the Image field is initially displayed, it will appear as a button with the text "-" displayed. Clicking on this button will open an Image dialog which appears as a small window as shown below.
 
- [![](http://wiki.adempiere.net/images/2/2c/ImageDialog.png)](http://wiki.adempiere.net/File:ImageDialog.png)
+[![](http://wiki.adempiere.net/images/2/2c/ImageDialog.png)](http://wiki.adempiere.net/File:ImageDialog.png)
 
 The dialog has three buttons: the standard Cancel and Confirm, and a small button "-" labeled Select File. Clicking this last button will open a file chooser where you can select an image from the file system. When the image is selected and opened, it will appear in the Image dialog and the button will hold the file name. Clicking Confirm will save the image to the database. Clicking Cancel will delete any image saved in the database and close the window. Closing the window will have no effect.
 
@@ -223,14 +202,11 @@ Software:
   * org.compiere.grid.ed.VImage.java
   * org.compiere.grid.ed.VImageDialog.java
 
-  
-
-
-### Integer
+## Integer
 
 The Integer field is a numeric field with no fractional part and a maximum of 10 digits. See [Number](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Number) for more information.
 
-### List
+## List
 
 A List appears as a combo box pre-filled with values that you can select. As you type in the box, the combo box will expand to show the best choice based on what you have typed. Type &lt;Enter&gt; to select it, or use the mouse to select the list entry. To set the List field to null, select the blank entry in the list.
 
@@ -238,13 +214,11 @@ See also
 
 * [Search](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Search)
 
-
-
-### Location \(Address\) [![Image:Icon\_Location24.png](http://wiki.adempiere.net/images/8/85/Icon_Location24.png)](http://wiki.adempiere.net/File:Icon_Location24.png)
+## Location \(Address\) [![Image:Icon\_Location24.png](http://wiki.adempiere.net/images/8/85/Icon_Location24.png)](http://wiki.adempiere.net/File:Icon_Location24.png)
 
 The Location control provides a way to attach an address to a record. The Location control does not accept text directly but the button can receive the focus and can be activated from the keyboard by typing &lt;Space&gt;. You can also click on the button \([![Image:Icon\_Location24.png](http://wiki.adempiere.net/images/8/85/Icon_Location24.png)](http://wiki.adempiere.net/File:Icon_Location24.png)\). This will open the Location Dialog where you can specify the full address.
 
- [![](http://wiki.adempiere.net/images/2/29/LocationAddress.gif)](http://wiki.adempiere.net/File:LocationAddress.gif)
+[![](http://wiki.adempiere.net/images/2/29/LocationAddress.gif)](http://wiki.adempiere.net/File:LocationAddress.gif)
 
 When the Location Dialog is closed, the Location control will display a summary of the address information entered.
 
@@ -255,15 +229,13 @@ The pop-up menu \(right-click\) provides options to:
 * [![Image:Icon\_Delete24.png](http://wiki.adempiere.net/images/a/af/Icon_Delete24.png)](http://wiki.adempiere.net/File:Icon_Delete24.png) Delete
 * [![Image:Icon\_ChangeLog24.png](http://wiki.adempiere.net/images/e/e1/Icon_ChangeLog24.png)](http://wiki.adempiere.net/File:Icon_ChangeLog24.png) [Change Log](http://wiki.adempiere.net/Change_Log)
 
-
-
-### Locator \(WH\) [![Image:Icon\_Locator24.png](http://wiki.adempiere.net/images/a/a1/Icon_Locator24.png)](http://wiki.adempiere.net/File:Icon_Locator24.png)
+## Locator \(WH\) [![Image:Icon\_Locator24.png](http://wiki.adempiere.net/images/a/a1/Icon_Locator24.png)](http://wiki.adempiere.net/File:Icon_Locator24.png)
 
 The Warehouse Locator field displays the key field of a warehouse location. Both the field and the button will accept the focus.
 
 Text typed into the Locator field will be compared to valid locations already defined. If the window already references a warehouse or a product, the locator entries will be limited to valid values for these references. If a single match is found, it will be used. If the text consists of a single percent symbol \(wildcard %\), no results are returned or more than one result is found, then the Locator Dialog is opened as shown below.
 
- [![](http://wiki.adempiere.net/images/c/c1/LocatorDialog.png)](http://wiki.adempiere.net/File:LocatorDialog.png)
+[![](http://wiki.adempiere.net/images/c/c1/LocatorDialog.png)](http://wiki.adempiere.net/File:LocatorDialog.png)
 
 The Locator Dialog can be used to select an existing Locator reference or define a new one. If a new entry is defined, the Key value will be used to identify it in the Locator field.
 
@@ -279,9 +251,7 @@ The software that controls this field is found in:
   * org.compiere.grid.ed.VLocator.java
   * org.compiere.grid.ed.VLocatorDialog.java
 
-
-
-### Memo
+## Memo
 
 The Memo field will accept character strings up to 2000 characters. It is similar to the [Text](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Text) and [String](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#String) fields with the exception that it uses a text area with 80 columns width and a height of 50 rows and can't be encrypted. If the text in the field exceeds the size of the text area on the screen, scroll bars will appear.
 
@@ -296,19 +266,15 @@ The software that controls this field is found in:
 * client/src
   * org.compiere.grid.ed.VMemo.java
 
-
-
-### 
-
-### Printer Name
+## Printer Name
 
 The Printer Name field is a [String](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#String) field. See [String](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#String) for more information.
 
-### Product Attribute [![Image:Icon\_PAttribute24.png](http://wiki.adempiere.net/images/c/ca/Icon_PAttribute24.png)](http://wiki.adempiere.net/File:Icon_PAttribute24.png)
+## Product Attribute [![Image:Icon\_PAttribute24.png](http://wiki.adempiere.net/images/c/ca/Icon_PAttribute24.png)](http://wiki.adempiere.net/File:Icon_PAttribute24.png)
 
 The Product Attribute field or Product Attribute Instance is a field dedicated to selecting or displaying a specific instance of [Product Attributes](http://wiki.adempiere.net/Product_Attributes). It appears as a text field with an icon/button \([![Image:Icon\_PAttribute24.png](http://wiki.adempiere.net/images/c/ca/Icon_PAttribute24.png)](http://wiki.adempiere.net/File:Icon_PAttribute24.png)\). The text field will not accept the focus but the button will. You can double click the field or click the button to activate the helper function and open the [Product Attribute Dialog](http://wiki.adempiere.net/Product_Attribute_Dialog).
 
- [![](http://wiki.adempiere.net/images/a/a5/PAttributeDialog.png)](http://wiki.adempiere.net/File:PAttributeDialog.png)
+[![](http://wiki.adempiere.net/images/a/a5/PAttributeDialog.png)](http://wiki.adempiere.net/File:PAttributeDialog.png)
 
 The dialog displays the details of the product attribute instance. There are two controls:
 
@@ -330,17 +296,15 @@ The software that controls this field is found in:
   * org.compiere.grid.ed.PAttribute.java
   * org.compiere.grid.ed.PAttributeDialog.java
 
-
-
-### Quantity [![Image:Icon\_Calculator24.png](http://wiki.adempiere.net/images/d/db/Icon_Calculator24.png)](http://wiki.adempiere.net/File:Icon_Calculator24.png)
+## Quantity [![Image:Icon\_Calculator24.png](http://wiki.adempiere.net/images/d/db/Icon_Calculator24.png)](http://wiki.adempiere.net/File:Icon_Calculator24.png)
 
 The Quantity field is a numeric field with a maximum of 12 digits in the fractional part and 28 digits in the integer part. See [Number](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Number) for more information.
 
-### RowID
+## RowID
 
 The Row ID Data Type is currently not active in the database.
 
-### Search [![Image:Icon\_Reset24.png](http://wiki.adempiere.net/images/a/a5/Icon_Reset24.png)](http://wiki.adempiere.net/File:Icon_Reset24.png)
+## Search [![Image:Icon\_Reset24.png](http://wiki.adempiere.net/images/a/a5/Icon_Reset24.png)](http://wiki.adempiere.net/File:Icon_Reset24.png)
 
 A Search Field is used to look up data. The Search field appears as a combo box with a list of available values. The text field will accept the focus but the button can only be operated by the mouse.
 
@@ -374,9 +338,7 @@ Software:
 * client/src
   * org.compiere.grid.ed.VLookup.java
 
-
-
-### String
+## String
 
 String fields are one of the most common types of fields in the database. A String is simply a sequence of up to 2000 characters but it is intended for shorter amounts of information.
 
@@ -393,17 +355,15 @@ The software that controls this field is found in:
 * client/src
   * org.compiere.grid.ed.VString.java
 
-
-
-### Table
+## Table
 
 The Table data field uses a reference to look up data in a table. It behaves like the [ID](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#ID) and [Search](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Search) fields. See [Search](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Search) for more information.
 
-### Table Direct
+## Table Direct
 
 The Table Direct data field uses a default reference to look up data in a table. It works best for tables that have defined Info windows. It behaves like the [ID](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#ID) and [Search](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Search) fields. See [Search](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Search) for more information.
 
-### Text
+## Text
 
 The Text data field is used for character strings up to 2000 characters long. It appears as a text area. It will be 2 rows high if the field length is less than 300 and three rows high otherwise. It is very similar to the [Memo](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Memo) field.
 
@@ -424,10 +384,7 @@ The software that controls this field is found in
 * client/src
   * org.compiere.grid.ed.VText.java
 
-  
-
-
-### Text Long
+## Text Long
 
 The Text \(Long\) field is intended for Text &gt; 2000 characters in length. It is interpreted and presented as HTML text.
 
@@ -447,15 +404,13 @@ The software that controls this field is found in
 * client/src
   * org.compiere.grid.ed.VTextLong.java
 
-
-
-### Time [![Image:Icon\_Calendar24.png](http://wiki.adempiere.net/images/5/52/Icon_Calendar24.png)](http://wiki.adempiere.net/File:Icon_Calendar24.png)
+## Time [![Image:Icon\_Calendar24.png](http://wiki.adempiere.net/images/5/52/Icon_Calendar24.png)](http://wiki.adempiere.net/File:Icon_Calendar24.png)
 
 The Time control is similar to the [Date](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Date) control but only shows the time component in the local format similar to h:mm:ss z or HH:mm:ss z. The text field can't be edited directly so you have to click the button to open the [Calendar Tool](http://wiki.adempiere.net/Calendar_Tool) to enter the values.
 
 See [Date](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Date) above for more information.
 
-### URL [![Image:Icon\_Online24.png](http://wiki.adempiere.net/images/0/0a/Icon_Online24.png)](http://wiki.adempiere.net/File:Icon_Online24.png)
+## URL [![Image:Icon\_Online24.png](http://wiki.adempiere.net/images/0/0a/Icon_Online24.png)](http://wiki.adempiere.net/File:Icon_Online24.png)
 
 The URL behaves like a [Text](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Text) field with an added helper function \([![Image:Icon\_Online24.png](http://wiki.adempiere.net/images/0/0a/Icon_Online24.png)](http://wiki.adempiere.net/File:Icon_Online24.png)\). When you click the button, the software will attempt to open the text as a URL using the default browser on the system.
 
@@ -465,9 +420,7 @@ The pop-up menu \(right-click\) provides options to access:
 * [![Image:Icon\_VPreference24.png](http://wiki.adempiere.net/images/b/b0/Icon_VPreference24.png)](http://wiki.adempiere.net/File:Icon_VPreference24.png) [Value Preference](http://wiki.adempiere.net/Value_Preference_Dialog)
 * [![Image:Icon\_ChangeLog24.png](http://wiki.adempiere.net/images/e/e1/Icon_ChangeLog24.png)](http://wiki.adempiere.net/File:Icon_ChangeLog24.png) [Change Log](http://wiki.adempiere.net/Change_Log)
 
-
-
-### Yes-No
+## Yes-No
 
 The Yes-No control appears as a Check Box.[![](http://wiki.adempiere.net/images/e/ef/Yes-no.png)](http://wiki.adempiere.net/File:Yes-no.png)
 

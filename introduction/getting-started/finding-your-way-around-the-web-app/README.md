@@ -41,11 +41,7 @@ At the top right is the User Panel. This small panel shows the User ID of the cu
     </tr>
   </thead>
   <tbody></tbody>
-</table>| \(GardenWorld Admin in the image\) | Opens a dialog that provides summary information about the current role. |
-| :--- | :--- |
-
-
-| Change Role | Closes all windows and effectively logs out, returning the user to the Login Role dialog. This provides a quick way to change the current Role, Client, Organization or Warehouse. For the Super User, its a great tool. For a user with access to only one of each, not so much. |
+</table>| Change Role | Closes all windows and effectively logs out, returning the user to the Login Role dialog. This provides a quick way to change the current Role, Client, Organization or Warehouse. For the Super User, its a great tool. For a user with access to only one of each, not so much. |
 | :--- | :--- |
 
 

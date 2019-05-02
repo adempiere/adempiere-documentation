@@ -6,7 +6,7 @@ Trees are collections and organizations of data using a summary and child struct
 
 Each Accounting Dimension, such as Product, can have multiple trees and which tree gets used in a report is defined in a Reporting Hierarchy. Financial Reports are defined in lines and columns that can use the summary level elements of the tree. For example, in the Garden World Balance Sheet, there is a Reporting Line for Cash and the Account Element Value is set to 11 - Cash. This is a summary level account and the line value on the report would include all activity in all the subordinate accounts shown in the tree below.
 
-![](../../../.gitbook/assets/image%20%2810%29.png)
+![](../../../.gitbook/assets/image-10.png)
 
 Each Accounting Dimension requires at least one tree and the default trees are used if no Reporting Hierarchy is selected.
 

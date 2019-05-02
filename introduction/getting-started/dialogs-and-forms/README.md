@@ -6,7 +6,7 @@ description: >-
 
 # Dialogs and Forms
 
-The following pages provide detailed descriptions of the various forms and dialogs which provide functionality to the application.  Here is a list with links to the pages:
+The following pages provide detailed descriptions of the various forms and dialogs which provide functionality to the application. Here is a list with links to the pages:
 
 * [Account Dialog](account-dialog.md)
 

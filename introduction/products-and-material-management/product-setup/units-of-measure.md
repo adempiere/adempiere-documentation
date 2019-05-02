@@ -22,21 +22,21 @@ The conversion is defined by a multiply rate and divide rate used to convert the
 
 As an example, suppose there are two types of rope in inventory. The rope is stocked and sold in meters \(m\) but its is purchased by spool. For rope A, the spool contains 1000m of the rope. For rope B, the spool contains 400m. Each rope product would use Meter as its base unit and each would have a UOM conversion from Meter to Spool with different values.
 
-![The Meter Unit of Measure](../../../.gitbook/assets/image%20%288%29.png)
+![The Meter Unit of Measure](../../../.gitbook/assets/image-8.png)
 
 ![The Spool Unit of Measure](../../../.gitbook/assets/image%20%281%29.png)
 
-![Conversions from Meter to Spool for the two Rope products](../../../.gitbook/assets/image%20%2814%29.png)
+![Conversions from Meter to Spool for the two Rope products](../../../.gitbook/assets/image-14%20%281%29.png)
 
-![Purchase Order Line for 3 Spools of Rope A](../../../.gitbook/assets/image%20%2811%29.png)
+![Purchase Order Line for 3 Spools of Rope A](../../../.gitbook/assets/image-11.png)
 
-![Purchase Order Line for 3 Spools of Rope B](../../../.gitbook/assets/image%20%2819%29.png)
+![Purchase Order Line for 3 Spools of Rope B](../../../.gitbook/assets/image-19%20%281%29.png)
 
-![Product Info for the Rope products showing Ordered Quantities in meters](../../../.gitbook/assets/image%20%2812%29.png)
+![Product Info for the Rope products showing Ordered Quantities in meters](../../../.gitbook/assets/image-12%20%281%29.png)
 
-![Material Receipt Lines showing receipt of spools. Not matched to order yet.](../../../.gitbook/assets/image%20%284%29.png)
+![Material Receipt Lines showing receipt of spools. Not matched to order yet.](../../../.gitbook/assets/image-4.png)
 
-![After the Material Receipt, On Hand quantity is shown in meters](../../../.gitbook/assets/image%20%2820%29.png)
+![After the Material Receipt, On Hand quantity is shown in meters](../../../.gitbook/assets/image-20.png)
 
-![After the Matching of PO with the Receipt, the On Order quantity is now zero. ](../../../.gitbook/assets/image%20%283%29.png)
+![After the Matching of PO with the Receipt, the On Order quantity is now zero. ](../../../.gitbook/assets/image-3.png)
 

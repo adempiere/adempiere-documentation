@@ -6,13 +6,13 @@ description: The Account Field
 
 ![An Account field in the Accounting tab of the Product window.](../../../.gitbook/assets/swing_field_account_example.PNG)
 
-Icons: ![](../../../.gitbook/assets/account24.gif) ![](../../../.gitbook/assets/infoaccount24.webicon.png) 
+Icons: ![](../../../.gitbook/assets/account24%20%281%29.gif) ![](../../../.gitbook/assets/infoaccount24.webicon.png)
 
-The Account field displays the details of a selected set of [Accounting Dimensions](../../../glossary.md#accounting-dimension) referred to as a [Combination](../../../glossary.md#combination).  It is usually found on Accounting tabs which provide accounting information related to the parent tab.
+The Account field displays the details of a selected set of [Accounting Dimensions](../../../glossary.md#accounting-dimension) referred to as a [Combination](../../../glossary.md#combination). It is usually found on Accounting tabs which provide accounting information related to the parent tab.
 
-The field shows a text value with the Accounting Dimensions separated by a hyphen.  Dimensions that have not yet been set have an underscore as a place holder.  When the Combination is used to post Accounting Facts, the values of the Dimensions will be drawn from the posted document, overwriting the placeholders and other values in the Combination and the final Combination will be used to create the Accounting Fact.  The account number dimension is not overwritten. 
+The field shows a text value with the Accounting Dimensions separated by a hyphen. Dimensions that have not yet been set have an underscore as a place holder. When the Combination is used to post Accounting Facts, the values of the Dimensions will be drawn from the posted document, overwriting the placeholders and other values in the Combination and the final Combination will be used to create the Accounting Fact. The account number dimension is not overwritten.
 
-To set a Combination, you can type in a text value or you can click on the helper button.  The text that is entered will be assessed as follows:
+To set a Combination, you can type in a text value or you can click on the helper button. The text that is entered will be assessed as follows:
 
 * If the text is null, zero length or equals "%" - the wild card - , the [Account Dialog](../dialogs-and-forms/account-dialog.md) will be opened.
 * If the text does not end with a percent sign "%", one is added as the last character.

@@ -6,7 +6,7 @@ description: >-
 
 # Garden World Demonstration Client
 
-## Garden World  <a id="firstHeading"></a>
+## Garden World   <a id="firstHeading"></a>
 
 Garden World is a demonstration business that exists as a Client in the ADempiere database. It can be used a demonstration, a sandbox to try business processes or a learning tool. Garden World comes prepared with products, vendors and customers.
 

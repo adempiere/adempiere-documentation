@@ -4,7 +4,7 @@ description: The main application menu
 
 # The Application Menu
 
-## The Application Menu  <a id="firstHeading"></a>
+## The Application Menu   <a id="firstHeading"></a>
 
 ![](../../../.gitbook/assets/applicationmenu.PNG)
 

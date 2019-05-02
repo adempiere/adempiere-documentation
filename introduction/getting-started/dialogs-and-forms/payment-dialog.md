@@ -1,6 +1,6 @@
 # Payment Dialog
 
-The **Payment Dialog** provides a convenient way to complete a payment from a **Sales Order** or **Invoice**.  It is accessed by clicking on the button for the Payment Rule which can have a number of labels but will have a payment icon such as ![](../../../.gitbook/assets/payment24.gif) or ![](../../../.gitbook/assets/webui_paymenticon.PNG).
+The **Payment Dialog** provides a convenient way to complete a payment from a **Sales Order** or **Invoice**. It is accessed by clicking on the button for the Payment Rule which can have a number of labels but will have a payment icon such as ![](../../../.gitbook/assets/payment24.gif) or ![](../../../.gitbook/assets/webui_paymenticon%20%281%29.PNG).
 
 {% hint style="info" %}
 A Payment Rule is simply a description of how the order or invoice will be paid, for example, by cash, check or credit card.
@@ -13,7 +13,7 @@ This convenience is useful for sales that don't use a Point of Sale terminal and
 The button will also appear on Purchase Orders but will be limited to changing the Payment Rule on the Purchase Order.
 
 {% hint style="warning" %}
-This is a simple dialog intended for simple cases.  It is not recommended it be used to collect payments to settle a customer account, pay multiple invoices or for complex payment terms with payment schedules. 
+This is a simple dialog intended for simple cases. It is not recommended it be used to collect payments to settle a customer account, pay multiple invoices or for complex payment terms with payment schedules.
 {% endhint %}
 
 ### Restrictions
@@ -31,7 +31,7 @@ There are some restrictions:
 
 ### Setting the Payment Rule
 
-The Payment Dialog appears as a button, as shown above, displaying the payment icon \(![](../../../.gitbook/assets/payment24.gif)or ![](../../../.gitbook/assets/webui_paymenticon.PNG) \)and labeled with the currently selected method of payment.
+The Payment Dialog appears as a button, as shown above, displaying the payment icon \(![](../../../.gitbook/assets/payment24%20%281%29.gif)or ![](../../../.gitbook/assets/webui_paymenticon.PNG) \)and labeled with the currently selected method of payment.
 
 Clicking the button will open the Payment Dialog. If the source document is not Completed or Waiting Payment and not yet able or ready to accept payment, the Payment Dialog will appear as a combo box listing various payment rules or methods.
 
@@ -58,20 +58,20 @@ Below the combo box, there are two buttons:
 If the source document status is Completed or Waiting Payment, the Payment Rule button can be used to create and complete a payment. If a single invoice is involved, either as the source document or if related to the source Order, the payment will be allocated against the invoice.
 
 {% hint style="info" %}
-The Payment Rule button can be clicked multiple times and will create a new payment each time.  This is useful for mixed payments where, say, the customer wants to pay a portion by cash and the balance by credit card.
+The Payment Rule button can be clicked multiple times and will create a new payment each time. This is useful for mixed payments where, say, the customer wants to pay a portion by cash and the balance by credit card.
 {% endhint %}
 
-The _**Amount**_ field that appears will display the "unpaid" amount.  This is calculated as follows:
+The _**Amount**_ field that appears will display the "unpaid" amount. This is calculated as follows:
 
 * For an Order, If no Invoices are associated with the Order, the Amount will be the _**Grand Total**_ of the Order less any payments made towards that Order.
 * Otherwise, the Amount will be the Invoice Open Amount less any unallocated payments made towards the Order where the Order is the source document for the dialog or referenced directly from the Invoice if the Invoice is the source document.
 
-Some payment methods can be processed online if a suitable payment processor has been configured to manage the online transactions.  If a payment processor has not been configured, the online button will not function and a error will be displayed if it is clicked. Without an online process, some manual care is required to ensure that the payment record will match the actual payment. 
+Some payment methods can be processed online if a suitable payment processor has been configured to manage the online transactions. If a payment processor has not been configured, the online button will not function and a error will be displayed if it is clicked. Without an online process, some manual care is required to ensure that the payment record will match the actual payment.
 
-If the payment process was successful, a dialog will appear with the message "Created Payment: &lt;Payment Document No&gt;".  If there was an error, an error message will be displayed.
+If the payment process was successful, a dialog will appear with the message "Created Payment: &lt;Payment Document No&gt;". If there was an error, an error message will be displayed.
 
 {% hint style="warning" %}
-In most cases, if there is an error, no payment is created.  However, in the case where the online process succeeds but the system payment cannot be completed, the payment will be left as draft so that the user can troubleshoot the problem.
+In most cases, if there is an error, no payment is created. However, in the case where the online process succeeds but the system payment cannot be completed, the payment will be left as draft so that the user can troubleshoot the problem.
 {% endhint %}
 
 ### **Cash**
@@ -88,7 +88,7 @@ The Cash Payment requires
 | _**Account Date**_ | The date of the accounting consequences.  This will also be used as the date of the transaction.  The date may be different than the date of the source document.  The default is the current date. |
 | _**Amount**_ | The remaining unpaid amount for this document.  Note the restrictions and warnings above. |
 
-On clicking Confirm \(![](../../../.gitbook/assets/webui_iconconfirm.PNG)\), a cash payment will be created, completed and added to the selected Cash Journal.  If possible, the payment will be allocated towards an invoice. 
+On clicking Confirm \(![](../../../.gitbook/assets/webui_iconconfirm%20%282%29.PNG)\), a cash payment will be created, completed and added to the selected Cash Journal. If possible, the payment will be allocated towards an invoice.
 
 ### **Check**
 
@@ -107,10 +107,10 @@ The Check Payment fields require the following
 | _**Check No**_ | The check number.  Used for reference. |
 
 {% hint style="info" %}
-The system can be configured to overwrite the payment document number with the check information.  For a receipt, the resulting document number will look like : "&lt;Routing No&gt;: &lt;Account No&gt; &lt;Check No&gt;.  For payments, the outgoing check number will be used.
+The system can be configured to overwrite the payment document number with the check information. For a receipt, the resulting document number will look like : "&lt;Routing No&gt;: &lt;Account No&gt; &lt;Check No&gt;. For payments, the outgoing check number will be used.
 {% endhint %}
 
-On clicking ![](../../../.gitbook/assets/webui_iconconfirm.PNG) Confirm, the payment information will be saved adn allocated to the invoice if possible.
+On clicking ![](../../../.gitbook/assets/webui_iconconfirm%20%281%29.PNG) Confirm, the payment information will be saved adn allocated to the invoice if possible.
 
 ### **Credit Card**
 
@@ -118,7 +118,7 @@ If _Credit Card_ is selected in the Payment Rule combo, the Payment Dialog will 
 
 ![Example of a Credit Card Payment](../../../.gitbook/assets/webui_payformcreditcard.png)
 
-Select the appropriate credit card type from the combo box and fill in the other text fields. 
+Select the appropriate credit card type from the combo box and fill in the other text fields.
 
 The Credit Card fields require the following
 
@@ -146,7 +146,7 @@ The required fields are:
 | _**Partner Bank Account**_ | For Direct debits and deposits, a target bank account is required.  This is defined in the **Business Partner** window, **Bank Account** tab. |
 | _**Amount**_ | The amount of the payment. |
 
- Clicking the Online button will attempt to process the payment online if a suitable payment processor is configured. 
+Clicking the Online button will attempt to process the payment online if a suitable payment processor is configured.
 
 Clicking the confirm button will simply create a payment record but will not process the payment online.
 
@@ -155,6 +155,4 @@ Clicking the confirm button will simply create a payment record but will not pro
 The On Credit payment will only update the payment terms of the order or invoice. No payment is created.
 
 ![](../../../.gitbook/assets/webui_payformoncredit.png)
-
-
 

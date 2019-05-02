@@ -46,7 +46,7 @@ If you have more than one BOM for this Product, the Search Key will have to be u
 ### Default BOM
 
 {% hint style="warning" %}
-The BOM where the _**Search Key**_ matches the **Product** _**Search Key**_ will be considered the default BOM for the Product regardless of its _**BOM Type**_ or _**BOM Use**_ settings. 
+The BOM where the _**Search Key**_ matches the **Product** _**Search Key**_ will be considered the default BOM for the Product regardless of its _**BOM Type**_ or _**BOM Use**_ settings.
 {% endhint %}
 
 This default BOM is used:
@@ -69,7 +69,7 @@ The BOM can use any UOM \(Unit of Measure\) valid for the Product - meaning wher
 
 ## Change Notice
 
-The _**Change Notice**_  field is used to record the Change Notice that is/was being applied to the BOM. A Change Notice is a way to inform people that need to know about the change as to the reasons and nature of the change.
+The _**Change Notice**_ field is used to record the Change Notice that is/was being applied to the BOM. A Change Notice is a way to inform people that need to know about the change as to the reasons and nature of the change.
 
 The Change Notice information is passed to the Manufacturing Order when it is created.
 

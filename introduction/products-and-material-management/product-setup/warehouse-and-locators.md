@@ -39,7 +39,7 @@ Within each warehouse, replenishment rules can be established for each product. 
 
 ## Replenishment Process
 
-The replenishment rules are tested when the [**Replenish Report**](http://wiki.adempiere.net/ManPageR_ReplenishReport) _\*\*_is generated. The software that generates the report can also automatically generate the associated documents based on the replenishment rules assigned to the products in the warehouse including Distribution Orders, Inventory Moves, Purchase Orders, or Requisitions.
+The replenishment rules are tested when the [**Replenish Report**](http://wiki.adempiere.net/ManPageR_ReplenishReport) \_\*\*\_is generated. The software that generates the report can also automatically generate the associated documents based on the replenishment rules assigned to the products in the warehouse including Distribution Orders, Inventory Moves, Purchase Orders, or Requisitions.
 
 Where replenishment occurs from a source warehouse rather than procurement, the default source warehouse for the replenishment can be identified in the **Warehouse** window. This can be overridden for each product on the **Replenishment** tab.
 

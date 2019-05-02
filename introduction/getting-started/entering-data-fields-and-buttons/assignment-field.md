@@ -6,7 +6,7 @@ description: Assignment field description
 
 ![Assignment Field example](../../../.gitbook/assets/swing_field_assignmentexample.PNG)
 
-Icon: ![](../../../.gitbook/assets/assignment24.gif) 
+Icon: ![](../../../.gitbook/assets/assignment24%20%281%29.gif)
 
 The Resource Assignment field provides a way to assign resources to schedule slots. If a resource assignment exists, the field will show the resource name, the date of the assignment and the number of slots used or it will display the resource assignment ID.
 

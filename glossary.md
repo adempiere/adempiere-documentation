@@ -2,7 +2,7 @@
 
 ## Accounting Dimension
 
-An Accounting Dimension is a value that is included in the Accounting Facts. The value is drawn from a field on a document when the document is posted. Typical Accounting Dimensions in ADempiere include the Client, Organization, Business Partner, Product, Project, Campaign, and Activity.  The Accounting Dimensions are defined in the [**Accounting Dimension**](https://adempiere.github.io/functional-guide/window/window-accounting-dimensions.html) window.
+An Accounting Dimension is a value that is included in the Accounting Facts. The value is drawn from a field on a document when the document is posted. Typical Accounting Dimensions in ADempiere include the Client, Organization, Business Partner, Product, Project, Campaign, and Activity. The Accounting Dimensions are defined in the [**Accounting Dimension**](https://adempiere.github.io/functional-guide/window/window-accounting-dimensions.html) window.
 
 ## Accounting Facts
 

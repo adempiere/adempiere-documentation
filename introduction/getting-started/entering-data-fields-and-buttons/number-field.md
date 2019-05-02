@@ -6,7 +6,7 @@ description: The Number field
 
 ![Number field example](../../../.gitbook/assets/swing_field_numberexample.PNG)
 
-Icon: ![](../../../.gitbook/assets/calculator24.gif) 
+Icon: ![](../../../.gitbook/assets/calculator24.gif)
 
 Number fields provide a way to enter and display numeric values. There are several types:
 
