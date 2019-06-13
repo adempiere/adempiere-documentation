@@ -110,7 +110,7 @@ The Check Payment fields require the following
 The system can be configured to overwrite the payment document number with the check information. For a receipt, the resulting document number will look like : "&lt;Routing No&gt;: &lt;Account No&gt; &lt;Check No&gt;. For payments, the outgoing check number will be used.
 {% endhint %}
 
-On clicking ![](../../../.gitbook/assets/webui_iconconfirm%20%281%29.PNG) Confirm, the payment information will be saved adn allocated to the invoice if possible.
+On clicking ![](../../../.gitbook/assets/webui_iconconfirm%20%281%29.PNG) Confirm, the payment information will be saved and allocated to the invoice if possible.
 
 ### **Credit Card**
 
