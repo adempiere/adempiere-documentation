@@ -16,92 +16,9 @@ Data entered into a field is not processed until the field loses focus or, unles
 
 The fields and buttons are similar between the Web Application and the Java Client.
 
-## Binary
-
-Binary Data fields can be used to store pretty much anything that can be found in a computer's file system. The binary data is stored as a BLOB or Binary Large OBject. The Binary field appears in ADempiere as a [Button](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Button). Clicking the button will open the File Chooser and allow you select a BLOB \(any file\) and save it to the database. The button text will show the following:
-
-* "-" if there is no data stored
-* "\#xyz" where xyz is the size of the data in bytes
-* The name of the class object stored
-* "?" if the data is not byte data and not a class.
-
-If a blob is already saved, clicking the button will allow you to reverse the process and save the BLOB to the file system.
-
-ADempiere does not make direct use of Binary fields in windows and tabs but they are used by the software for [Attachments](http://wiki.adempiere.net/Attachment), Images, Migration scripts and class instances. However, nothing prevents you from using Binary fields in any custom windows and tabs you develop.
-
-> <table>
->   <thead>
->     <tr>
->       <th style="text-align:left"><a href="http://wiki.adempiere.net/File:Note.gif"><img src="http://wiki.adempiere.net/images/6/62/Note.gif" alt="Image:Note.gif"/></a>
->       </th>
->       <th style="text-align:left">
->         <p><b>Note:</b>
->         </p>
->         <p>PostgreSQL version 9 was recently released and is not backwards compatible
->           with earlier versions. One of the changes was in the manner that BLOBs
->           were stored in the database. We recommend you use PostgreSQL version 8.4
->           or earlier until we fix this.</p>
->       </th>
->     </tr>
->   </thead>
->   <tbody></tbody>
-> </table>
-
-\(Software: client/src org.compiere.grid.ed.VBinary.java\)
-
-## Button
-
-Buttons perform a command of some sort - starting a process, running a script or performing some other task.
-
-The Button is defined as a field in the database, but data may not be stored there. Instead, the record in the Column definition includes information that determines how the Button is to function. There are a few special cases.
-
-If the column name is:
-
-* **Record\_ID** \([![Image:Icon\_Zoom24.png](http://wiki.adempiere.net/images/7/7c/Icon_Zoom24.png)](http://wiki.adempiere.net/File:Icon_Zoom24.png)\), then the button performs the [Zoom](http://wiki.adempiere.net/Zoom) function, going directly to the default window and tab for that record. This is useful in situations where the current window is reporting on the status of another record, such as in the [Workflow](http://wiki.adempiere.net/Workflow) windows. The Record\_ID value is pulled from the context. There are a few special cases of this as well:
-  * If the current tab does not have a Record\_ID and the key column name is "AD\_Language", the Record\_ID is set to the AD\_Language\_ID value.
-  * If the current tab does not have a Record\_ID and the process associated with the Button is "Un-Do Changes" or "Re-Do Changes", then the Record\_ID is set to the AD\_Changelog\_ID.
-* **PaymentRule** \([![Image:Icon\_Payment24.png](http://wiki.adempiere.net/images/1/13/Icon_Payment24.png)](http://wiki.adempiere.net/File:Icon_Payment24.png)\), clicking the Button will pop-up the [Payment Dialog](http://wiki.adempiere.net/Payment_Dialog). If the invoice is not completed, the [Payment Dialog](http://wiki.adempiere.net/Payment_Dialog) will be limited to payments types. If the invoice is completed, the [Payment Dialog](http://wiki.adempiere.net/Payment_Dialog) will allow you to complete a full payment. This is very useful in POS applications when using POS Orders or Credit Orders with Invoice Indirect and immediate payment. The button text will reflect the payment method chosen.
-* **DocAction** \([![Image:Icon\_Process24.png](http://wiki.adempiere.net/images/e/eb/Icon_Process24.png)](http://wiki.adempiere.net/File:Icon_Process24.png)\), clicking the Button will open the [Document Action Dialog](http://wiki.adempiere.net/Document_Action_Dialog). This dialog allows you to set the status \(Drafted, In Progress, Completed, Closed, etc...\) of the document. Changing the status will trigger the associated workflow process, if any, the document processing engine and the accounting engine. The button text will reflect the next document action in the normal workflow.
-* **CreateFrom** \([![Image:Copy24.png](http://wiki.adempiere.net/images/c/c6/Copy24.png)](http://wiki.adempiere.net/File:Copy24.png)\) and there is no process associated with the Button, clicking the Button will open a [Create From Dialog](http://wiki.adempiere.net/Create_From_Dialog) where lines from an associated document can be selected and used to create lines in the current document. See the [Create From Dialog](http://wiki.adempiere.net/Create_From_Dialog) page for more information.
-* **Posted** \([![Image:Icon\_InfoAccount24.png](http://wiki.adempiere.net/images/b/be/Icon_InfoAccount24.png)](http://wiki.adempiere.net/File:Icon_InfoAccount24.png)\) and the User's role has **Show Accounting** in the [**Role Window**](http://wiki.adempiere.net/ManPageW_Role), then if the document is processed and posted, clicking the button will open the [Account Info](http://wiki.adempiere.net/Account_Info) dialog with the Select Document set to the current document. The accounting consequences or financial accounting details of the posting will be shown. Note that the **Re-post** button will be enabled. If the document has not been posted yet, clicking the button will open a dialog that asks "Post Immediate?". Confirming this dialog will cause the record to be posted. Typically, the Posted button is hidden and will only appear once the document has been completed, closed, reversed or voided. The label of the button will reflect the status of the posting.
-
-If none of the above apply, the software checks to see if a process is defined for the Button and attempts to run that process or invoke a custom form.
-
-Software:
-
-* client/src
-  * org.compiere.apps.APanel.java
-  * org.compiere.grid.ed.VButton.java
-
 ## Color
 
 A Color element provides a way to set a color in the database. The Color control appears as a button. Clicking the button will open a color dialog where the color properties can be set. Colors can be selected using the java swing JColorChooser tool.
-
-> <table>
->   <thead>
->     <tr>
->       <th style="text-align:left"><a href="http://wiki.adempiere.net/File:Note.gif"><img src="http://wiki.adempiere.net/images/6/62/Note.gif" alt="Image:Note.gif"/></a>
->       </th>
->       <th style="text-align:left">
->         <p><b>Note:</b>
->         </p>
->         <p>The only default use of the Color elements is in workbench and desktop
->           settings. Workbench and desktops are beta features and are not used in
->           the application - at least not in a way that is easily visible. The color
->           controls are not fully functional. Feel free to include Color elements
->           in customizations though.</p>
->       </th>
->     </tr>
->   </thead>
->   <tbody></tbody>
-> </table>
-
-Software:
-
-* base/src
-  * org.compiere.swing.ColorEditor.java
-* client/src
-  * org.compiere.grid.ed.VColor.java
 
 ## Date [![Image:Icon\_Calendar24.png](http://wiki.adempiere.net/images/5/52/Icon_Calendar24.png)](http://wiki.adempiere.net/File:Icon_Calendar24.png)
 
@@ -116,14 +33,6 @@ The pop-up menu displays the following options:
 * [![Image:Icon\_VPreference24.png](http://wiki.adempiere.net/images/b/b0/Icon_VPreference24.png)](http://wiki.adempiere.net/File:Icon_VPreference24.png) [Value Preference](http://wiki.adempiere.net/Value_Preference_Dialog)
 * [![Image:Icon\_ChangeLog24.png](http://wiki.adempiere.net/images/e/e1/Icon_ChangeLog24.png)](http://wiki.adempiere.net/File:Icon_ChangeLog24.png) [Change Log](http://wiki.adempiere.net/Change_Log)
 
-Software:
-
-* base/src
-  * org.compiere.util.DisplayType.java
-* client/src
-  * org.compiere.grid.ed.MDocDate.java
-  * org.compiere.grid.ed.VDate.java
-
 ## Date+Time [![Image:Icon\_Calendar24.png](http://wiki.adempiere.net/images/5/52/Icon_Calendar24.png)](http://wiki.adempiere.net/File:Icon_Calendar24.png)
 
 Date with time control is similar to the [Date](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Date) control but includes the time component with the full timestamp format of yyyy-MM-dd HH:mm:ss. The text field can't be edited directly so you have to click the button to open the [Calendar Tool](http://wiki.adempiere.net/Calendar_Tool) to enter the values.
@@ -134,19 +43,9 @@ See [Date](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Date) ab
 
 The FileName control is intended to hold a file name that can be found in the local default directories. Clicking the button will open the File Chooser dialog where you can select the file of interest. You can also enter the file name in the text field directly.
 
-Software:
-
-* client/src
-  * org.compiere.grid.ed.VFile.java
-
 ## FilePath [![Image:Icon\_Open24.png](http://wiki.adempiere.net/images/2/2e/Icon_Open24.png)](http://wiki.adempiere.net/File:Icon_Open24.png)
 
 Local File Path control is similar to the FileName control but is restricted to a directory path only - no file names. Clicking the button will open the File Chooser dialog where you can select the directory of interest. You can also enter the file path in the text field directly.
-
-Software:
-
-* client/src
-  * org.compiere.grid.ed.VFile.java
 
 ## ID [![Image:Icon\_Reset24.png](http://wiki.adempiere.net/images/a/a5/Icon_Reset24.png)](http://wiki.adempiere.net/File:Icon_Reset24.png)
 
@@ -179,11 +78,6 @@ The pop-up menu in a Business Partner ID field will display the following entrie
 
 See [Search](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Search) for more information.
 
-Software:
-
-* client/src
-  * org.compiere.grid.ed.VLookup.java
-
 ## Image
 
 Image fields can be used to display images that are stored in the database as binary data or linked to a URL. When the Image field is initially displayed, it will appear as a button with the text "-" displayed. Clicking on this button will open an Image dialog which appears as a small window as shown below.
@@ -195,12 +89,6 @@ The dialog has three buttons: the standard Cancel and Confirm, and a small butto
 Once an image is saved in the database, it will appear in the window/tab in place of the button. The image will be sized to fit within a box defined by the column width set for that column in that tab.
 
 Clicking the image again will re-open the Image dialog with the image loaded. To delete the image, click the Cancel button. Clicking the button with the file path/name will open the file chooser where you can select another image. Click Confirm to save that image to the database.
-
-Software:
-
-* client/src
-  * org.compiere.grid.ed.VImage.java
-  * org.compiere.grid.ed.VImageDialog.java
 
 ## Integer
 
@@ -245,12 +133,6 @@ The pop-up menu \(right-click\) provides options to:
 * [![Image:Icon\_Refresh24.png](http://wiki.adempiere.net/images/2/2a/Icon_Refresh24.png)](http://wiki.adempiere.net/File:Icon_Refresh24.png) Requery the field
 * [![Image:Icon\_ChangeLog24.png](http://wiki.adempiere.net/images/e/e1/Icon_ChangeLog24.png)](http://wiki.adempiere.net/File:Icon_ChangeLog24.png) View the [Change Log](http://wiki.adempiere.net/Change_Log)
 
-The software that controls this field is found in:
-
-* client/src
-  * org.compiere.grid.ed.VLocator.java
-  * org.compiere.grid.ed.VLocatorDialog.java
-
 ## Memo
 
 The Memo field will accept character strings up to 2000 characters. It is similar to the [Text](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Text) and [String](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#String) fields with the exception that it uses a text area with 80 columns width and a height of 50 rows and can't be encrypted. If the text in the field exceeds the size of the text area on the screen, scroll bars will appear.
@@ -260,11 +142,6 @@ The memo field will accept the focus but &lt;Tab&gt; characters will be entered 
 Typing &lt;Escape&gt; will reset the text to its previous value.
 
 The pop-up menu includes a single entry. If the Column name is "Script", the pop-up will point to the [Script](http://wiki.adempiere.net/Script_Editor_Tool) editor. Otherwise, it will point to the text [Editor](http://wiki.adempiere.net/Text_Editor_Tool).
-
-The software that controls this field is found in:
-
-* client/src
-  * org.compiere.grid.ed.VMemo.java
 
 ## Printer Name
 
@@ -289,12 +166,6 @@ The pop-up menu for the field will have entries to
 * [![Image:Icon\_ChangeLog24.png](http://wiki.adempiere.net/images/e/e1/Icon_ChangeLog24.png)](http://wiki.adempiere.net/File:Icon_ChangeLog24.png) [Change Log](http://wiki.adempiere.net/Change_Log)
 
 See [Product Attributes](http://wiki.adempiere.net/Product_Attributes) for more information.
-
-The software that controls this field is found in:
-
-* client/src
-  * org.compiere.grid.ed.PAttribute.java
-  * org.compiere.grid.ed.PAttributeDialog.java
 
 ## Quantity [![Image:Icon\_Calculator24.png](http://wiki.adempiere.net/images/d/db/Icon_Calculator24.png)](http://wiki.adempiere.net/File:Icon_Calculator24.png)
 
@@ -333,11 +204,6 @@ See also
 * [Table Direct](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Table_Direct)
 * [Lookup](http://wiki.adempiere.net/Lookup)
 
-Software:
-
-* client/src
-  * org.compiere.grid.ed.VLookup.java
-
 ## String
 
 String fields are one of the most common types of fields in the database. A String is simply a sequence of up to 2000 characters but it is intended for shorter amounts of information.
@@ -349,11 +215,6 @@ The pop-up menu \(right-click\) provides options to:
 * [![Image:Icon\_Edit24.png](http://wiki.adempiere.net/images/8/87/Icon_Edit24.png)](http://wiki.adempiere.net/File:Icon_Edit24.png) [Editor](http://wiki.adempiere.net/Text_Editor_Tool) \(Launches a text editor. Appears if the string length is greater than the displayed length.\)
 * [![Image:Icon\_VPreference24.png](http://wiki.adempiere.net/images/b/b0/Icon_VPreference24.png)](http://wiki.adempiere.net/File:Icon_VPreference24.png) [Value Preference](http://wiki.adempiere.net/Value_Preference_Dialog)
 * [![Image:Icon\_ChangeLog24.png](http://wiki.adempiere.net/images/e/e1/Icon_ChangeLog24.png)](http://wiki.adempiere.net/File:Icon_ChangeLog24.png) [Change Log](http://wiki.adempiere.net/Change_Log)
-
-The software that controls this field is found in:
-
-* client/src
-  * org.compiere.grid.ed.VString.java
 
 ## Table
 
@@ -379,11 +240,6 @@ See also
 * [Script Editor Tool](http://wiki.adempiere.net/Script_Editor_Tool)
 * [Text Editor Tool](http://wiki.adempiere.net/Text_Editor_Tool)
 
-The software that controls this field is found in
-
-* client/src
-  * org.compiere.grid.ed.VText.java
-
 ## Text Long
 
 The Text \(Long\) field is intended for Text &gt; 2000 characters in length. It is interpreted and presented as HTML text.
@@ -398,11 +254,6 @@ See also:
 * [Memo](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Memo)
 * [String](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#String)
 * [Text](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Text)
-
-The software that controls this field is found in
-
-* client/src
-  * org.compiere.grid.ed.VTextLong.java
 
 ## Time [![Image:Icon\_Calendar24.png](http://wiki.adempiere.net/images/5/52/Icon_Calendar24.png)](http://wiki.adempiere.net/File:Icon_Calendar24.png)
 

@@ -26,6 +26,8 @@
     * [Entering Data - Fields and Buttons](introduction/getting-started/entering-data-fields-and-buttons/README.md)
       * [Account Field](introduction/getting-started/entering-data-fields-and-buttons/account-field.md)
       * [Assignment Field](introduction/getting-started/entering-data-fields-and-buttons/assignment-field.md)
+      * [Binary Data Field](introduction/getting-started/entering-data-fields-and-buttons/binary-data-field.md)
+      * [Button Field](introduction/getting-started/entering-data-fields-and-buttons/button-field.md)
       * [Number Field](introduction/getting-started/entering-data-fields-and-buttons/number-field.md)
     * [Dialogs and Forms](introduction/getting-started/dialogs-and-forms/README.md)
       * [Account Dialog](introduction/getting-started/dialogs-and-forms/account-dialog.md)

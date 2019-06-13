@@ -11,13 +11,13 @@ description: Details on the main Tool Bar used in most windows.
 Most windows are organized the same way in ADempiere. At the top of the window is a tool bar of icons, shown above, that is common across all Windows.
 
 {% hint style="info" %}
-
 While the Web Application and the Java Client are mostly similar, there are a few differences. Specifically, the web application:
 
 * does not have both print and print-preview. In the Web Application there are the same thing so there is only one icon.
 * does not have a Home icon. 
 * does not have an Exit icon.
 * does have a button to allow "quicksheet" entry
+{% endhint %}
 
 The details of the various toolbar icons follow:
 
