@@ -27,59 +27,71 @@ You now have the main ADempiere project created. Changes to this project should 
 
 Fork the customization template project on GitHub from here: [https://github.com/adempiere/Customization-Template](https://github.com/adempiere/Customization-Template).
 
-Add the forked code as a new project to your IDE workspace that contains the ADempiere project you created above.
+Add the forked code as a new project to your IDE workspace that contains the ADempiere project you created above.   Then, modify the _**Project Properties**_ to point at the main ADempiere project.
 
-In the template, modify the utils\_dev/buildCustomization.properties file to point to the correct directories.
+![](../../.gitbook/assets/customizationbuildpathprojects.png)
 
-## General Customization
+### Customization of the Swing Interface
 
-Most of the code in the ADempiere project can be customized by replacing the project classes with new ones archived in the customization.jar file in ADEMPIERE\_HOME/lib. This will not affect the server or the ZK interface which have to be dealt with differently.
+For Swing, its pretty straight forward. Copy the source code you wish to customize from the main project, keeping the source directory structure the same. You can modify the code and then run the customization project to see the effects.  Many changes made while the code is running will be hot-swapped immediately.
 
-In the IDE, it is sufficient to copy the target source code, following the same directory structure, from the ADempiere project into your customization project and modify it there. When you run the customized application, you should see your changes.
+### Customization of the ZK Interface
 
-The template provide sample build scripts to archive the resulting customized class files into the customization.jar which you will need to add to your installation ADEMPIERE\_HOME/lib directory prior to running RUN\_Setup or RUN\_SilentSetup.
+To help reduce the delays in starting Tomcat every time you make a change, there is a trick you can use based on an article on the [Beyond Java blog.](https://www.beyondjava.net/eliminate-cumbersome-tomcat-deployment-waits) Using a file synchronization tool, you can copy updated classes to the Tomcat server without having to reload the entire server. You may lose the state of the application but you will not have to wait for 30 seconds or more after every change for the server to restart.
 
-## Customization of the ZK interface
+Download and install the [FileSync Eclipse plugin](https://marketplace.eclipse.org/content/filesync).
 
-Customization and debugging of the ZK interface is a bit more involved as the IDE needs ALL the classes in one project to run them on a server. To keep the customizations separate from the main ADempiere project requires a bit of work. In general, all the ZK classes needed to run the WebUI have to be copied to the customization project but you only need to copy the source for the classes you are customizing. There are scripts provided to help with this.
+In Eclipse, open the _**Window-&gt;Preferences**_ dialog and find the preferences for _**Run/Debug-&gt;String Substitution**_. Add a new variable and path as follows:
 
-As a demo, the template has only one file LoginPanel.java which changes the login header to "My Customization Works!". If you want to test with this demo, follow the instructions below but don't delete or overwrite this file in step 2 below.
+![Add ADEMPIERE\_PROJECT\_LOC as a String Substitution to the Eclipse Preferences.](../../.gitbook/assets/preferencescustomizationsettingsstrings.png)
 
-1. Delete all the contents of the zkwebui folder in the template except for the build\_custom.xml file.
-2. Copy the zkwebui directory from the ADempire project to the template. Be careful not to overwrite the build\_custom.xml file in the template. This will provide the same deployment structure as the main ADempiere project. \(This step is necessary and could be automated but risks overwriting your customization so it has been left as a manual process.\)
-3. Delete the zkwebui/WEB-INF/src source tree, leaving only the files you wish to customize. 
-4. Open the launch configuration "MyCustomizationProject InitializeZKCustomizations" which you will find in the directory tools/launchers. Replace the name of MyCustomizationProject with the actual name of your project in the launcher.  Run the launcher MyCustomizationProject InitializeZKCustomizations - this will copy all the classes needed from the adempiere project to the template. Depending on the version of ADempiere, you may need to modify the associated build.xml file. Note, if you run the build target by hand from the build file, don't forget to refresh the project files.
-5. If you are customizing zk, add a server and add the cutomization project to the server. In the server launcher, the class path for the user entries needs to include the following:
-6. C:/dev/apache/tomcat-6.0/bin/bootstrap.jar
-7. adempiereTrunk/tools/lib/jnlp.jar
-8. adempiereTrunk/tools/lib/javaee.jar
-9. adempiereTrunk/tools/lib/jcommon-1.0.18.jar
-10. adempiereTrunk/tools/lib/jfreechart-1.0.15.jar
-11. adempiereTrunk/tools/lib/log4j.jar
-12. adempiereTrunk/JasperReportsTools/lib/jasperreports-5.1.0.jar
-13. adempiereTrunk/tools/lib/c3p0-0.9.1.2.jar
-14. adempiereTrunk/tools/lib/iText-2.1.7.jar
-15. adempiereTrunk/tools/lib/poi-3.9-20121203.jar
-16. adempiereTrunk/lib/postgresql.jar
-17. adempiereTrunk/tools/lib/commons-net-1.4.0.jar
-18. adempiereTrunk/tools/lib/commons-collections-3.1.jar
-19. adempiereTrunk/tools/lib/barbecue-1.5-beta1.jar
+Next, make these variables available to the Ant build scripts by adding them to the _**Ant-&gt;Runtime**_ properties in the same _**Windows-&gt;Preferences**_ dialog.
 
-These are the defaults in the launcher included with the project. You will need to point the path in the launcher at the correct project name for the ADempiere project and you may have to add/change the libraries based on the version of ADempiere you are using.
+![Adding the variables to the Ant Runtime properties](../../.gitbook/assets/preferencesantruntimeproperties.png)
 
-## Testing with the template
+Delete all the contents of the zkwebui folder in the template except for the build\_custom.xml file. The template contains one source file in zkwebui/WEB-INF/src, Login.java, as an example. This simply changes the heading on the login window to "My Customization Works!". If you wish, you can leave this file in place.
 
-With the setup complete, the template should be good to go. You may need to update the build files to adjust to ADempiere versions. If you customize other directories than build and client, also copy the build.xml files from those directories in the ADempiere project and modify them to add the customized classes to the jar files. Compare the build.xml from the base directory in both the template and the ADempiere project.
+Copy the zkwebui directory from the ADempire project to the template. Be careful not to overwrite the build\_custom.xml file in the template. This will provide the same deployment structure as the main ADempiere project. \(This step is necessary and could be automated but risks overwriting your customization so it has been left as a manual process.\)
 
-If you launch the server, you should see the changes in the zk files. If you make any changes, you will have to restart the server to see them.
+In the _**Project Properties**_ for the template, verify that the Deployment Assembly for the template project matches the Deployment Assembly in the ADempiere project.  
+
+{% hint style="info" %}
+If you have doubts, simply copy the Deployment Assembly entries from the ADempiere project _.settings_/_org.eclipse.wst.common.component_  file to the same file in the template project.  Delete any _src_ directories that you won't be customizing and only keep the ones you will be using in the template.
+{% endhint %}
+
+Run the External Launcher _**MyCustomizationProject InitializeZKCustomizations**_ - this will copy all the classes needed from the ADempiere project to the template. Depending on the version of ADempiere, you may need to modify the associated build.xml file. \(If you do this by hand from the build file, don't forget to refresh the project files.\)
+
+Create a server and add the template to the server following the [same process](creating-webui-workspace-using-eclipse-webtool.md#setup-the-webtool) as for the ADepiere project. Open the server properties and note the location where the project will be deployed.  This will typically be a folder like the following:
+
+```text
+C:\dev\eclipse\custom-template-folder\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\MyCustomizationProject
+```
+
+In the project explorer, open the server folder and modify the context.xml file. Change the "context" tag to read
+
+```text
+<context reloadable="false">
+```
+
+This will prevent Tomcat from reloading the context/application every time there is a change.  It only affects the Eclipse Tomcat server and is not required on any production server.
+
+Open the Project Properties and update the File Synchronization properties. Add the folder "MyCustomizationProject/zkwebui" as the source and set the target to the deployment location of the server. 
+
+![](../../.gitbook/assets/preferencescustomizationsettingssync.png)
+
+Publish the project to the server then, Open the server configuration and set the publishing setting to "Never publish".  Any changes made after this will be managed by the FileSync plugin.
+
+![](../../.gitbook/assets/serverneverpublish.png)
+
+### Testing with the Template
+
+With the template setup you should be good to go. You may need to update the build files to adjust to ADempiere versions. If you customize other directories than build and client, also copy the build.xml files from the ADempiere project and modify them to add the customized classes to the jar files. Compare the build.xml from the base directory in both the template and the ADempiere project to see how and what to change.
+
+If you launch the server, you should see the changes in the zk files. When you make a change, the file synchronization should publish this immediately and you will see the effects when you refresh the web page. You may lose the context and have to log-in again.
 
 The launcher for the client will run the client as per the main project. Here, most changes you make will be hot-swapped into the application which is really nice for development.
 
 ## Exporting the Customization Jars
 
-When your customization is ready, there is a launcher to build the customization jars. The two files customization.jar and zkcustomization.jar will be added to the lib directory. You can add these to the lib directory of the ADempiere installation \(ADEMPIERE\_HOME/lib\) and execute the setup \(RUN\_Setup or RUN\_SilentSetup\) to see the changes.
-
-**References**: [http://en.wikiversity.org/wiki/Adempiere\_Technical\_Training\#Project\_Customization\_Management\_Hints](http://en.wikiversity.org/wiki/Adempiere_Technical_Training#Project_Customization_Management_Hints)
-
-Enjoy !
+When your customization is ready, there is a launcher to build the customization jars. The two files customization.jar and zkcustomization.jar will be added to the lib directory. You can add these to the lib directory of a deployed ADempiere installation \(ADEMPIERE\_HOME/lib\) and execute the setup \(RUN\_Setup or RUN\_SilentSetup\) to see the changes.
 
