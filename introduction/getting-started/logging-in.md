@@ -4,7 +4,7 @@
 
 After [Launching the ADempiere Application](launching-the-application.md) the login dialog will appear. This dialog has two tabs, a [Connection Tab](logging-in.md#connection-tab) and a [Default Tab](logging-in.md#defaults-tab). Before you can set the defaults, you must complete the connection by logging in. Enter you user name and password and click the green check mark \( ![](../../.gitbook/assets/icon_ok24.png) \) called "Confirm". If you don't have a user name, you can use one of the default names as shown below. For the first time, just confirm the defaults that appear and move on to [Finding Your Way Around](finding-your-way-around.md).
 
-| ![](../../.gitbook/assets/note%20%282%29.gif) | The icon ![](../../.gitbook/assets/icon_ok24%20%281%29.png) and ![](../../.gitbook/assets/icon_cancel24.png) at the bottom of each page will confirm/process or cancel the dialog respectively. |
+| ![](../../.gitbook/assets/note-2%20%285%29.gif) | The icon ![](../../.gitbook/assets/icon_ok24-1.png) and ![](../../.gitbook/assets/icon_cancel24.png) at the bottom of each page will confirm/process or cancel the dialog respectively. |
 | :--- | :--- |
 
 
@@ -25,7 +25,7 @@ For more information about using the Garden World client when you first log on, 
 
 ### Connection Tab
 
-![ADempiere Login Connection Tab](../../.gitbook/assets/image%20%282%29.png)
+![ADempiere Login Connection Tab](../../.gitbook/assets/image-2%20%281%29.png)
 
 | **Field** | **Description** |
 | :--- | :--- |
@@ -81,7 +81,7 @@ When you click in the Server field in the Connection tab of the login dialog, th
 
 ![Connection Test Dialog](../../.gitbook/assets/login_connection_test.jpg)
 
-> \| ![](../../.gitbook/assets/note%20%281%29.gif) \| Please talk with your system administrator if you don't know how to manage this window. In order to use the Connection Test Dialog, the ADempiere Application Server must be running and the database service must be available. \| \| :--- \| :--- \|
+> \| ![](../../.gitbook/assets/note-1%20%283%29.gif) \| Please talk with your system administrator if you don't know how to manage this window. In order to use the Connection Test Dialog, the ADempiere Application Server must be running and the database service must be available. \| \| :--- \| :--- \|
 
 | **Field** | **Description** |
 | :--- | :--- |

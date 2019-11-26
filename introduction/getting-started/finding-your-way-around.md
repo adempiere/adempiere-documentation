@@ -8,7 +8,7 @@ description: >-
 
 Once you log in, you will be presented with a window that may have three or four tabs as shown below. If performance measures are defined, the Performance tab will be visible and shown. Otherwise, the first tab displayed will be the Menu.
 
-![The initial window showing the performance measures.](../../.gitbook/assets/image%20%287%29.png)
+![The initial window showing the performance measures.](../../.gitbook/assets/image-7%20%281%29.png)
 
 Some things to note as you look at the window for the first time:
 
