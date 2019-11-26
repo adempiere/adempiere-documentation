@@ -61,7 +61,7 @@ If you have doubts, simply copy the Deployment Assembly entries from the ADempie
 
 Run the External Launcher _**MyCustomizationProject InitializeZKCustomizations**_ - this will copy all the classes needed from the ADempiere project to the template. Depending on the version of ADempiere, you may need to modify the associated build.xml file. \(If you do this by hand from the build file, don't forget to refresh the project files.\)
 
-Create a server and add the template to the server following the [same process](creating-webui-workspace-using-eclipse-webtool.md#setup-the-webtool) as for the ADepiere project. Open the server properties and note the location where the project will be deployed.  This will typically be a folder like the following:
+Create a server and add the template to the server following the [same process](creating-webui-workspace-using-eclipse-webtool.md#setup-the-webtool) as for the ADempiere project. Open the server properties and note the location where the project will be deployed.  This will typically be a folder like the following:
 
 ```text
 C:\dev\eclipse\custom-template-folder\.metadata\.plugins\org.eclipse.wst.server.core\tmp1\wtpwebapps\MyCustomizationProject
