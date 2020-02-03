@@ -18,5 +18,5 @@ If you are reading this, you are already part of our community. To join our effo
   * Fix a bug.  Check out the project issues on Github.  Choose a bug and solve it, as a good initiation to ADempiere source code and development process.
   * Get involved in [Bug Triage](http://wiki.adempiere.net/Bug_Triage)  or [ADempiere Bug Day](http://wiki.adempiere.net/ADempiere_Bug_Day)
 * Donations
-  * If you wish to donate money, please do so through donation to the [ADempiere Foundation](http://www.adempiere.net/en/web/guest/thefoundation), our non-profit organization based in Berlin.
+  * If you wish to donate money, please do so through donation to the [ADempiere Foundation](http://www.adempiere.net/en/web/guest/thefoundation), our non-profit organization based in Berlin and Canada.
 

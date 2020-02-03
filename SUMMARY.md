@@ -96,6 +96,7 @@
   * [Becoming a Developer](developer-guide/becoming-a-developer.md)
   * [Software Development Procedure](developer-guide/software-development-procedure.md)
   * [ADempiere Version Control](developer-guide/adempiere-version-control.md)
+  * [ADempiere Best Practices](developer-guide/adempiere-best-practices.md)
   * [Development Environments](developer-guide/development-environments/README.md)
     * [Creating WebUI Workspace using Eclipse Webtool](developer-guide/development-environments/creating-webui-workspace-using-eclipse-webtool.md)
     * [Customization Environment](developer-guide/development-environments/customization-environment.md)

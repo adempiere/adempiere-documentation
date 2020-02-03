@@ -69,7 +69,7 @@ Here, a couple of important definitions are introduced shortly to help the under
     * These branches always have a limited life time
     * Since they will be removed eventually.
 
-[![Image:ADempiere\_Repository\_Structure.png](http://wiki.adempiere.net/images/1/13/ADempiere_Repository_Structure.png)](http://wiki.adempiere.net/File:ADempiere_Repository_Structure.png)
+![ADempiere Repository Structure](../.gitbook/assets/adempiere_repository_structure.png)
 
 ### Software Production Cycle
 
