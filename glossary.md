@@ -8,6 +8,14 @@ An Accounting Dimension is a value that is included in the Accounting Facts. The
 
 An Accounting Fact or just Fact is the results of a document posting. It includes all the information about the accounts and Dimensions used and the debit/credit information. The Facts are the basis of financial reports and can be traced back to the documents that created them. Facts are also referred to as Accounting Consequences.
 
+## AD
+
+Short form for the [**A**pplication **D**ictionary](system-administration/the-application-dictionary.md)**.**
+
+## Application Dictionary
+
+A collection of meta-data that defines the look and behavior of the application.  Nearly every aspect of the ADempiere interface and functionality is defined by the Application Dictionary.  The application can also be easily extended with new functionality by adding to the Application Dictionary.  Also referred to as simply the "AD".
+
 ## Application Server
 
 A software program running on a server that provides a web interface or access to a Java Client. The Application Server also performs system and client processes as required - for example, the off-line posting of documents.
@@ -39,6 +47,10 @@ The process of making repeated and insistent demands upon a customer, especially
 ## Dunning Run
 
 A collection of information and also the process of collecting information for the purposes of Dunning.
+
+## Entity Type
+
+An entity type defines the "entity" or owner of a particular entry in the Application Dictionary.  The owner has responsiblity for the entry.  Entity Types "Dictionary" and "Adempiere" are reserved for the application developers and all Application Dictionary entries using these Entity Types will be overwritten every time the application is migrated to a new version.
 
 ## Identifier
 
