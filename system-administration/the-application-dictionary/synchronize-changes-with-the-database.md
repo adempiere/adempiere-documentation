@@ -10,6 +10,10 @@ description: >-
 
 Records in the Application Dictionary for Columns or Tables describe actual columns and tables in the database.  It is important that the Application Dictionary accurately reflects the structure of the database.  If it didn't the application may, for example,  try to access data from a column that doesn't exist. 
 
+{% hint style="danger" %}
+It is not recommended to make changes that require synchronization in a production environment, especially when there are many users connected to the database.  The synchronization transaction that applies the DLL changes can cause locks on the tables that may make the application feel slow for the duration of the transaction.  Its best to make the changes off-line or in a development environment and then migrate the changes to the production system using the XML migration scripts or the pack-out/in  functionality. 
+{% endhint %}
+
 ## How to Synchronize Changes
 
 Every time you make a change in the Application Dictionary that affects a column or table definition, the changes have to be synchronized with the database.  There are three ways to do this:
