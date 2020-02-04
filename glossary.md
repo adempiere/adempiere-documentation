@@ -10,7 +10,7 @@ An Accounting Fact or just Fact is the results of a document posting. It include
 
 ## AD
 
-Short form for the [**A**pplication **D**ictionary](system-administration/the-application-dictionary.md)**.**
+Short form for the [**A**pplication **D**ictionary](system-administration/the-application-dictionary/)**.**
 
 ## Application Dictionary
 

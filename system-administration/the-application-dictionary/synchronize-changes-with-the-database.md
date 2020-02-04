@@ -28,9 +28,9 @@ Every time you make a change in the Application Dictionary that affects a column
 
 When you add a table for the first time, a number of columns are automatically  added to the **Column** tab for that table.  You might also create columns of your own.  When you click the _**Synchronize Column**_ button, the application will check to see if the table exists in the database and, if not, will create the table and **all** the columns, not just the column shown in the **Column** tab.  If the table exists, only the current column is synchronized.
 
-![Column tab of the Table window](../.gitbook/assets/webui_sync_synccolbutton.png)
+![Column tab of the Table window](../../.gitbook/assets/webui_sync_synccolbutton.png)
 
-![Synchronize Column process triggered from the button on Column tab.](../.gitbook/assets/webui_sync_synccolprocess.png)
+![Synchronize Column process triggered from the button on Column tab.](../../.gitbook/assets/webui_sync_synccolprocess.png)
 
 After the process has run, the results will display the DDL commands used to update the database.
 
@@ -38,7 +38,7 @@ After the process has run, the results will display the DDL commands used to upd
 If you are adding or changing  a number of columns in a table that has been synchronized in the past, you will have to synchronize each new or modified column in turn.
 {% endhint %}
 
-![Results of the Synchronize Column process showing the SQL commands used to update the database.](../.gitbook/assets/webui_sync_synccolprocessresult.png)
+![Results of the Synchronize Column process showing the SQL commands used to update the database.](../../.gitbook/assets/webui_sync_synccolprocessresult.png)
 
 ### Using the Process Synchronize All Tables and Columns
 
