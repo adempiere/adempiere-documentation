@@ -12,32 +12,11 @@ Several of the fields have helper functions, indicated by an icon/button at the 
 
 Unless noted in the field notes, most fields will accept and lose the focus as the &lt;Tab&gt; key is typed on the keyboard. When buttons have the focus, the buttons can be activated by typing the &lt;Space&gt; key. Each field also controls the pop-up menu that appears when the mouse is right-clicked over the field.
 
-Data entered into a field is not processed until the field loses focus or, unless noted in the field notes, the &lt;Enter&gt; key s typed.
+Data entered into a field is not processed until the field loses focus or, unless noted in the field notes, the &lt;Enter&gt; key is typed.
 
 The fields and buttons are similar between the Web Application and the Java Client.
 
-## Color
-
-A Color element provides a way to set a color in the database. The Color control appears as a button. Clicking the button will open a color dialog where the color properties can be set. Colors can be selected using the java swing JColorChooser tool.
-
-## Date [![Image:Icon\_Calendar24.png](http://wiki.adempiere.net/images/5/52/Icon_Calendar24.png)](http://wiki.adempiere.net/File:Icon_Calendar24.png)
-
-The Date control maintains data as a time stamp in a format consistent with the locale and language of the user's system. The format definitions follow the Java class [SimpleDateFormat](http://download-llnw.oracle.com/javase/6/docs/api/java/text/SimpleDateFormat.html). If no default format is found, the JDBC standard will be used "yyyy-MM-dd". Local formats will be converted to contain at least "dd" and "MM" numbers in the format code. Year codes will be increased to at least four digits.
-
-The Date control operates like a text field where data can be input by keyboard entry. The digit being entered is enclosed in blue square brackets and format characters are ignored - just type the numbers.
-
-Alternatively, the [Calendar Tool](http://wiki.adempiere.net/Calendar_Tool) can be opened and used to enter a date.
-
-The pop-up menu displays the following options:
-
-* [![Image:Icon\_VPreference24.png](http://wiki.adempiere.net/images/b/b0/Icon_VPreference24.png)](http://wiki.adempiere.net/File:Icon_VPreference24.png) [Value Preference](http://wiki.adempiere.net/Value_Preference_Dialog)
-* [![Image:Icon\_ChangeLog24.png](http://wiki.adempiere.net/images/e/e1/Icon_ChangeLog24.png)](http://wiki.adempiere.net/File:Icon_ChangeLog24.png) [Change Log](http://wiki.adempiere.net/Change_Log)
-
-## Date+Time [![Image:Icon\_Calendar24.png](http://wiki.adempiere.net/images/5/52/Icon_Calendar24.png)](http://wiki.adempiere.net/File:Icon_Calendar24.png)
-
-Date with time control is similar to the [Date](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Date) control but includes the time component with the full timestamp format of yyyy-MM-dd HH:mm:ss. The text field can't be edited directly so you have to click the button to open the [Calendar Tool](http://wiki.adempiere.net/Calendar_Tool) to enter the values.
-
-See [Date](http://wiki.adempiere.net/Entering_Data_-_Fields_and_Buttons#Date) above for more information.
+## 
 
 ## FileName [![Image:Icon\_Open24.png](http://wiki.adempiere.net/images/2/2e/Icon_Open24.png)](http://wiki.adempiere.net/File:Icon_Open24.png)
 
