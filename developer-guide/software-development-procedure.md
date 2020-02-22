@@ -121,15 +121,21 @@ In summary:
 
 * The Maintainer manages the main repository \([https://github.com/adempiere/adempiere\](https://github.com/adempiere/adempiere%29\)
 * Developers should have their own account on GitHub.
-* Developers fork the main repository on GitHub to their personal account \([https://github.com/&lt;developerAcct&gt;/adempiere\](https://github.com/<developerAcct>/adempiere%29\) and make a local clone of their personal fork.
-* If the developer is working with Jira a lot, they should link their GitHub account with the project Jira account. This requires the help of a Jira administator so ask in the Developers forum. There is a good \(if you don't mind elevator music\) [video tutorial](https://www.youtube.com/watch?v=SCNWWfXpCw0) on youtube showing what is involved.
-* Working on their local clone, developers can open a new “feature” branch or contribute to any other branch using the Gitflow Workflow' model.
-* Developers commit to their local clone and push to their fork using well documented commits. To use the smart commits that link to the Jira issues, follow the [instructions on the Atlassian site](https://confluence.atlassian.com/display/Cloud/Processing+JIRA+issues+with+commit+messages). It is important to use the uppercase references \(e.g. ADEMPIERE-123\) in the commit messages. Read the instructions for more information.
+* Developers fork the main repository on GitHub to their personal account \([https://github.com/&lt;developerAcct&gt;/adempiere](https://github.com/<developerAcct>/adempiere%29\)\) and make a local clone of their personal fork.
+* Issues are tracked in GitHub on the main repository.  Commits that relate to that issue should include the hashtag for the issues \(e.g. \#123\).
+* Working on their local clone, developers should create a new branch for their work to correct an issue \(for example "fix/\#123\_myfix"\) or create a new “feature” branch.   These should branch from the most resent commits on the target branch that their work will be eventually be added to.  
+* Developers commit to their local clone and push to their fork using well documented commits.  Read the Github instructions for more information.
 * To have their work merged into the main repository, developers issue a pull request from their GitHub account. This will initiate a discussion with other developers, leading to the inclusion of the new work.
 
-> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**While the main repository will be following the branch naming very closely, developers are encouraged to use more descriptive names for their branches and to develop these "tracking" branches from a recent point on the Adempiere \(origin\) project. The branch should contain only the changes relevant to the pull request and the pull request should target the correct branch on the origin repository. Once the pull request has been accepted and closed the tracking branch can be deleted. \(Branches in git are only pointers so deleting the branch tag leaves all the history intact.\) \| \| :--- \| :--- \|
+{% hint style="info" %}
+While the main repository will be following the branch naming very closely, developers are encouraged to use more descriptive names for their branches and to develop these "tracking" branches from a recent point on the Adempiere \(origin\) project \(the "target" branch\). The branch should contain only the changes relevant to the pull request and the pull request should target the correct branch on the origin repository. Once the pull request has been accepted and closed the tracking branch can be deleted. \(Branches in git are only pointers so deleting the branch tag leaves all the history intact.\)
+{% endhint %}
 
-#### Technical Team
+{% hint style="warning" %}
+While developers can work on any branch, the pull requests have to be made in sequence if more than one is made from a single branch.  This can get confusing.  Even if both pull requests have a single commit, the second one created will include the first making it difficult to reject the first and accept the second.  Best to keep the source for the pull requests on unique branches if possible.
+{% endhint %}
+
+### Technical Team
 
 Calculate 4 hours minimum work per week
 
@@ -164,7 +170,7 @@ Note: More detail in features branches section
 * Gabriel Vila
 * Mike McKay
 
-**Release Manager**
+### **Release Manager**
 
 **Responsibilities**
 
@@ -180,7 +186,7 @@ Note: More detail in features branches section
 
 Note: More detail in release branches section
 
-#### Functional team
+### Functional team
 
 Calculate 4 hours minimum work per week
 
@@ -221,11 +227,11 @@ There are already other teams that could be integrated into this Integration Pro
 * In exception to the Software Production Cycle there is also the possibility to apply hotfixes
 * Technical and functional team can approve that hotfixes go directly to “master” branch and “development” branches
 
-Note: More detail in Hotfix branches section
-
 ### Service Pack
 
-> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**Needs discussion. \| \| :--- \| :--- \|
+{% hint style="info" %}
+Service Packs haven't been used and this section needs more discussion.
+{% endhint %}
 
 The Technical Team agreed to maintain only one Service Pack of a former version. It would be great to support for several years \(typical for this kind of applications\) but our community’s resources are scarce.
 
@@ -233,16 +239,9 @@ A Service Pack can be obtained by comparing the tag of the released version with
 
 ### Reverting policy
 
-> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**Needs discussion. Is it relevant with the new methods? \| \| :--- \| :--- \|
+Code that has been accepted by a pull request but subsequently found to have errors or other problems can be reverted.  This will be done by the repository maintainers with the concurrence of the Technical Team.
 
-* Technical team has the responsibility to revert code that has been committed without approval
-* The revert should be motivated precisely and without any doubt.
-* Any other person outside of the technical team \(including the functional team\) is not allowed to revert, but is advised to call for a revert by specifying the concrete reasons.
-* The revert procedure will use the repository facility that allows posts history and the reason of the revert, so a change set or commit are necessary to execute the revert.
-
-### Team Policy
-
-> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**Needs discussion. \| \| :--- \| :--- \|
+## **Team Policy**
 
 #### Voting
 
@@ -262,7 +261,7 @@ As there might be changes to the version control software \(e.g. switching to me
 The only thing that the teams are not allowed to change and that is hereby voted and enforced by the citizens is
 
 * Features need always approval before they hit the main line of development to avoid excessively number of reverts  =&gt; Goals "reduce overhead caused by reverts for unfinished features" and "clear rules how to get repository code "
-* The aim should always be high quality of the software. If a feature is putting the quality of the adempiere to risk it should not be approved.  =&gt; Goals "produce high quality ERP software" and "an all the time stable version"
+* The aim should always be high quality of the software. If a feature is putting the quality of the ADempiere to risk it should not be approved.  =&gt; Goals "produce high quality ERP software" and "an all the time stable version"
 * New features need to be applied with documentation for users and developers  =&gt; Goal "documentation for all new features"
 * The power to take decisions and organizing processes should be with teams and not single persons.  =&gt; Goals "teams are to be responsible not single persons" and "lean project organisation"
 * Team members need to dedicate a minimum amount of hours per week to the work. They need to agree on that before they become part of the team.  =&gt; Goal "continuous and reliable progress"
@@ -383,36 +382,21 @@ Automated testing of ADempiere is also performed using test scripts that cover t
 
 See [managing pull requests](https://help.github.com/articles/using-pull-requests/), [pull requests tutorial](https://yangsu.github.io/pull-request-tutorial/) and [What Is A Pull Request](http://oss-watch.ac.uk/resources/pullrequest).
 
-If you want to fix a bug you can do it two ways
+If you want to fix a bug, follow this process:
 
-* if you are an ADempiere developer, you have tested your code thoroughly and you are sure of what you've done: just do the commit and the push in the corresponding branch after consulting the Technical and Functional Team.
-
-This is described below.
-
-1. Open a console or terminal.
-2. Create a backup for example with the command cp adempiereSource adempiere.bak
-3. Go to the sources for example with cd adempiereSource
-4. Execute git pull
-5. Execute git checkout hotfix/3.8.0\#002. This is because you want the bug fix applies to this very branch. If there is another branch you want the bug fix to be applied, just modify the checkout command accordingly.
-6. Do changes and modifications towards bug fixing in the branch \(in our case hotfix/3.8.0\#002\).
-7. Execute git commit -m 'my comments to the bug fixing, with reference to the altlassian/github site were the bug was created'
-8. Execute git push
-9. In the [github Adempiere page](https://github.com/adempiere/adempiere/) you can create a pull request for this commit. This pull request can be used in other branches.
-10. For new hotfixes, all patches will be collected and tested, and a collection of all patches \(patches.jar\) will be created for the branch. contribute.
-11. **if you are not** an ADempiere developer or you are an ADempiere developer, but you don't want to commit nor push it directly because you want others to check it before committing and pushing:
-12. you must create a branch where you want do the bug fix.
-13. do the modifications there
-14. create a pull request in your branch.
-15. Your pull request can be used in other branches
-
-This is an effective ans easy way of collaboration, where developers and non-developers can contribute.
+1. In your local clone of your adempiere fork in GitHub, switch to the branch you want to change.
+2. Execute git pull from the same branch in the  Adempiere project to get the latest code.
+3. Checkout the local branch or \(preferred\) create a new branch to hold your changes.
+4. Do whatever changes and modifications are required to fix the bug in this branch.
+5. Commit the changes with a comment that well describes what was changed.  As much as possible, try to keep the commits limited to Execute git commit -m 'my comments to the bug fixing', with reference to the github site were the bug was created
+6. Execute git push
+7. In the [github Adempiere page](https://github.com/adempiere/adempiere/) you can create a pull request for this commit using the Adempiere project branch as the target and your modified branch as the source.  The original issue can be closed automatically if the pull request comments include a phrase "Fixes \#123"
+8. Other developers can then review your work and recommend it be included in the target branch.
 
 ## Bibliography
 
 * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 * [Git cheetsheet](http://www.globallinuxsecurity.pro/static/git/cheetsheet.pdf)
 * [GitHub Forking Projects](https://guides.github.com/activities/forking/)
-* [Atlassian Comparison of Software Development Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
-* [A youtube video on using the Jira DVCS connector](https://www.youtube.com/watch?v=SCNWWfXpCw0)
 * [GitHub introduction to the Flow model which describes the Pull Requests](https://guides.github.com/introduction/flow/)
 
