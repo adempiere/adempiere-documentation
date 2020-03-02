@@ -38,6 +38,38 @@ The install sets the start-up options as manual. You will need to open the Servi
 
 Once the Service is running, you can move on to [Launching the ADempiere Application](launch-the-application-server.md).
 
+## As a Service on Linux
+
+ADempiere can be setup a service on Ubuntu using systemd. 
+
+ Create a file called "adempiere.service" under the /lib/systemd/system/ directory
+
+```text
+[Unit] Description=Task that runs the ADempiere ERP Service After=network.target After=systemd-user-sessions.service After=network-online.target
+[Service] Environment=ADEMPIERE_HOME=/opt/Adempiere Type=forking ExecStart=/opt/Adempiere/utils/RUN_Server2.sh ExecStop=/opt/Adempiere/utils/RUN_Server2Stop.sh TimeoutSec=30 Restart=on-failure RestartSec=30 StartLimitInterval=350 StartLimitBurst=10
+[Install] WantedBy=multi-user.target
+```
+
+With the service defined, you can run the following commands to control it. You will need to run these as root or using `sudo`
+
+| Command | Purpose |
+| :--- | :--- |
+| `systemctl daemon-reload`  | Loads the new service |
+| `systemctl start adempiere` | Starts the ADempiere service. |
+| `service adempiere status` | Show the status of the ADempiere service |
+| `systemctl enable adempiere` | Enable the ADempiere service to it will restart on the next reboot/restart event. |
+| `systemctl stop adempiere` | Stop the ADempiere service |
+| `systemctl disable adempiere` | Turns the ADempiere service off at the next reboot/restart event. Prevents the ADempiere service from restarting. |
+| `systemctl is-enabled adempiere` | Use this to check if the service is currently configured to start or not on the next reboot. |
+
+{% hint style="info" %}
+The systemd script may fail if the memory runs out.  When the heap is full for some reason, the stop script will fail.   In that case,  try kill -9 using the service PID, wait for a few seconds then start the service again. System Administrators should add a health check to handle this condition.
+{% endhint %}
+
+If the server started with no errors, you can move on to [Launching the ADempiere Application](../../../introduction/getting-started/launching-the-application.md).
+
+\(Thanks to [@pmdw](https://github.com/pmdw) and [Horacio Miranda @piracio](https://github.com/piracio) for their contribution.\)
+
 ## Using nohup on Linux Systems
 
 For other operating systems, check ADEMPIERE\_HOME/utils/unix or use the Linux nohup command \(no hangup\) as follows:
@@ -62,9 +94,13 @@ If the server started with no errors, you can move on to [Launching the ADempier
 
 ## Trouble Shooting
 
-Check the logs for errors. They are located at ADEMPIERE\_HOME/jboss/server/adempiere/logs or ADEMPIERE\_HOME/jboss/bin.
+Check the logs for errors. 
 
-The most common problems are with ports already in use. Typical conflicting ports are:
+For JBoss, the logs are located at ADEMPIERE\_HOME/jboss/server/adempiere/logs or ADEMPIERE\_HOME/jboss/bin.
+
+For Tomcat, you will find them in ADEMPIERE\_HOME/tomcat/log/Catalina.out.
+
+The most common problems are with ports that are already in use. Typical conflicting ports are:
 
 * HTTP: 80, 443, 8080, 8443
 * RMI : 1098, 1099
