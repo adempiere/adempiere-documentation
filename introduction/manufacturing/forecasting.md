@@ -117,14 +117,7 @@ The historical sales information is used to realize the forecast calculus and to
 
 The Forecasting Rules define the mathematical and statistical methods that are available to calculate the forecast given a set of Sales History data.  These rules are used in the Forecast Definition to define how the forecast will be calculated. There are nine rules provided in the core application but it is possible to extend these with others by providing the appropriate software classes.  The rules are described in detail in [Engineering Statistics Handbook, 6.4 Introduction to Time Series Analysis](https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc4.htm) by Author Steven R. Gould.  The summaries below are taken from this reference.
 
-In the **Forecast Definition** window, the Simulation parameters can be entered.  How these parameters apply to the Rules depends on the rule.  A summary of which rule uses which parameters is shown in the table below.
-
-| Rule ... | Uses Parameter ... | To ... |
-| :--- | :--- | :--- |
-| Moving Average | _**User Factor**_ |  _****_Define the number of periods to average.  F |
-| Single Exponential Smoothing | _**Factor Alpha**_ | Define the smoothing constant. This is a value from 0 to 1. The higher the number, the faster the dampening or weight given to data. |
-| Double Exponential Smoothing | _**Factor Alpha**_ | Define the smoothing constant. This is a value from 0 to 1. The higher the number, the faster the dampening or weight given to data. |
-|  | _**Factor Gamma**_ | Define the trend smoothing constant. This is a value from 0 to 1. The higher the number, the faster the dampening or weight given to data. |
+In the **Forecast Definition** window, the Simulation parameters can be entered.  How these parameters apply to the Rules depends on the rule.  
 
 ### Moving Average
 
@@ -248,13 +241,11 @@ Due to the simplistic nature of the naive forecasting model, it can only be used
 
 This really is a simplistic model, and is included partly for completeness and partly because of its simplicity. It is unlikely that you'll want to use this model directly. Instead, consider using either the moving average model, or the more general weighted moving average model with a higher \(i.e. greater than 1\) number of periods, and possibly a different set of weights.
 
-#### Forecast Engine.
+## Forecast Definition
 
-The forecasting engine has the function to expose the implementations for each forecast rule, the interface ForecastRule.java is the interface to implement each forecast rule.
+The **Forecast Definition** window provides a way to manipulate the creation of the forecast by focusing on sets of specific information.  Essentially, the complete forecast can be treated as a number of very focused forecasts, each looking at different data and using different parameters to forecast that data.  
 
-The developers can use this interface to implement their own calculation algorithms.
-
-### Forecast definition:
+The Forecast Definition includes a header, which has the standard identifying fields and an embedded tab for the **Forecast Definition Lines**.
 
 This window allows to define the valid combinations, used to select the historic sales records. The combinations order is determined by the sequence, where the lower sequence has priority over the higher sequence.
 
