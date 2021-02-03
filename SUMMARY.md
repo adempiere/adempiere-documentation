@@ -90,6 +90,7 @@
     * [Engineering Change Management](introduction/manufacturing/engineering-change-management.md)
     * [Product Configuration](introduction/manufacturing/product-configuration.md)
     * [Forecasting](introduction/manufacturing/forecasting.md)
+  * [Warehouse Management System](introduction/warehouse-management-system.md)
 * [System Administration](system-administration/README.md)
   * [Installation](system-administration/installation/README.md)
     * [System Requirements](system-administration/installation/system-requirements.md)
