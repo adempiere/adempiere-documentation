@@ -114,4 +114,5 @@
   * [Development Environments](developer-guide/development-environments/README.md)
     * [Creating WebUI Workspace using Eclipse Webtool](developer-guide/development-environments/creating-webui-workspace-using-eclipse-webtool.md)
     * [Customization Environment](developer-guide/development-environments/customization-environment.md)
+  * [Install ADempiere easily with Docker](developer-guide/install-adempiere-easily-with-docker.md)
 
