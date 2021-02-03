@@ -130,7 +130,7 @@ Congratulations now you can evaluate and try adempiere locally
 ![ADempiere Main Screen](../.gitbook/assets/image%20%2811%29.png)
 
 {% hint style="info" %}
-Info reference see  [https://github.com/adempiere/adempiere-docker/blob/master/README.md](https://github.com/adempiere/adempiere-docker/blob/master/README.md)
+Info reference here  [https://github.com/adempiere/adempiere-docker/blob/master/README.md](https://github.com/adempiere/adempiere-docker/blob/master/README.md)
 {% endhint %}
 
 {% hint style="danger" %}
