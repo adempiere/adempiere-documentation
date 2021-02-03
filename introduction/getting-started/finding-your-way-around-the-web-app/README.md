@@ -56,7 +56,9 @@ At the top right is the User Panel. This small panel shows the User ID of the cu
       <td style="text-align:left">Closes all windows and logs out, returning the user to the Login dialog.</td>
     </tr>
   </tbody>
-</table>![Web Application Menu](../../../.gitbook/assets/webui_menu.PNG)
+</table>
+
+![Web Application Menu](../../../.gitbook/assets/webui_menu.PNG)
 
 On the left is the Menu which is a tree of all the available Windows, Reports and Processes the User has access to. The tree can be quite large and contain hundreds of items but it can be customized to each role and only show the entries required.
 

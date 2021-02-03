@@ -113,3 +113,4 @@ The Product Revenue account will be credited on the sale of the asset, assuming 
   </thead>
   <tbody></tbody>
 </table>
+
