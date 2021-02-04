@@ -94,7 +94,7 @@
 * [System Administration](system-administration/README.md)
   * [Installation](system-administration/installation/README.md)
     * [System Requirements](system-administration/installation/system-requirements.md)
-    * [Using Docker](system-administration/installation/using-docker.md)
+    * [Install ADempiere easily with Docker](system-administration/installation/install-adempiere-easily-with-docker.md)
     * [Installing ADempiere Manually](system-administration/installation/installing-adempiere-manually/README.md)
       * [Database Server Installation & Setup](system-administration/installation/installing-adempiere-manually/database-server-installation-and-setup.md)
       * [Application Server Installation and Setup](system-administration/installation/installing-adempiere-manually/application-server-installation-and-setup.md)
@@ -114,5 +114,4 @@
   * [Development Environments](developer-guide/development-environments/README.md)
     * [Creating WebUI Workspace using Eclipse Webtool](developer-guide/development-environments/creating-webui-workspace-using-eclipse-webtool.md)
     * [Customization Environment](developer-guide/development-environments/customization-environment.md)
-  * [Install ADempiere easily with Docker](developer-guide/install-adempiere-easily-with-docker.md)
 

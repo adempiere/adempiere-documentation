@@ -115,19 +115,19 @@ fe8cc0a49e77   adempiere                "/bin/sh -c '/root/s…"   11 months ago
 docker logs adempiere
 ```
 
-Based on the configuration of ./adempiere/.env docker will show the available ports where the ADempiere services were deployed 0.0.0.0:4444-&gt;4444/tcp, 0.0.0.0:8274-&gt;8888/tcp
+Based on the configuration of ./adempiere/.env, docker will show the available ports where the ADempiere services were deployed 0.0.0.0:4444-&gt;4444/tcp, 0.0.0.0:8274-&gt;8888/tcp
 
 If everything goes well up to here, open the following url [http://0.0.0.0:8274/webui/](http://0.0.0.0:8274/webui/) in the browser of your choice
 
-![](../.gitbook/assets/image%20%2814%29.png)
+![](../../.gitbook/assets/image%20%2814%29.png)
 
 To access use the username and password GardenAdmin
 
-![ADempiere Role](../.gitbook/assets/image%20%2810%29.png)
+![ADempiere Role](../../.gitbook/assets/image%20%2810%29.png)
 
 Congratulations now you can evaluate and try adempiere locally
 
-![ADempiere Main Screen](../.gitbook/assets/image%20%2811%29.png)
+![ADempiere Main Screen](../../.gitbook/assets/image%20%2811%29.png)
 
 {% hint style="danger" %}
 The deployment in Docker is done for didactic purposes, for a production installation requires specific adjustments in the database and memory parameters
