@@ -21,13 +21,11 @@ Important data is obtained from this report, such as delivery date, source wareh
 
 The user generates a picking list through an Outbound Order _OO_ using several criteria based on demand or open sales orders. It is important to mention the key parameters chosen here refer to common criteria that makes delivery possible, for example: Promised Date range, Document Type, Sales Region.
 
-![](../.gitbook/assets/image%20%286%29.png)
+![Generate Outbound Order Selection Criteria](../.gitbook/assets/image%20%286%29.png)
 
-![](../.gitbook/assets/image%20%283%29.png)
+![Record Selection Preview from Order Lines](../.gitbook/assets/image%20%283%29.png)
 
-![](../.gitbook/assets/image%20%288%29.png)
-
-
+![Generated Outbound Order Example](../.gitbook/assets/image%20%2816%29.png)
 
 ## Distribution Order
 
