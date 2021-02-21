@@ -2,7 +2,7 @@
 
 Usually the sales department creates Sales Orders _SO_ using alternative Delivery Rules:
 
-| Delivery Rule |
+| **Delivery Rule** |
 | :--- |
 | Full Line Delivery |
 | Full Order Delivery |
@@ -27,9 +27,21 @@ The user generates a picking list through an Outbound Order _OO_ using several c
 
 ![Generated Outbound Order Example](../.gitbook/assets/image%20%2816%29.png)
 
+![Outbound Order Line Detail](../.gitbook/assets/image%20%2819%29.png)
+
+You may notice there are different sales order lines reference in an outbound order, This is because their focus is to ease deliveries across several criteria, for example a distribution route and/or fulfilling truck capacity.
+
+![Release Outbound Order to Pick](../.gitbook/assets/image%20%2817%29.png)
+
+As we reach one of the critical steps in this process, this is the Release Outbound Order to Pick that generates the pick tickets and indicates the picking list and the location of the items.
+
 ## Distribution Order
 
-Commonly known as _DO_ it feeds from the commitments made out of the Sales Orders based on availability of the line items involved.
+The pick tickets that were created on the previous steps will now show up as distribution orders
+
+![Distribution Order from Pick Ticket](../.gitbook/assets/image%20%2818%29.png)
+
+
 
 
 
