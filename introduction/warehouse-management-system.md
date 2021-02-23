@@ -41,6 +41,14 @@ The pick tickets that were created on the previous steps will now show up as dis
 
 ![Distribution Order from Pick Ticket](../.gitbook/assets/image%20%2818%29.png)
 
+There are a number of different business scenarios that leverage the distribution order document so from here we can manage picking tickets and inventory movement transactions which also include an In-Transit Warehouse.
+
+The final step involves Generate Shipments from Outbound Order
+
+![Generate Shipments from Outbound Order](../.gitbook/assets/image%20%2821%29.png)
+
+![](../.gitbook/assets/image%20%2822%29.png)
+
 
 
 
