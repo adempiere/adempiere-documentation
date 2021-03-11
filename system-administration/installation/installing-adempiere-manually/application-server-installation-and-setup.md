@@ -22,7 +22,9 @@ Download each of the following packages:
 
 Install the JAVA JDK with the default installation settings. Say OK to install the follow-on JRE as well. Carefully note the full path for the JDK directory \(e.g: C:\Program Files\java\jdk1.5.0\_19\) and the JRE directory that you have just installed.
 
-> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**There may well be a number of JDK and JRE directories, so choose the right one! The JDK should include the JRE. \| \| :--- \| :--- \|
+{% hint style="info" %}
+There may well be a number of JDK and JRE directories, so choose the right one! The JDK should include the JRE.
+{% endhint %}
 
 The ADempiere scripts rely on the existence of a system environment variable JAVA\_HOME. When the scripts call java, they use the full path as JAVA\_HOME/bin/java so it is important that this variable exist.
 
@@ -38,13 +40,17 @@ According to your OS, append the following JDK path to the system path:
 
 There is no install script. Just extract the ADempiere archive to a suitable location: \(e.g. c: or /u01/\). For reference, call this directory ADEMPIERE\_ROOT. You should end up with the files in a folder like ADEMPIERE\_ROOT\Adempiere. For reference, call this folder ADEMPIERE\_HOME.
 
-> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note: Avoid spaces in the directory path**. The batch scripts do not like directory names with spaces. If using a ADEMPIERE\_ROOT with multiple directories, avoid directory names with spaces. \| \| :--- \| :--- \|
+{% hint style="info" %}
+**Avoid spaces in the directory path**. The batch scripts do not like directory names with spaces. If using a ADEMPIERE\_ROOT with multiple directories, avoid directory names with spaces.
+{% endhint %}
 
 ### Apply the Patches
 
 Patches are a combination of \*.jar files, which replace \*.jar files in the ADEMPIERE\_HOME\lib directory, and migration scripts which update the database. In the Patches directory on Source Forge, there may be more than one type of \*.jar that needs patching. If you downloaded one or more patch files, replace the existing file with the downloaded one, changing its name to match. For example, copy the \*\_patches\_\*.jar file to ADEMPIERE\_HOME\lib\patches.jar, overwriting the existing file. See the detailed instructions in [Patches Installation](http://wiki.adempiere.net/Patches_Installation).
 
-> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**It is a good idea to rename the existing \*.jar file to something like patches.jar.old before you replace it with the the new file \| \| :--- \| :--- \|
+{% hint style="info" %}
+It is a good idea to rename the existing \*.jar file to something like patches.jar.old before you replace it with the the new file.
+{% endhint %}
 
 ### Apply Customizations, Packages and other Files
 
@@ -58,7 +64,9 @@ The Application Server is configured by a utility RUN\_Setup.\(sh/bat\) found in
 
 You can rerun this utility as many times as you like until everything is correct.
 
-> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:** In case you are changing settings on an existing Application Server, make sure that the Application Server is shut down before you start. Otherwise you will get port errors during the testing. You can shut down the Application server by running the script RUN\_Server2Stop.\(sh/bat\) from ADEMPIERE\_HOME/utils or by stopping the "service". \| \| :--- \| :--- \|
+{% hint style="info" %}
+In case you are changing settings on an existing Application Server, make sure that the Application Server is shut down before you start. Otherwise you will get port errors during the testing. You can shut down the Application server by running the script RUN\_Server2Stop.\(sh/bat\) from ADEMPIERE\_HOME/utils or by stopping the "service".
+{% endhint %}
 
 In a command shell with administrative privileges, run the script **RUN\_Setup**, located in the ADEMPIERE\_HOME directory. The ADempiere Server Setup window should appear as shown below:
 
@@ -66,7 +74,9 @@ In a command shell with administrative privileges, run the script **RUN\_Setup**
 
 The Setup window opens and loads its values from the file AdempiereEnv.properties. It looks for this file in the ADEMPIERE\_HOME directory. If the environment variable ADEMPIERE\_HOME is not set or is null, it will look in the directory defined in the system property "user.dir".
 
-> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**The setup process creates a file named Adempiere.properties. This is the main configuration file for your Client. You can copy this file and pass it as a variable when you start ADempiere using the command line interface parameter-DPropertyFile=AdempiereProduction.properties. If you create several files you can use them to easily switch between development, test and production environments, for example. \| \| :--- \| :--- \|
+{% hint style="info" %}
+The setup process creates a file named Adempiere.properties. This is the main configuration file for your Client. You can copy this file and pass it as a variable when you start ADempiere using the command line interface parameter-DPropertyFile=AdempiereProduction.properties. If you create several files you can use them to easily switch between development, test and production environments, for example.
+{% endhint %}
 
 ### Setup Fields
 
@@ -107,7 +117,9 @@ Fill in the setup window fields as follows:
 
 Mail setup is optional but a server does have to be identified. The Setup Tool will finish successfully whether the mail tests work or not. You can maintain the mail server connection in the Application on a Client basis from the [**Client Window**](http://wiki.adempiere.net/ManPageW_Client). If you don't want to setup mail or don't have an SMTP server, just enter a valid server - the field defaults to the local computer name. As long as the server exists, the setup will finish successfully.
 
-> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**The software only needs a method to send email. There is no ability to read email in the application. \| \| :--- \| :--- \|
+{% hint style="info" %}
+The software only needs a method to send email. There is no ability to read email in the application. 
+{% endhint %}
 
 ### Testing the Setup
 
@@ -115,7 +127,7 @@ After you fill the Setup fields, press the Test button to verify them. As the te
 
 If, for example, the Application Server name is wrong, then you will see a message such as:
 
-[![](http://wiki.adempiere.net/images/c/c1/IS_ServerSetupError.PNG)](http://wiki.adempiere.net/File:IS_ServerSetupError.PNG)
+![Server setup error dialog](../../../.gitbook/assets/is_serversetuperror.png)
 
 When all the tests pass \(you can see the boxes checked: √ \):
 
@@ -124,7 +136,7 @@ When all the tests pass \(you can see the boxes checked: √ \):
 * press the Save button. This will save the settings to the AdempiereEnv.properties file in the ADEMPIERE\_HOME directory.
 * After you accept the license, you will see the dialog:
 
-  [![](http://wiki.adempiere.net/images/5/55/IS_EnvironmentSaved.PNG)](http://wiki.adempiere.net/File:IS_EnvironmentSaved.PNG)
+![The setup was saved and the process is ready to start deployment](../../../.gitbook/assets/is_environmentsaved.png)
 
 * Press the OK button to continue and take a look into the log. Make sure that you see the **BUILD SUCCESSFUL** and **Done**, such as:
 
@@ -178,7 +190,7 @@ Once the setup is complete, you can move on to [Initialize the ADempiere Databas
 
 If you receive the following message:
 
-[![](http://wiki.adempiere.net/images/5/54/IS_JAVA_HOME_ERROR.PNG)](http://wiki.adempiere.net/File:IS_JAVA_HOME_ERROR.PNG)
+![JAVA\_HOME was not found](../../../.gitbook/assets/is_java_home_error.png)
 
 You should check your java environment variables. Check that the JAVA\_HOME system environment variable points to the correct directory.
 
@@ -186,7 +198,7 @@ You should check your java environment variables. Check that the JAVA\_HOME syst
 
 If you receive the following message from the installer:
 
-[![](http://wiki.adempiere.net/images/e/e8/Adempiereerror1.png)](http://wiki.adempiere.net/File:Adempiereerror1.png)
+![Web port error](../../../.gitbook/assets/adempiereerror1.png)
 
 it is likely that you have some other web server running or, if your are using Linux, you need the appropriate privileges.
 
@@ -198,7 +210,9 @@ Another possible error is Server Setup Error Error JNP Port \(Not correct: JNP P
 
 The JNP Port = 1099 error can be caused by another process which is already attached to that TCP port. Take a look what process is using this port and so you can take steps to stop it. It can also be caused by a mismatch between your IP address and the entry in your hosts file. See /etc/hosts\(linux\) or %SystemRoot%/system32/drivers/etc/hosts\(windows\).
 
-> \| [![Image:Note.gif](http://wiki.adempiere.net/images/6/62/Note.gif)](http://wiki.adempiere.net/File:Note.gif) \| **Note:**To find the IP address of your server try the following in a command script:Linux /sbin/ifconfigWindows IPCONFIG \| \| :--- \| :--- \|
+{% hint style="info" %}
+To find the IP address of your server try the following in a command script:Linux /sbin/ifconfigWindows IPCONFIG
+{% endhint %}
 
 ### JNP Name Not Found Exception
 
