@@ -28,7 +28,8 @@ The processes to add a new window with a single tab and some columns is quite si
 5. Create a new Window and add a Tab that draws data from the Table
 6. Create the Fields for the Columns and order them in the tab
 7. Add the Window to the menu
-8. Log-out and in to see the changes
+8. Run the Role Access Update process to ensure users can see the new window.
+9. Log-out and in to see the changes
 
 You can now use the window to collect and manage the data as in any other window.  
 
