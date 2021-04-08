@@ -53,6 +53,7 @@
         * [Defining Users and Contacts](introduction/system-administration/general-rules/security-1/defining-users-and-contacts.md)
         * [Roles and Managing Data Access](introduction/system-administration/general-rules/security-1/roles-and-managing-data-access/README.md)
           * [Dashboard Access](introduction/system-administration/general-rules/security-1/roles-and-managing-data-access/dashboard-access.md)
+          * [Role Access Update](introduction/system-administration/general-rules/security-1/roles-and-managing-data-access/role-access-update.md)
       * [Server](introduction/system-administration/general-rules/server/README.md)
         * [EMail Configuration](introduction/system-administration/general-rules/server/email-configuration.md)
     * [Managing the Client](introduction/system-administration/managing-the-client/README.md)
