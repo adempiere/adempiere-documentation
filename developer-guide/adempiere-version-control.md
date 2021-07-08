@@ -20,7 +20,10 @@ The setup is easy. Follow these steps:
 * Create a GitHub account
 * [Create your personal fork](https://help.github.com/articles/fork-a-repo/) of the ADempiere project
 * Create a local clone of your personal fork
-* Follow the instructions in [Create your ADempiere development environment](http://wiki.adempiere.net/Create_your_ADempiere_development_environment), [Creating WebUI Workspace using Eclipse Webtool](http://wiki.adempiere.net/Creating_WebUI_Workspace_using_Eclipse_Webtool) and [Create your ADempiere customization environment](http://wiki.adempiere.net/Create_your_ADempiere_customization_environment).
+* Follow the instructions in 
+ 1. [Create your ADempiere development environment](http://www.adempiere.com/Create_your_ADempiere_development_environment), 
+ 1. [Creating WebUI Workspace using Eclipse Webtool](http://www.adempiere.com/Creating_WebUI_Workspace_using_Eclipse_Webtool) and 
+ 1. [Create your ADempiere customization environment](http://www.adempiere.com/Create_your_ADempiere_customization_environment).
 * Start developing!
 * Commit your work to your own fork. Follow the ADempiere [Software Development Procedure](software-development-procedure.md) for branch naming.
 * Send a pull request to the ADempiere project.
